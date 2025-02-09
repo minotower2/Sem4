@@ -9,6 +9,7 @@ enum class io_status {
   success,
   memory,
   format,
+  eof,
 };
 
 class student {
