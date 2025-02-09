@@ -1,0 +1,6 @@
+*.out
+*.o
+*.zip
+__pycache__/
+vgcore*
+gentest*
