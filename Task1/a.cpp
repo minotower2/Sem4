@@ -1,9 +1,11 @@
 #include "student.h"
 #include "rb_tree.h"
+#include <ctime>
 
 int main(int argc, char* argv[]) {
   char *filename = 0;
-  int r, k;
+  int r, k, task, res;
+  double t;
   FILE *fp;
   io_status read;
 
@@ -42,6 +44,11 @@ int main(int argc, char* argv[]) {
   }
   birch->print(r);
 
+  task = 1;
+  t = clock();
+  res = birch->solve1(k);
+  t = (clock()-t)/CLOCKS_PER_SEC;
+  printf ("%s : Task = %d K = %d Result = %d Elapsed = %.2f\n", argv[0], task, k, res, t);
 
   delete birch;
   fclose(fp);
