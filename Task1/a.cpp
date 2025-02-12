@@ -50,6 +50,12 @@ int main(int argc, char* argv[]) {
   t = (clock()-t)/CLOCKS_PER_SEC;
   printf ("%s : Task = %d K = %d Result = %d Elapsed = %.2f\n", argv[0], task, k, res, t);
 
+  task = 2;
+  t = clock();
+  res = birch->solve2(k);
+  t = (clock()-t)/CLOCKS_PER_SEC;
+  printf ("%s : Task = %d K = %d Result = %d Elapsed = %.2f\n", argv[0], task, k, res, t);
+
   delete birch;
   fclose(fp);
   return 0;

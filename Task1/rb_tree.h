@@ -235,6 +235,32 @@ class rb_tree {
       solve1_recc(curr->right, k, count);
     }
 
+    //=========================
+    //         Task2
+    //=========================
+
+    int solve2(int k) {
+      int count = 0;
+      solve2_recc(root, k, &count);
+      return count;
+    }
+
+    int count_levels(rb_tree_node<T> *curr, int level, int *num) {
+      if (curr == nullptr) return 0;
+      if (level > *num) *num = level;
+      int count = 1;
+      count += count_levels(curr->left, level+1, num);
+      count += count_levels(curr->right, level+1, num);
+      return count;
+    }
+    void solve2_recc(rb_tree_node<T> *curr, int k, int *count) {
+      if (curr == nullptr) return;
+      int c = 0;
+      int num = count_levels(curr, 0, &c);
+      if (c <= k) {*count += num; return;}
+      solve2_recc(curr->left, k, count);
+      solve2_recc(curr->right, k, count);
+    }
 };
 
 
