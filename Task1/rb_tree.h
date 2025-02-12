@@ -256,11 +256,16 @@ class rb_tree {
     void solve2_recc(rb_tree_node<T> *curr, int k, int *count) {
       if (curr == nullptr) return;
       int c = 0;
-      int num = count_levels(curr, 0, &c);
+      int num = count_levels(curr, 1, &c);
       if (c <= k) {*count += num; return;}
       solve2_recc(curr->left, k, count);
       solve2_recc(curr->right, k, count);
     }
+
+    //=========================
+    //         Task3
+    //=========================
+
 };
 
 
