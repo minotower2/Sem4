@@ -158,14 +158,14 @@ class rb_tree {
           rb_tree_node<T> *temp2 = curr->left;
           grfather->left = curr; curr->parent = grfather;
           curr->left = father; father->parent = curr;
-          father->right = temp2; temp2->parent = father;
+          father->right = temp2; if (temp2) temp2->parent = father;
           flag = 1;
         }
         if (grfather->right == father && father->left == curr) {
           rb_tree_node<T> *temp2 = curr->right;
           grfather->right = curr; curr->parent = grfather;
           curr->right = father; father->parent = curr;
-          father->left = temp2; temp2->parent = father;
+          father->left = temp2; if (temp2) temp2->parent = father;
           flag = 1;
         }
         rb_tree_node<T> *p;
@@ -230,7 +230,7 @@ class rb_tree {
     void solve1_recc(rb_tree_node<T> *curr, int k, int *count) {
       if (curr == nullptr) return;
       int c = count_subtree(curr);
-      if (c <= k) {*count += c; return;}
+      if (c <= k) {*count += c;}
       solve1_recc(curr->left, k, count);
       solve1_recc(curr->right, k, count);
     }
@@ -257,7 +257,7 @@ class rb_tree {
       if (curr == nullptr) return;
       int c = 0;
       int num = count_levels(curr, 1, &c);
-      if (c <= k) {*count += num; return;}
+      if (c <= k) {*count += num;}
       solve2_recc(curr->left, k, count);
       solve2_recc(curr->right, k, count);
     }
@@ -265,6 +265,78 @@ class rb_tree {
     //=========================
     //         Task3
     //=========================
+
+    void count_nodes_kth_level(rb_tree_node<T> *curr, int goal, int level, int *count) {
+      if (curr == nullptr || level > goal) return;
+      if (goal == level) (*count)++;
+      count_nodes_kth_level(curr->left, goal, level+1, count);
+      count_nodes_kth_level(curr->right, goal, level+1, count);
+    }
+    int solve3(int k) {
+      int count = 0;
+      solve3_recc(root, k, &count);
+      return count;
+    }
+    int get_height(rb_tree_node<T>*curr) {
+      if (curr == nullptr) return 0;
+      int count = 1, height, max_height = 0;
+      height = get_height(curr->left);
+      if (height > max_height) max_height = height;
+      height = get_height(curr->right);
+      if (height > max_height) max_height = height;
+      return count + max_height;
+  }
+    int check_subtree(rb_tree_node<T> *curr, int k) {
+      int height = get_height(curr);
+      int count;
+      for (int i = 0; i < height; i++) {
+        count = 0;
+        count_nodes_kth_level(curr, i, 0, &count);
+        if (count > k) {
+          return -1;
+        }
+      }
+      return 1;
+    }
+    void solve3_recc(rb_tree_node<T> *curr, int k, int *count) {
+      if (curr == nullptr) return;
+      int num = 0, c;
+      num = check_subtree(curr, k);
+      if (num == 1) {
+        c = count_subtree(curr);
+        (*count) += c;
+      }
+      solve3_recc(curr->left, k, count);
+      solve3_recc(curr->right, k, count);
+    }
+
+    //=========================
+    //         Task4
+    //=========================
+
+    int solve4(int k) {
+      int count = 0;
+      count_nodes_kth_level(root, k, 0, &count);
+      return count;
+    }
+
+
+    //=========================
+    //         Task5
+    //=========================
+    
+    int solve5(int k) {
+      int count = 0;
+      lists_on_kth_level(root, k, 1, &count);
+      return count * k;
+    }
+
+    void lists_on_kth_level(rb_tree_node<T> *curr, int goal, int level, int *count) {
+      if (curr == nullptr || level > goal) return;
+      if (goal == level && (curr->left == nullptr) && (curr->right == nullptr)) (*count)++;
+      lists_on_kth_level(curr->left, goal, level+1, count);
+      lists_on_kth_level(curr->right, goal, level+1, count);
+    }
 
 };
 
