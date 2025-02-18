@@ -32,14 +32,17 @@ int main(int argc, char* argv[]) {
     case io_status::eof:
       printf("Reached end of file\n");
       delete birch;
+      fclose(fp);
       return -3;
     case io_status::format:
       printf("Wrong format of data\n");
       delete birch;
+      fclose(fp);
       return -4;
     case io_status::memory:
       printf("Not enough memory\n");
       delete birch;
+      fclose(fp);
       return -5;
   }
   birch->print(r);

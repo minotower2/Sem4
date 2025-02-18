@@ -89,19 +89,7 @@ class rb_tree {
       if (curr == nullptr || level > r) return;
       int spaces = level * 2;
       for (int i = 0; i < spaces; i++) fprintf (fp, " ");
-      if (curr->color == colors::red) {
-        printf("\033[0;31m");
-        curr->print (fp);
-        printf("\033[0m");
-      }
-      else if (curr->color == colors::black) {
-        printf("\033[0;30m");
-        curr->print (fp);
-        printf("\033[0m");
-      }
-      else {
-        curr->print(fp);
-      }
+      curr->print(fp);
       print_subtree (curr->left, level + 1, r, fp);
       print_subtree (curr->right, level + 1, r, fp);
   }
@@ -220,19 +208,11 @@ class rb_tree {
       return count;
     }
 
-    int count_subtree(rb_tree_node<T> *curr) {
+    int solve1_recc(rb_tree_node<T> *curr, int k, int *count) {
       if (curr == nullptr) return 0;
-      int count = 1;
-      count += count_subtree(curr->left);
-      count += count_subtree(curr->right);
-      return count;
-    }
-    void solve1_recc(rb_tree_node<T> *curr, int k, int *count) {
-      if (curr == nullptr) return;
-      int c = count_subtree(curr);
+      int c = solve1_recc(curr->left, k, count) + solve1_recc(curr->right, k, count) + 1;
       if (c <= k) {*count += c;}
-      solve1_recc(curr->left, k, count);
-      solve1_recc(curr->right, k, count);
+      return c;
     }
 
     //=========================
@@ -266,6 +246,13 @@ class rb_tree {
     //         Task3
     //=========================
 
+    int count_subtree(rb_tree_node<T> *curr) {
+      if (curr == nullptr) return 0;
+      int count = 1;
+      count += count_subtree(curr->left);
+      count += count_subtree(curr->right);
+      return count;
+    }
     void count_nodes_kth_level(rb_tree_node<T> *curr, int goal, int level, int *count) {
       if (curr == nullptr || level > goal) return;
       if (goal == level) (*count)++;

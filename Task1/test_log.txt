@@ -1,118 +1,118 @@
 Standard set tests:
-Test № 0     test.txt                   Len: 0     k: 1   Student: OK
-Test № 1     test1.txt                  Len: 1     k: 1   Student: OK
-Test № 2     test2.txt                  Len: 7     k: 1   Student: OK
+Test № 0     test.txt                   Len: 0     k: 1   Memory: Good! Student: OK
+Test № 1     test1.txt                  Len: 1     k: 1   Memory: Good! Student: OK
+Test № 2     test2.txt                  Len: 7     k: 1   Memory: Good! Student: OK
 Comment: Incorrect file!
 
  Summary:3 of 3 completed successfully!
-Test № 0     gentest0_0.txt             Len: 1000  k: 0   Student: OK
-Test № 1     gentest1_1.txt             Len: 1000  k: 1   Student: OK
-Test № 2     gentest2_2.txt             Len: 1000  k: 2   Student: OK
-Test № 3     gentest3_3.txt             Len: 1000  k: 3   Student: OK
-Test № 4     gentest4_4.txt             Len: 1000  k: 4   Student: OK
-Test № 5     gentest5_5.txt             Len: 1000  k: 5   Student: OK
-Test № 6     gentest6_6.txt             Len: 1000  k: 6   Student: OK
-Test № 7     gentest7_7.txt             Len: 1000  k: 7   Student: OK
-Test № 8     gentest8_8.txt             Len: 1000  k: 8   Student: OK
-Test № 9     gentest9_9.txt             Len: 1000  k: 9   Student: OK
-Test № 10    gentest10_0.txt            Len: 1100  k: 0   Student: OK
-Test № 11    gentest11_1.txt            Len: 1100  k: 1   Student: OK
-Test № 12    gentest12_2.txt            Len: 1100  k: 2   Student: OK
-Test № 13    gentest13_3.txt            Len: 1100  k: 3   Student: OK
-Test № 14    gentest14_4.txt            Len: 1100  k: 4   Student: OK
-Test № 15    gentest15_5.txt            Len: 1100  k: 5   Student: OK
-Test № 16    gentest16_6.txt            Len: 1100  k: 6   Student: OK
-Test № 17    gentest17_7.txt            Len: 1100  k: 7   Student: OK
-Test № 18    gentest18_8.txt            Len: 1100  k: 8   Student: OK
-Test № 19    gentest19_9.txt            Len: 1100  k: 9   Student: OK
-Test № 20    gentest20_0.txt            Len: 1200  k: 0   Student: OK
-Test № 21    gentest21_1.txt            Len: 1200  k: 1   Student: OK
-Test № 22    gentest22_2.txt            Len: 1200  k: 2   Student: OK
-Test № 23    gentest23_3.txt            Len: 1200  k: 3   Student: OK
-Test № 24    gentest24_4.txt            Len: 1200  k: 4   Student: OK
-Test № 25    gentest25_5.txt            Len: 1200  k: 5   Student: OK
-Test № 26    gentest26_6.txt            Len: 1200  k: 6   Student: OK
-Test № 27    gentest27_7.txt            Len: 1200  k: 7   Student: OK
-Test № 28    gentest28_8.txt            Len: 1200  k: 8   Student: OK
-Test № 29    gentest29_9.txt            Len: 1200  k: 9   Student: OK
-Test № 30    gentest30_0.txt            Len: 1300  k: 0   Student: OK
-Test № 31    gentest31_1.txt            Len: 1300  k: 1   Student: OK
-Test № 32    gentest32_2.txt            Len: 1300  k: 2   Student: OK
-Test № 33    gentest33_3.txt            Len: 1300  k: 3   Student: OK
-Test № 34    gentest34_4.txt            Len: 1300  k: 4   Student: OK
-Test № 35    gentest35_5.txt            Len: 1300  k: 5   Student: OK
-Test № 36    gentest36_6.txt            Len: 1300  k: 6   Student: OK
-Test № 37    gentest37_7.txt            Len: 1300  k: 7   Student: OK
-Test № 38    gentest38_8.txt            Len: 1300  k: 8   Student: OK
-Test № 39    gentest39_9.txt            Len: 1300  k: 9   Student: OK
-Test № 40    gentest40_0.txt            Len: 1400  k: 0   Student: OK
-Test № 41    gentest41_1.txt            Len: 1400  k: 1   Student: OK
-Test № 42    gentest42_2.txt            Len: 1400  k: 2   Student: OK
-Test № 43    gentest43_3.txt            Len: 1400  k: 3   Student: OK
-Test № 44    gentest44_4.txt            Len: 1400  k: 4   Student: OK
-Test № 45    gentest45_5.txt            Len: 1400  k: 5   Student: OK
-Test № 46    gentest46_6.txt            Len: 1400  k: 6   Student: OK
-Test № 47    gentest47_7.txt            Len: 1400  k: 7   Student: OK
-Test № 48    gentest48_8.txt            Len: 1400  k: 8   Student: OK
-Test № 49    gentest49_9.txt            Len: 1400  k: 9   Student: OK
-Test № 50    gentest50_0.txt            Len: 1500  k: 0   Student: OK
-Test № 51    gentest51_1.txt            Len: 1500  k: 1   Student: OK
-Test № 52    gentest52_2.txt            Len: 1500  k: 2   Student: OK
-Test № 53    gentest53_3.txt            Len: 1500  k: 3   Student: OK
-Test № 54    gentest54_4.txt            Len: 1500  k: 4   Student: OK
-Test № 55    gentest55_5.txt            Len: 1500  k: 5   Student: OK
-Test № 56    gentest56_6.txt            Len: 1500  k: 6   Student: OK
-Test № 57    gentest57_7.txt            Len: 1500  k: 7   Student: OK
-Test № 58    gentest58_8.txt            Len: 1500  k: 8   Student: OK
-Test № 59    gentest59_9.txt            Len: 1500  k: 9   Student: OK
-Test № 60    gentest60_0.txt            Len: 1600  k: 0   Student: OK
-Test № 61    gentest61_1.txt            Len: 1600  k: 1   Student: OK
-Test № 62    gentest62_2.txt            Len: 1600  k: 2   Student: OK
-Test № 63    gentest63_3.txt            Len: 1600  k: 3   Student: OK
-Test № 64    gentest64_4.txt            Len: 1600  k: 4   Student: OK
-Test № 65    gentest65_5.txt            Len: 1600  k: 5   Student: OK
-Test № 66    gentest66_6.txt            Len: 1600  k: 6   Student: OK
-Test № 67    gentest67_7.txt            Len: 1600  k: 7   Student: OK
-Test № 68    gentest68_8.txt            Len: 1600  k: 8   Student: OK
-Test № 69    gentest69_9.txt            Len: 1600  k: 9   Student: OK
-Test № 70    gentest70_0.txt            Len: 1700  k: 0   Student: OK
-Test № 71    gentest71_1.txt            Len: 1700  k: 1   Student: OK
-Test № 72    gentest72_2.txt            Len: 1700  k: 2   Student: OK
-Test № 73    gentest73_3.txt            Len: 1700  k: 3   Student: OK
-Test № 74    gentest74_4.txt            Len: 1700  k: 4   Student: OK
-Test № 75    gentest75_5.txt            Len: 1700  k: 5   Student: OK
-Test № 76    gentest76_6.txt            Len: 1700  k: 6   Student: OK
-Test № 77    gentest77_7.txt            Len: 1700  k: 7   Student: OK
-Test № 78    gentest78_8.txt            Len: 1700  k: 8   Student: OK
-Test № 79    gentest79_9.txt            Len: 1700  k: 9   Student: OK
-Test № 80    gentest80_0.txt            Len: 1800  k: 0   Student: OK
-Test № 81    gentest81_1.txt            Len: 1800  k: 1   Student: OK
-Test № 82    gentest82_2.txt            Len: 1800  k: 2   Student: OK
-Test № 83    gentest83_3.txt            Len: 1800  k: 3   Student: OK
-Test № 84    gentest84_4.txt            Len: 1800  k: 4   Student: OK
-Test № 85    gentest85_5.txt            Len: 1800  k: 5   Student: OK
-Test № 86    gentest86_6.txt            Len: 1800  k: 6   Student: OK
-Test № 87    gentest87_7.txt            Len: 1800  k: 7   Student: OK
-Test № 88    gentest88_8.txt            Len: 1800  k: 8   Student: OK
-Test № 89    gentest89_9.txt            Len: 1800  k: 9   Student: OK
-Test № 90    gentest90_0.txt            Len: 1900  k: 0   Student: OK
-Test № 91    gentest91_1.txt            Len: 1900  k: 1   Student: OK
-Test № 92    gentest92_2.txt            Len: 1900  k: 2   Student: OK
-Test № 93    gentest93_3.txt            Len: 1900  k: 3   Student: OK
-Test № 94    gentest94_4.txt            Len: 1900  k: 4   Student: OK
-Test № 95    gentest95_5.txt            Len: 1900  k: 5   Student: OK
-Test № 96    gentest96_6.txt            Len: 1900  k: 6   Student: OK
-Test № 97    gentest97_7.txt            Len: 1900  k: 7   Student: OK
-Test № 98    gentest98_8.txt            Len: 1900  k: 8   Student: OK
-Test № 99    gentest99_9.txt            Len: 1900  k: 9   Student: OK
-Test № 100   gentest100_0.txt           Len: 2000  k: 0   Student: OK
-Test № 101   gentest101_1.txt           Len: 2000  k: 1   Student: OK
-Test № 102   gentest102_2.txt           Len: 2000  k: 2   Student: OK
-Test № 103   gentest103_3.txt           Len: 2000  k: 3   Student: OK
-Test № 104   gentest104_4.txt           Len: 2000  k: 4   Student: OK
-Test № 105   gentest105_5.txt           Len: 2000  k: 5   Student: OK
-Test № 106   gentest106_6.txt           Len: 2000  k: 6   Student: OK
-Test № 107   gentest107_7.txt           Len: 2000  k: 7   Student: OK
-Test № 108   gentest108_8.txt           Len: 2000  k: 8   Student: OK
-Test № 109   gentest109_9.txt           Len: 2000  k: 9   Student: OK
+Test № 0     gentest0_0.txt             Len: 1000  k: 0   Memory: Good! Student: OK
+Test № 1     gentest1_1.txt             Len: 1000  k: 1   Memory: Good! Student: OK
+Test № 2     gentest2_2.txt             Len: 1000  k: 2   Memory: Good! Student: OK
+Test № 3     gentest3_3.txt             Len: 1000  k: 3   Memory: Good! Student: OK
+Test № 4     gentest4_4.txt             Len: 1000  k: 4   Memory: Good! Student: OK
+Test № 5     gentest5_5.txt             Len: 1000  k: 5   Memory: Good! Student: OK
+Test № 6     gentest6_6.txt             Len: 1000  k: 6   Memory: Good! Student: OK
+Test № 7     gentest7_7.txt             Len: 1000  k: 7   Memory: Good! Student: OK
+Test № 8     gentest8_8.txt             Len: 1000  k: 8   Memory: Good! Student: OK
+Test № 9     gentest9_9.txt             Len: 1000  k: 9   Memory: Good! Student: OK
+Test № 10    gentest10_0.txt            Len: 1100  k: 0   Memory: Good! Student: OK
+Test № 11    gentest11_1.txt            Len: 1100  k: 1   Memory: Good! Student: OK
+Test № 12    gentest12_2.txt            Len: 1100  k: 2   Memory: Good! Student: OK
+Test № 13    gentest13_3.txt            Len: 1100  k: 3   Memory: Good! Student: OK
+Test № 14    gentest14_4.txt            Len: 1100  k: 4   Memory: Good! Student: OK
+Test № 15    gentest15_5.txt            Len: 1100  k: 5   Memory: Good! Student: OK
+Test № 16    gentest16_6.txt            Len: 1100  k: 6   Memory: Good! Student: OK
+Test № 17    gentest17_7.txt            Len: 1100  k: 7   Memory: Good! Student: OK
+Test № 18    gentest18_8.txt            Len: 1100  k: 8   Memory: Good! Student: OK
+Test № 19    gentest19_9.txt            Len: 1100  k: 9   Memory: Good! Student: OK
+Test № 20    gentest20_0.txt            Len: 1200  k: 0   Memory: Good! Student: OK
+Test № 21    gentest21_1.txt            Len: 1200  k: 1   Memory: Good! Student: OK
+Test № 22    gentest22_2.txt            Len: 1200  k: 2   Memory: Good! Student: OK
+Test № 23    gentest23_3.txt            Len: 1200  k: 3   Memory: Good! Student: OK
+Test № 24    gentest24_4.txt            Len: 1200  k: 4   Memory: Good! Student: OK
+Test № 25    gentest25_5.txt            Len: 1200  k: 5   Memory: Good! Student: OK
+Test № 26    gentest26_6.txt            Len: 1200  k: 6   Memory: Good! Student: OK
+Test № 27    gentest27_7.txt            Len: 1200  k: 7   Memory: Good! Student: OK
+Test № 28    gentest28_8.txt            Len: 1200  k: 8   Memory: Good! Student: OK
+Test № 29    gentest29_9.txt            Len: 1200  k: 9   Memory: Good! Student: OK
+Test № 30    gentest30_0.txt            Len: 1300  k: 0   Memory: Good! Student: OK
+Test № 31    gentest31_1.txt            Len: 1300  k: 1   Memory: Good! Student: OK
+Test № 32    gentest32_2.txt            Len: 1300  k: 2   Memory: Good! Student: OK
+Test № 33    gentest33_3.txt            Len: 1300  k: 3   Memory: Good! Student: OK
+Test № 34    gentest34_4.txt            Len: 1300  k: 4   Memory: Good! Student: OK
+Test № 35    gentest35_5.txt            Len: 1300  k: 5   Memory: Good! Student: OK
+Test № 36    gentest36_6.txt            Len: 1300  k: 6   Memory: Good! Student: OK
+Test № 37    gentest37_7.txt            Len: 1300  k: 7   Memory: Good! Student: OK
+Test № 38    gentest38_8.txt            Len: 1300  k: 8   Memory: Good! Student: OK
+Test № 39    gentest39_9.txt            Len: 1300  k: 9   Memory: Good! Student: OK
+Test № 40    gentest40_0.txt            Len: 1400  k: 0   Memory: Good! Student: OK
+Test № 41    gentest41_1.txt            Len: 1400  k: 1   Memory: Good! Student: OK
+Test № 42    gentest42_2.txt            Len: 1400  k: 2   Memory: Good! Student: OK
+Test № 43    gentest43_3.txt            Len: 1400  k: 3   Memory: Good! Student: OK
+Test № 44    gentest44_4.txt            Len: 1400  k: 4   Memory: Good! Student: OK
+Test № 45    gentest45_5.txt            Len: 1400  k: 5   Memory: Good! Student: OK
+Test № 46    gentest46_6.txt            Len: 1400  k: 6   Memory: Good! Student: OK
+Test № 47    gentest47_7.txt            Len: 1400  k: 7   Memory: Good! Student: OK
+Test № 48    gentest48_8.txt            Len: 1400  k: 8   Memory: Good! Student: OK
+Test № 49    gentest49_9.txt            Len: 1400  k: 9   Memory: Good! Student: OK
+Test № 50    gentest50_0.txt            Len: 1500  k: 0   Memory: Good! Student: OK
+Test № 51    gentest51_1.txt            Len: 1500  k: 1   Memory: Good! Student: OK
+Test № 52    gentest52_2.txt            Len: 1500  k: 2   Memory: Good! Student: OK
+Test № 53    gentest53_3.txt            Len: 1500  k: 3   Memory: Good! Student: OK
+Test № 54    gentest54_4.txt            Len: 1500  k: 4   Memory: Good! Student: OK
+Test № 55    gentest55_5.txt            Len: 1500  k: 5   Memory: Good! Student: OK
+Test № 56    gentest56_6.txt            Len: 1500  k: 6   Memory: Good! Student: OK
+Test № 57    gentest57_7.txt            Len: 1500  k: 7   Memory: Good! Student: OK
+Test № 58    gentest58_8.txt            Len: 1500  k: 8   Memory: Good! Student: OK
+Test № 59    gentest59_9.txt            Len: 1500  k: 9   Memory: Good! Student: OK
+Test № 60    gentest60_0.txt            Len: 1600  k: 0   Memory: Good! Student: OK
+Test № 61    gentest61_1.txt            Len: 1600  k: 1   Memory: Good! Student: OK
+Test № 62    gentest62_2.txt            Len: 1600  k: 2   Memory: Good! Student: OK
+Test № 63    gentest63_3.txt            Len: 1600  k: 3   Memory: Good! Student: OK
+Test № 64    gentest64_4.txt            Len: 1600  k: 4   Memory: Good! Student: OK
+Test № 65    gentest65_5.txt            Len: 1600  k: 5   Memory: Good! Student: OK
+Test № 66    gentest66_6.txt            Len: 1600  k: 6   Memory: Good! Student: OK
+Test № 67    gentest67_7.txt            Len: 1600  k: 7   Memory: Good! Student: OK
+Test № 68    gentest68_8.txt            Len: 1600  k: 8   Memory: Good! Student: OK
+Test № 69    gentest69_9.txt            Len: 1600  k: 9   Memory: Good! Student: OK
+Test № 70    gentest70_0.txt            Len: 1700  k: 0   Memory: Good! Student: OK
+Test № 71    gentest71_1.txt            Len: 1700  k: 1   Memory: Good! Student: OK
+Test № 72    gentest72_2.txt            Len: 1700  k: 2   Memory: Good! Student: OK
+Test № 73    gentest73_3.txt            Len: 1700  k: 3   Memory: Good! Student: OK
+Test № 74    gentest74_4.txt            Len: 1700  k: 4   Memory: Good! Student: OK
+Test № 75    gentest75_5.txt            Len: 1700  k: 5   Memory: Good! Student: OK
+Test № 76    gentest76_6.txt            Len: 1700  k: 6   Memory: Good! Student: OK
+Test № 77    gentest77_7.txt            Len: 1700  k: 7   Memory: Good! Student: OK
+Test № 78    gentest78_8.txt            Len: 1700  k: 8   Memory: Good! Student: OK
+Test № 79    gentest79_9.txt            Len: 1700  k: 9   Memory: Good! Student: OK
+Test № 80    gentest80_0.txt            Len: 1800  k: 0   Memory: Good! Student: OK
+Test № 81    gentest81_1.txt            Len: 1800  k: 1   Memory: Good! Student: OK
+Test № 82    gentest82_2.txt            Len: 1800  k: 2   Memory: Good! Student: OK
+Test № 83    gentest83_3.txt            Len: 1800  k: 3   Memory: Good! Student: OK
+Test № 84    gentest84_4.txt            Len: 1800  k: 4   Memory: Good! Student: OK
+Test № 85    gentest85_5.txt            Len: 1800  k: 5   Memory: Good! Student: OK
+Test № 86    gentest86_6.txt            Len: 1800  k: 6   Memory: Good! Student: OK
+Test № 87    gentest87_7.txt            Len: 1800  k: 7   Memory: Good! Student: OK
+Test № 88    gentest88_8.txt            Len: 1800  k: 8   Memory: Good! Student: OK
+Test № 89    gentest89_9.txt            Len: 1800  k: 9   Memory: Good! Student: OK
+Test № 90    gentest90_0.txt            Len: 1900  k: 0   Memory: Good! Student: OK
+Test № 91    gentest91_1.txt            Len: 1900  k: 1   Memory: Good! Student: OK
+Test № 92    gentest92_2.txt            Len: 1900  k: 2   Memory: Good! Student: OK
+Test № 93    gentest93_3.txt            Len: 1900  k: 3   Memory: Good! Student: OK
+Test № 94    gentest94_4.txt            Len: 1900  k: 4   Memory: Good! Student: OK
+Test № 95    gentest95_5.txt            Len: 1900  k: 5   Memory: Good! Student: OK
+Test № 96    gentest96_6.txt            Len: 1900  k: 6   Memory: Good! Student: OK
+Test № 97    gentest97_7.txt            Len: 1900  k: 7   Memory: Good! Student: OK
+Test № 98    gentest98_8.txt            Len: 1900  k: 8   Memory: Good! Student: OK
+Test № 99    gentest99_9.txt            Len: 1900  k: 9   Memory: Good! Student: OK
+Test № 100   gentest100_0.txt           Len: 2000  k: 0   Memory: Good! Student: OK
+Test № 101   gentest101_1.txt           Len: 2000  k: 1   Memory: Good! Student: OK
+Test № 102   gentest102_2.txt           Len: 2000  k: 2   Memory: Good! Student: OK
+Test № 103   gentest103_3.txt           Len: 2000  k: 3   Memory: Good! Student: OK
+Test № 104   gentest104_4.txt           Len: 2000  k: 4   Memory: Good! Student: OK
+Test № 105   gentest105_5.txt           Len: 2000  k: 5   Memory: Good! Student: OK
+Test № 106   gentest106_6.txt           Len: 2000  k: 6   Memory: Good! Student: OK
+Test № 107   gentest107_7.txt           Len: 2000  k: 7   Memory: Good! Student: OK
+Test № 108   gentest108_8.txt           Len: 2000  k: 8   Memory: Good! Student: OK
+Test № 109   gentest109_9.txt           Len: 2000  k: 9   Memory: Good! Student: OK
 Summary: 110 of 110 completed successfully!

@@ -18,7 +18,7 @@ step = 100
 max_length = 2000
 k_attempts = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-use_valgrind = False
+use_valgrind = True
 
 # only single mode
 print_tree = True
