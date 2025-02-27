@@ -5,5 +5,6 @@ enum class io_status {
   memory,
   read,
   create,
+  format,
 };
 #endif

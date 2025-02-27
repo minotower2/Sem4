@@ -29,6 +29,9 @@ int main(int argc, char **argv) {
     case io_status::create:
       printf("Error!\n");
       return 3;
+    case io_status::format:
+      printf("Wrong format\n");
+      return 4;
   }
   time = (clock()-time)/CLOCKS_PER_SEC;
 

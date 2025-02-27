@@ -1,13 +1,12 @@
 #include "solve.h"
 
 int main(int argc, char **argv) {
-  char *filenamein = 0, *filenameout = 0, *s = 0, *t = 0;
-  int res = 0, task = 1, m;
+  char *filenamein = 0, *filenameout = 0, *s = 0, *t = 0, *x = 0;
+  int res = 0, task = 4;
   double time;
   io_status read;
 
-  if (!((argc == 6) &&
-    (sscanf(argv[5], "%d", &m) == 1)))
+  if (!((argc == 6)))
   {
     printf("Usage %s\n", argv[0]);
     return -1;
@@ -16,8 +15,9 @@ int main(int argc, char **argv) {
   filenameout = argv[2];
   s = argv[3];
   t = argv[4];
+  x = argv[5];
 
-  read = solve1(filenamein, filenameout, s, t, m, &res);
+  read = solve4(filenamein, filenameout, s, t, x, &res);
   time = clock();
   switch(read) {
     case io_status::success: break;

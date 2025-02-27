@@ -110,4 +110,5 @@ class querry_2 {
       return birch.search(birch.get_root(), buf);
     }
 };
+
 #endif
