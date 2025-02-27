@@ -1,5 +1,2 @@
-    printf("Usage %s\n", argv[0]);
-      printf("Couldn't open file\n");
-      printf("Memory error\n");
-      printf("Error!\n");
-  printf ("%s : Task = %d Result = %d Elapsed = %.2f\n", argv[0], task, res, time);
+#include "solve.h"
+

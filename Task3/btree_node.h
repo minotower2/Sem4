@@ -1,13 +1,7 @@
 #ifndef BTREENODE
 #define BTREENODE
 #include <stdio.h>
-enum class io_status {
-  success,
-  memory,
-  read,
-  create,
-};
-
+#include "io_status.h"
 
 template <class T> class b_tree;
 

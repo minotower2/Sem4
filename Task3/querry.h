@@ -4,6 +4,8 @@
 #include <memory>
 #include <string.h>
 #include "btree.h"
+#include "rb_tree.h"
+
 #define LEN 1234
 
 class word {
@@ -13,6 +15,9 @@ class word {
     word() = default;
     ~word() = default;
     word(const word&) = delete;
+    word(char *n) {
+      init(n);
+    }
     word(word&&) = default;
     word& operator = (const word&) = delete;
     word& operator = (word&&) = default;
@@ -75,4 +80,34 @@ class querry_1 {
     }
 };
 
+
+class querry_2 {
+  private:
+    rb_tree<word> birch;
+  public:
+    querry_2() = default;
+    io_status initialize (char *string, const char *t) {
+      char *start = strtok(string, t);
+      word buf;
+      io_status r;
+      while (start) {
+        r = buf.init(start);
+        if (r != io_status::success) return r;
+        r = birch.add_value(buf);
+        if (r != io_status::success) return r;
+        start = strtok(nullptr, t);
+      }
+      return io_status::success;
+    }
+    ~querry_2() = default;
+    void print(int r) {
+      birch.print(r);
+    }
+    int search(char *s) {
+      word buf;
+      io_status r = buf.init(s);
+      if (r != io_status::success) return 0;
+      return birch.search(birch.get_root(), buf);
+    }
+};
 #endif
