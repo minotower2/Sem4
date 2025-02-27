@@ -29,9 +29,11 @@ class word {
         }
         else
           return io_status::memory;
+        return io_status::success;
       }
-      return io_status::success;
+      return io_status::read;
     }
+    char * get() {return string.get();}
     int operator< (const word& x) const { return strcmp (string.get(), x.string.get()) < 0; }
     int operator<= (const word& x) const { return strcmp (string.get(), x.string.get()) <= 0; }
     int operator> (const word& x) const { return strcmp (string.get(), x.string.get()) > 0; }
@@ -49,20 +51,28 @@ class querry_1 {
       birch.set_m(m);
     }
     io_status initialize (char *string, const char *t) {
-      int i = 0;
       char *start = strtok(string, t);
+      word buf;
+      io_status r;
       while (start) {
-        word buf;
-        io_status r;
         r = buf.init(start);
         if (r != io_status::success) return r;
         r = birch.add_value(buf);
         if (r != io_status::success) return r;
-        start = strtok(string, t);
+        start = strtok(nullptr, t);
       }
       return io_status::success;
     }
     ~querry_1() = default;
+    void print(int r) {
+      birch.print(r);
+    }
+    int search(char *s) {
+      word buf;
+      io_status r = buf.init(s);
+      if (r != io_status::success) return 0;
+      return birch.search(birch.get_root(), buf);
+    }
 };
 
 #endif

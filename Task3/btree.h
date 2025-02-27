@@ -14,17 +14,8 @@ public:
     delete_subtree (root);
     erase_links ();
   }
-  io_status read (FILE * fp = stdin) {
-    T x;
-    io_status r;
-    while(x.read(fp) == io_status::success) {
-      r = add_value(x);
-      if (r != io_status::success) return r;
-    }
-    if (!feof(fp)) return io_status::eof;
-    return io_status::success;
-  }
   void set_m(int k) {m = k;}
+  b_tree_node<T> * get_root() {return root;}
   void print (int r, FILE * fp = stdout) const {
     print_subtree (root, 0, r, fp);
   }
@@ -165,6 +156,14 @@ public:
       // создан новый узел, он возвращается в ’down’
     }
     return io_status::success;
+  }
+public:
+  int search(b_tree_node<T> *curr, T& target) {
+    if (curr == nullptr) return 0;
+    int ind = curr->bin_search(target);
+    if (curr->values[ind].get() != nullptr && curr->values[ind] == target) return 1;
+    if (search(curr->children[ind], target) == 1 || search(curr->children[ind+1], target) == 1) return 1;
+    return 0;
   }
 };
 #endif

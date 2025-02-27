@@ -3,8 +3,6 @@
 #include <stdio.h>
 enum class io_status {
   success,
-  eof,
-  format,
   memory,
   read,
   create,
