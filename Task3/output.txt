@@ -1,5 +1,7 @@
+int main(int argc, char **argv) {
     printf("Usage %s\n", argv[0]);
-      printf("Couldn't open file\n");
-      printf("Memory error\n");
-      printf("Error!\n");
-      printf("Wrong format\n");
+  filenamein = argv[1];
+  filenameout = argv[2];
+  s = argv[3];
+  t = argv[4];
+  printf ("%s : Task = %d Result = %d Elapsed = %.2f\n", argv[0], task, res, time);

@@ -338,9 +338,6 @@ io_status solve6(const char *a, const char *b, char *s, char *t, int *r) {
           if (start[k] == '\0') {
             flag = 1;
           }
-          if(start[k+1] && keys[j+1] == '2') {
-            flag = 1;
-          }
           if (keys[j] == '0') {
             if (buffer[j] != start[k]) {
               flag = 1;
