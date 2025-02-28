@@ -7,7 +7,7 @@ MATH = -lm
 	g++ -c $(CPPFLAGS) $<
 %.out: %.o $(FUNCTIONS_O)
 	g++ $(CPPFLAGS) $^ -o $@ 
-all: a01.out a02.out a04.out a05.out a06.out
+all: a01.out a02.out a04.out a05.out a06.out a08.out a09.out
 
 archive:
 	zip Vatchenko_MY.zip Makefile *.cpp *.h 
