@@ -1,1 +1,5 @@
-ab ab cd ab cd ab 
+    printf("Usage %s\n", argv[0]);
+      printf("Couldn't open file\n");
+      printf("Memory error\n");
+      printf("Error!\n");
+      printf("Wrong format\n");
