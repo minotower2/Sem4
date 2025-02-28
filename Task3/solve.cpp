@@ -462,8 +462,128 @@ io_status solve8(const char *a, const char *b, char *s, char *t, int *r) {
           if ((keys[j+1] == '\0' || (keys[j+1] && keys[j+1] == '2')) && (start[k+1] != '\0')) {
             flag = 1;
           }
-          if (keys[j] == 1) {
+          if (keys[j] == '1') {
             if (start[k] > buffercopy[j] || start[k] < buffer[j]) {
+              flag = 1;
+            }
+          }
+        }
+        if (flag == 0) break;
+      }
+
+      if (flag == 0) {
+        (*r)++;
+        fputs(buffer3, fout);
+        break;
+      }
+      start = strtok(nullptr, t);
+    }
+
+  }
+  fclose(fin);
+  fclose(fout);
+  return io_status::success;
+}
+
+io_status solve9(const char *a, const char *b, char *s, char *t, int *r) {
+  const int length = 1234;
+  if (s[0] == '\0') return io_status::success;
+  FILE *fin = fopen(a, "r");
+  if (fin == nullptr) return io_status::read;
+  FILE *fout = fopen(b, "w");
+  if (fout == nullptr) {fclose (fin); return io_status::read;}
+
+  char buffer[length];
+  char buffercopy[length];
+  char keys[length];
+  int j = 0, k = 0, l = 0;
+  int len = strlen(s);
+  for (int i = 0; i < len; i++) {
+    if (s[i] == '\\' && s[i+1] == '\\') {
+      buffer[j++] = '\\';
+      buffercopy[l++] = '\\';
+      keys[k++] = '0';
+      i++;
+    }
+    else if (s[i] == '\\' && s[i+1] == '[') {
+      buffer[j++] = '[';
+      buffercopy[l++] = '[';
+      keys[k++] = '0';
+      i++;
+    }
+    else if (s[i] == '\\' && s[i+1] == ']') {
+      buffer[j++] = ']';
+      buffercopy[l++] = ']';
+      keys[k++] = '0';
+      i++;
+    }
+    else if ((s[i] == '\\' && s[i+1] == '\0') || (s[i] == '[' && s[i+1] != '^') || (s[i] == '[' && s[i+2] == '\0') || (s[i] == '[' && s[i+3] != '-') || (s[i] == '[' && s[i+4] == '\0') || (s[i] == '[' && s[i+5] != ']')) {
+      fclose(fin);
+      fclose(fout);
+      return io_status::format;
+    }
+    else if (s[i] == '\\') {
+      buffer[j++] = s[i+1];
+      buffercopy[l++] = s[i+1];
+      keys[k++] = '0';
+      i++;
+    }
+    else if (s[i] == '['){
+      buffer[j++] = s[i+2];
+      buffercopy[l++] = s[i+4];
+      keys[k++] = '1';
+      i+=5;
+    }
+    else {
+      int hay = 0;
+      for (int j = 0; t[j]; j++) {
+        if (t[j] == s[i]) {
+          hay = 1;
+          break;
+        }
+      }
+      if (hay == 0) {
+        buffer[j++] = s[i];
+        buffercopy[l++] = s[i];
+        keys[k++] = '0';
+      }
+      else {
+        buffer[j++] = s[i];
+        buffercopy[l++] = s[i];
+        keys[k++] = '2';
+      }
+    }
+  }
+  buffer[j] = '\0';
+  keys[k] = '\0';
+  buffercopy[l] = '\0';
+
+
+  char buffer2[length];
+  char buffer3[length];
+  int flag = -1;
+  while(fgets(buffer2, sizeof(buffer2), fin)) {
+    for (int j = 0; j < length; j++) {const char c = buffer2[j]; if (c != '\n') buffer3[j] = c; else {buffer2[j] = '\0'; buffer3[j] = c;}}
+    char *start = strtok(buffer2, t);
+    while(start) {
+      int j = 0;
+      while(keys[j]) {
+        flag = 0;
+        for (; keys[j] == '2'; j++);
+        for(int k = 0; (keys[j] == '0' || keys[j] == '1'); j++, k++) {
+          if (start[k] == '\0') {
+            flag = 1;
+          }
+          if (keys[j] == '0') {
+            if (buffer[j] != start[k]) {
+              flag = 1;
+            }
+          }
+          if ((keys[j+1] == '\0' || (keys[j+1] && keys[j+1] == '2')) && (start[k+1] != '\0')) {
+            flag = 1;
+          }
+          if (keys[j] == '1') {
+            if (start[k] <= buffercopy[j] && start[k] >= buffer[j]) {
               flag = 1;
             }
           }
