@@ -343,6 +343,9 @@ io_status solve6(const char *a, const char *b, char *s, char *t, int *r) {
               flag = 1;
             }
           }
+          if ((keys[j+1] == '\0' || (keys[j+1] && keys[j+1] == '2')) && (start[k+1] != '\0')) {
+            flag = 1;
+          }
         }
         if (flag == 0) break;
       }
@@ -360,3 +363,4 @@ io_status solve6(const char *a, const char *b, char *s, char *t, int *r) {
   fclose(fout);
   return io_status::success;
 }
+

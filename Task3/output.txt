@@ -1,7 +1,1 @@
-int main(int argc, char **argv) {
-    printf("Usage %s\n", argv[0]);
-  filenamein = argv[1];
-  filenameout = argv[2];
-  s = argv[3];
-  t = argv[4];
-  printf ("%s : Task = %d Result = %d Elapsed = %.2f\n", argv[0], task, res, time);
+#include "solve.h"
