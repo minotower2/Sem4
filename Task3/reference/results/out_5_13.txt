@@ -1,0 +1,559 @@
+
+
+
+}
+
+}
+
+}
+
+        }
+    }
+    } else {
+        return FILE_READING_ERROR;
+    }
+}
+
+
+    }
+    } else {
+        }
+    }
+}
+
+
+
+}
+
+}
+
+}
+
+        }
+    }
+    } else {
+        return FILE_READING_ERROR;
+    }
+}
+
+
+    }
+    } else {
+            case FILE_OPENNING_ERROR:
+            case FILE_READING_ERROR:
+        }
+    }
+}
+
+
+
+}
+
+}
+
+}
+
+
+        }
+    }
+
+            } else {
+            }
+        } else {
+            return FILE_READING_ERROR;
+        }
+    }
+
+        }
+    }
+
+        } else {
+        }
+    } else {
+        return FILE_READING_ERROR;
+    }
+}
+
+
+    }
+        case FILE_OPENNING_ERROR:
+        case FILE_READING_ERROR:
+    }
+
+}
+
+
+
+
+}
+
+}
+
+}
+
+            return EMPTY_FILE;
+        }
+        return FILE_READING_ERROR;
+    }
+
+        }
+    }
+        return SUCCESS;
+    } else {
+        return FILE_READING_ERROR;
+    }
+}
+
+
+    }
+        case SUCCESS:
+        case EMPTY_FILE:
+        case FILE_OPENNING_ERROR:
+        case FILE_READING_ERROR:
+    }
+
+}
+
+
+
+}
+
+}
+
+}
+
+        }
+        return FILE_READING_ERROR;
+    }
+
+        } else {
+                }
+            }
+        }
+    }
+
+        }
+    }
+
+        }
+    }
+    return FILE_READING_ERROR;
+}
+
+
+    }
+    }
+        case EMPTY_FILE:
+        case FILE_OPENNING_ERROR:
+        case FILE_READING_ERROR:
+    }
+
+}
+
+
+
+}
+
+}
+
+}
+
+        }
+        return FILE_READING_ERROR;
+    }
+
+        } else {
+            }
+        }
+    }
+
+    }
+
+        }
+    }
+    return FILE_READING_ERROR;
+}
+
+
+    }
+    }
+        case EMPTY_FILE:
+        case FILE_OPENNING_ERROR:
+        case FILE_READING_ERROR:
+    }
+
+}
+
+
+
+}
+
+}
+
+}
+
+    }
+            } else {
+            }
+        }
+
+    }
+    return FILE_READING_ERROR;
+}
+
+
+
+
+    }
+    }
+        case EMPTY_FILE:
+        case FILE_OPENNING_ERROR:
+        case FILE_READING_ERROR:
+    }
+
+}
+
+
+
+}
+
+}
+
+}
+
+enum SequenceType {
+};
+
+
+}
+
+
+
+            } else {
+            }
+        }
+        return FILE_READING_ERROR;
+    }
+    }
+    }
+    return FILE_READING_ERROR;
+}
+
+    }
+    }
+        case EMPTY_FILE:
+        case FILE_OPENNING_ERROR:
+        case FILE_READING_ERROR:
+    }
+
+}
+
+
+
+class IdrBuffer {
+
+    }
+
+    }
+
+
+
+    }
+    }
+    }
+
+    }
+
+    }
+
+        }
+    }
+};
+
+class IdrArgumentBuilder {
+
+
+
+
+    
+    }
+
+
+
+
+
+
+
+    }
+
+        }
+
+
+        }
+    }
+
+        }
+
+
+        }
+    }
+
+
+
+
+
+        }
+
+
+        }
+    }
+
+
+        }
+
+    }
+
+
+
+        }
+
+        }
+    }
+
+
+
+
+        
+        }
+    }
+
+
+        }
+    }
+
+
+        }
+    }
+
+        }
+
+        }
+
+        }
+
+
+
+        }
+    }
+
+
+    }
+
+    }
+
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+}
+
+        } else {
+        }
+    }
+}
+
+
+        } else {
+        }
+    }
+    
+    }
+
+    }
+}
+
+
+        }
+        }
+    }
+}
+
+        }
+        }
+    }
+}
+
+
+        }
+    }
+}
+
+            }
+        }
+        
+    }
+}
+
+
+
+        } else {
+        }
+    }
+}
+
+}
+
+    
+    }
+}
+
+    
+    
+    
+
+    }    
+}
+
+    
+        }
+    }
+}
+
+    
+    }
+}
+
+        }
+    }
+        }
+    } 
+}
+    
+    
+        } else {
+        }
+    }
+}
+    } 
+    
+        } else {
+        }
+    }
+    } 
+}
+
+
+}
+
+}
+
+}
+
+}
+
+
+    
+    }
+}
+
+    
+    
+    }
+    }
+}
+
+            }
+        }
+        
+        }
+    }
+}
+
+
+
+    }
+}
+
+
+
+        do {
+
+            }
+
+            }
+
+    }
+
+
+            
+                } else {
+                }
+            }
+
+
+                } else {
+                }
+            } else {
+                } else {
+                }
+            }
+        }
+    }
+}

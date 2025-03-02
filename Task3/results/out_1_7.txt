@@ -1,0 +1,237 @@
+    if(!fp) return FILE_OPENNING_ERROR;
+        if(deq(elem, x)) {
+    if(feof(fp)) {
+    if(argc != 3 || (sscanf(argv[2], "%lf", &x) != 1)) {
+    if(res >= 0) {
+    if(!fp) return FILE_OPENNING_ERROR;
+        if(deq(elem, x)) {
+    if(feof(fp)) {
+    if(argc != 3 || (sscanf(argv[2], "%lf", &x) != 1)) {
+    if(res >= 0) {
+int find_elem_in_file(const char *filename, double x, int *i, int *j);
+int find_elem_in_file(const char *filename, double x, int *i, int *j) {
+    if(!fp) return FILE_OPENNING_ERROR;
+        if(deq(elem, x)) {
+    if(trigger != 1) {
+        if(feof(fp)) {
+            if(tmp_i == 0) {
+                *i = tmp_i;
+        if(deq(elem, x)) {
+    if(feof(fp)) {
+        if(tmp_i == 0) {
+            *i = tmp_i;
+    int res, i = 0, j = 0;
+    if(argc != 3 || (sscanf(argv[2], "%lf", &x) != 1)) {
+            printf ("%s : Task = %d Result = %d i = %d j = %d\n", argv[0], 3, res, i, j);
+int find_max_elem_in_file(const char *filename, double *x, int *i, int *j);
+int find_max_elem_in_file(const char *filename, double *x, int *i, int *j) {
+    if(!fp) return FILE_OPENNING_ERROR;
+    if(fscanf(fp, "%lf", &tmp_max) != 1) {
+        if(feof(fp)) {
+        if(deq(elem, tmp_max)) {
+        } else if(elem > tmp_max) {
+    if(feof(fp)) {
+        *i = tmp_i;
+    int res, i, j;
+    if(argc != 2) {
+            printf ("%s : Task = %d Result = %d X = %f i = %d j = %d\n", argv[0], 4, res, x, i, j);
+    if(!fp) return FILE_OPENNING_ERROR;
+    if(
+        if(feof(fp)) {
+        if(deq(last_elem, elem)) {
+            if(tmp_count != 1) {
+                if(max_length < tmp_count) {
+                } else if(max_length == tmp_count) {
+    if(tmp_count != 1) {
+        if(max_length < tmp_count) {
+        } else if(max_length == tmp_count) {
+    if(feof(fp)) {
+        if(max_length != 0) {
+    if(argc != 2) {
+    if(res >= 0) {
+    if(!fp) return FILE_OPENNING_ERROR;
+    if(
+        if(feof(fp)) {
+        if(deq(last_elem, elem)) {
+            if(tmp_count != 1) {
+    if(tmp_count != 1) {
+    if(feof(fp)) {
+        if(mono_count != 0) {
+    if(argc != 2) {
+    if(res >= 0) {
+    if(!fp) return FILE_OPENNING_ERROR;
+    if(feof(fp)) {
+        if(count_elem != 0) {
+            if(deq(square_square_middle, 0.)) {
+    if(argc != 2) {
+    if(res >= 0) {
+    if(deq(a, b)) return SequenceTypeMonotone;
+    else if(deq(a - b, b - c)) return SequenceTypeArithmetic;
+    else if(
+    if(!fp) return FILE_OPENNING_ERROR;
+    if(
+        if(feof(fp)) {
+            if(
+        if(next != now) return SequenceTypeCommon;
+    if(feof(fp)) {
+    if(argc != 2) {
+    if(res >= 0) {
+        if(cursor >= N) status = io_status::buffer_overflow;
+        if(0 < index || index >= N) status = io_status::out_of_range;
+        if(status != io_status::success) return *this;
+        for(size_t i = 0; i < cursor; i++) {
+            fprintf(fp, "%s", buffer[i]);
+        if(stop) return *this;
+        if(argc <= index) {
+        if(std::sscanf(argv[index], "%d", a) != 1) {
+        if(stop) return *this;
+        if(argc <= index) {
+        if(std::sscanf(argv[index], "%u", a) != 1) {
+        if(stop) return *this;
+        if(argc <= index) {
+        if(std::sscanf(argv[index], "%lf", a) != 1) {
+        if(stop) return *this;
+        if(argc <= index) {
+        if(stop) return *this;
+        if(argc <= index) {
+        if(!(*cell)) {
+        Ainfo.append(": if(").append(condition).append(")\n");
+        if(stop) return *this;
+        if(!req) {
+        if(flagIf && flagLayerSet == layer) {
+        if(stop) return *this;
+        if(req == false) {
+        if(!usage) {
+        if(!Ainfo) {
+        if(!error) {
+        if(stop) return *this;
+        if(index != argc) {
+		for(int i = 0; i < n; i++) {
+			if(bigArray[i].read(fp) != SUCCESS) {
+		for(int i = 0; i < n; i++) {
+			if(a[i].read(fpA) != SUCCESS) {
+		for(int i = 0; i < n; i++) {
+			if(b[i].read(fpB) != SUCCESS) {
+		for(int i = 0; i < n; i++) {
+			if(a[i].read(fp) != SUCCESS) {
+        if(a[s] < *x) {
+    int i = 0, j = 0;
+    while(i < n && j < m) {
+        if(a[i] < b[j]) {
+            c[i+j] = a[i];
+            i++;
+            c[i+j] = b[j];
+    while(i < n) {
+        c[i+j] = a[i];
+        i++;
+        c[i+j] = b[j];
+    //if(s == n) return s - 1;
+    //if(a[s] > x) return s - 1;
+    //if(a[s] < x) return s + 1;
+    int i = 0, j = n-1;
+    while(i <= j) {
+        if(a[i] < a[m]) {
+            i++;
+        if(a[j] > a[m]) {
+        dswap(a + i, a + j);
+        if(m == i) m = j;
+        else if(m == j) m = i;
+        i++;
+    int i = 0, j = n - 1;
+    while(i <= j) {
+        if(a[i] < x) {
+            i++;
+        if(a[j] > x) {
+        //printf("i = %d j = %d\n", i, j);
+        dswap(a + i, a + j);
+        i++;
+    return i;
+    int i;
+        for(i = 0; i < n - 1; i++) {
+            if(a[i] > a[i+1]) dswap(a + i, a + i + 1);
+    int n_ind, i;
+        for(i = 1; i < n; i++) {
+            if(a[i] < n_min) {
+                n_min = a[i];
+                n_ind = i;
+        if(n_ind != 0) dswap(a, a + n_ind);
+        if(a > b) {
+    int n_k, i;
+    if(n <= 1) return;   
+    if(n_k == 0) return;
+    for(i = 0; i < nod(n, n_k); i++) {
+        piece_cycle_k(a, n, n_k, i);
+    int sorted_n = 1, i;
+        for(i = 0; i < sorted_n; i++) {
+            if(a[sorted_n] < a[i]) break;
+        cycle_k(a + i, sorted_n + 1 - i, 1);
+    int sorted_n = 1, i;
+        i = bin_divide_position_finder(a, sorted_n, a + sorted_n);
+        //printf("!: %d %lf\n", i, a[sorted_n]);
+        cycle_k(a + i, sorted_n + 1 - i, 1);
+    int cells = 1, i;
+        for(i = 0; i < n; i += 2*cells) {
+                a + i, 
+                a + i + cells, 
+                b + i, 
+                std::min(cells, n - i),
+                std::min(cells, n - (i + cells))
+            //printf("======= %d %d\n", cells, i);
+    if(b == orig_a) {
+        for(i = 0; i < n; i++) {
+            b[i] = a[i];
+    int i;
+        i = qsort_divide(a, n, a + n/2);
+        //printf("%d\n", i);
+        dswap(a + n/2, a + i);
+        if(i == 0) {
+        } else if(i == n) {
+        } else if(i > n - i) {
+            quick_sort(a+i, n-i);
+            n = i;
+            quick_sort(a, i);
+            a = a + i;
+            n = n - i;
+    int i;
+    if(n == 2) {
+        if(a[0] > a[1]) dswap(a, a+1);
+        //i = qsort_divide_indexed(a, n, n/2);
+        i = qsort_divide(a, n, a[n/2]);
+        //printf("%d\n", i);
+        //dswap(a + n/2, a + i);
+        if(i == 0) {
+        } else if(i == n) {
+        } else if(i > n - i) {
+            quick_sort(a+i, n-i);
+            n = i;
+            quick_sort(a, i);
+            a = a + i;
+            n = n - i;
+    if(n == 2) {
+        if(a[0] > a[1]) dswap(a, a+1);
+    if(k == 0) return -1;
+    if(index < end_index) return; 
+    if(get_parent(index) < end_index) {
+    if(counter != 0) a[end_index] = tmp__;
+            if(a[k] > a[p_k]) {
+        if(ind != k) {
+    if(n <= 1) return;
+        	    if(a[left] > a[right]) {
+        	        if(a[0] < a[left]) ind = left;
+        	        if(a[0] < a[right]) ind = right;
+        	} else if(is_valid(k, right)) {
+        	    if(a[0] < a[right]) ind = right;
+        	} else if(is_valid(k, left)) {
+        	    if(a[0] < a[left]) ind = left;
+            if(saved <= tmp) {
+            if(cursor <= 0) {
+        //if(cursor >= 0) a[cursor] = saved;
+    if(DEBUG_TEST) print_data_array(a, n, n);
+        if(a[0] > a[k]) dswap(a, a + k);
+            if(right_cursor >= k) {
+                if(left_cursor >= k) break;
+                if(saved <= left) {
+            if(left > right) {
+                if(saved < left) {
+                if(saved < right) {
+        if(DEBUG_TEST) print_data_array(a, n, n);

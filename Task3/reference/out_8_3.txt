@@ -1,0 +1,255 @@
+bool deq(double x, double n);
+bool deq(double x, double n) {
+int find_elem_in_file(const char *filename, double x);
+int find_elem_in_file(const char *filename, double x) {
+    int index;
+    for(index = 0; fscanf(fp, "%lf", &elem) == 1; index++) {
+        if(deq(elem, x)) {
+int main(int argc, char *argv[]) {
+    int res;
+    res = find_elem_in_file(argv[1], x);
+    if(res >= 0) {
+        printf ("%s : Task = %d Result = %d\n", argv[0], 1, res);
+        switch(res) {
+                printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+        return res;
+bool deq(double x, double n);
+bool deq(double x, double n) {
+int find_elem_in_file(const char *filename, double x);
+int find_elem_in_file(const char *filename, double x) {
+    int index, tmp_index = 0;
+    for(index = 0; fscanf(fp, "%lf", &elem) == 1; index++) {
+        if(deq(elem, x)) {
+int main(int argc, char *argv[]) {
+    int res;
+    res = find_elem_in_file(argv[1], x);
+    if(res >= 0) {
+        printf ("%s : Task = %d Result = %d\n", argv[0], 2, res);
+        switch(res) {
+                printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+        return res;
+bool deq(double x, double n);
+bool deq(double x, double n) {
+int find_elem_in_file(const char *filename, double x, int *i, int *j);
+int find_elem_in_file(const char *filename, double x, int *i, int *j) {
+    int index, tmp_i = 0, tmp_j = 0, trigger;
+    for(index = 0; (trigger = fscanf(fp, "%lf", &elem)) == 1; index++) {
+        if(deq(elem, x)) {
+    for(;fscanf(fp, "%lf", &elem) == 1; index++) {
+        if(deq(elem, x)) {
+int main(int argc, char *argv[]) {
+    int res, i = 0, j = 0;
+    res = find_elem_in_file(argv[1], x, &i, &j);
+    switch(res) {
+            printf ("%s : Task = %d Result = %d i = %d j = %d\n", argv[0], 3, res, i, j);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+    return res;
+bool deq(double x, double n);
+bool deq(double x, double n) {
+int find_max_elem_in_file(const char *filename, double *x, int *i, int *j);
+int find_max_elem_in_file(const char *filename, double *x, int *i, int *j) {
+    int index, tmp_i = 0, tmp_j = 0;
+    for(index = 2; fscanf(fp, "%lf", &elem) == 1; index++) {
+        if(deq(elem, tmp_max)) {
+int main(int argc, char *argv[]) {
+    int res, i, j;
+    res = find_max_elem_in_file(argv[1], &x, &i, &j);
+    switch(res) {
+            printf ("%s : Task = %d Result = %d X = %f i = %d j = %d\n", argv[0], 4, res, x, i, j);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+    return res;
+bool deq(double x, double n);
+bool deq(double x, double n) {
+int find_max_monotone_seq(const char *filename, double *middle);
+int find_max_monotone_seq(const char *filename, double *middle) {
+    int max_length = 0, tmp_count;
+        if(deq(last_elem, elem)) {
+int main(int argc, char *argv[]) {
+    int res;
+    res = find_max_monotone_seq(argv[1], &x);
+    if(res >= 0) {
+        printf ("%s : Task = %d Result = %d X = %f\n", argv[0], 5, res, x);
+    switch(res) {
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+    return res;
+bool deq(double x, double n);
+bool deq(double x, double n) {
+int find_max_monotone_seq(const char *filename, double *middle);
+int find_max_monotone_seq(const char *filename, double *middle) {
+    int mono_count = 0, tmp_count, result_count = 0;
+        if(deq(last_elem, elem)) {
+int main(int argc, char *argv[]) {
+    int res;
+    res = find_max_monotone_seq(argv[1], &x);
+    if(res >= 0) {
+        printf ("%s : Task = %d Result = %d X = %f\n", argv[0], 6, res, x);
+    switch(res) {
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+    return res;
+bool deq(double x, double n);
+bool deq(double x, double n) {
+int calc_dispers_2(const char *filename, double *x);
+int calc_dispers_2(const char *filename, double *x) {
+    int count_elem = 0;
+            if(deq(square_square_middle, 0.)) {
+int main(int argc, char *argv[]) {
+    int res;
+    res = calc_dispers_2(argv[1], &x);
+    if(res >= 0) {
+        printf ("%s : Task = %d Result = %d X = %f\n", argv[0], 7, res, x);
+    switch(res) {
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+    return res;
+bool deq(double x, double n);
+bool deq(double x, double n) {
+    if(deq(a, b)) return SequenceTypeMonotone;
+    else if(deq(a - b, b - c)) return SequenceTypeArithmetic;
+        deq(b/a, c/b)
+int find_seq_type(const char *filename);
+int find_seq_type(const char *filename) {
+    int a, b;
+    SequenceType now, next;
+                (deq(last_elem, 0.) != deq(elem, 0.))
+    now = analizer(last_elem, elem, next_elem);
+        if(next != now) return SequenceTypeCommon;
+        return now;
+int main(int argc, char *argv[]) {
+    int res;
+    res = find_seq_type(argv[1]);
+    if(res >= 0) {
+        printf ("%s : Task = %d Result = %d\n", argv[0], 8, res);
+    switch(res) {
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+    return res;
+        for(size_t i = 0; i < cursor; i++) {
+    int argc = 0;
+    int index = 0;
+    IdrArgumentBuilder &start(char **argv, int argc) {
+    IdrArgumentBuilder &arg(int *a, const char *name, const char *info) {
+    IdrArgumentBuilder &arg(unsigned int *a, const char *name, const char *info) {
+        bool req,
+        bool req, 
+        if(req == false) {
+int main(int argc, char *argv[]) {
+	int p(0), n(0), s(0), res(0);
+	.arg(&n, "n","array length")
+	.arg(&p, "p", "max print elems")
+	.arg(&s, "s", "formula number")
+	.end();
+		for(int i = 0; i < n; i++) {
+	std::printf ("Res = %d\n", res);
+int main(int argc, char *argv[]) {
+	.arg(&n, "n", "array length A")
+	.arg(&pa, "pa", "max print elems for A")
+	.arg(&sa, "sa", "formula number for A")
+	.arg(&m, "m", "array length B")
+	.arg(&pb, "pb", "max print elems for B")
+	.arg(&sb, "sb", "formula number for B")
+	.end();
+		for(int i = 0; i < n; i++) {
+		for(int i = 0; i < n; i++) {
+int main(int argc, char *argv[]) {
+	.arg(&m, "m", "additional index for task 3")
+	.arg(&n, "n", "array length")
+	.arg(&p, "p", "max printable parameter")
+	.arg(&s, "sa", "formula number")
+	.end();
+		for(int i = 0; i < n; i++) {
+    data tmp = *a;
+    *b = tmp;
+int bin_divide_position_finder(data *a, int n, data *x) {
+    int left = 0, right = n, s = 0;
+void merge_arrays(data *a, data *b, data *c, int n, int m) {
+    int i = 0, j = 0;
+int qsort_divide_indexed(data *a, int n, int m) {
+    //int s = qsort_divide(a, n, x);
+    int i = 0, j = n-1;
+int qsort_divide(data *a, int n, data x) {
+    int i = 0, j = n - 1;
+void bubble_sort(data *a, int n) {
+    int i;
+        for(i = 0; i < n - 1; i++) {
+void min_find_sort(data *a, int n) {
+    int n_ind, i;
+        for(i = 1; i < n; i++) {
+int nod(int a, int b);
+int nod(int a, int b) {
+int cycle_index(int n, int index);
+int cycle_index(int n, int index) {
+void piece_cycle_k(data *a, int n, int k, int start_index);
+void piece_cycle_k(data *a, int n, int k, int start_index) {
+    data tmp;
+    int last_index = start_index, index;
+    tmp = a[start_index];
+    a[last_index] = tmp;
+void cycle_k(data *a, int n, int k);
+void cycle_k(data *a, int n, int k) {
+    int n_k, i;
+    for(i = 0; i < nod(n, n_k); i++) {
+void lin_insertion_sort(data *a, int n) {
+    int sorted_n = 1, i;
+        for(i = 0; i < sorted_n; i++) {
+void bin_insertion_sort(data *a, int n) {
+    int sorted_n = 1, i;
+void merge_sort(data *a, data *b, int n) {
+    data *orig_a = a, *tmp;
+    int cells = 1, i;
+        for(i = 0; i < n; i += 2*cells) {
+        tmp = a;
+        b = tmp;
+        //for(int j = 0; j < n; j++) b[j] = 0;
+        for(i = 0; i < n; i++) {
+void quick_sort(data *a, int n) {
+    int i;
+void quick_sort(data *a, int n) {
+    int i;
+int get_parent(int k);
+int get_parent(int k) {
+int get_child_left(int k);
+int get_child_left(int k) {
+int get_child_right(int k);
+int get_child_right(int k) {
+int is_valid(int n, int k);
+int is_valid(int n, int k) {
+void push_down_heap(data *a, int index, int end_index);
+void push_down_heap(data *a, int index, int end_index) {
+    data tmp;
+    int cursor;
+    tmp = a[index];
+    a[end_index] = tmp;
+void push_up_heap(data *a, int index, int end_index);
+void push_up_heap(data *a, int index, int end_index) {
+    data tmp, tmp_, tmp__;
+    int s_index = index, counter = 0, cursor;
+    tmp = a[end_index];
+    a[s_index] = tmp;
+void order_heap(data *a, int n);
+void order_heap(data *a, int n) {
+    int k, p_k, l_k, ind; 
+    //double tmp;
+    for(k = 1; k < n; k++) {
+        ind = k;
+                ind = p_k;
+        if(ind != k) {
+            push_down_heap(a, k, ind);
+void heap_sort(data *a, int n) {
+    int k = 0;
+    int left = 0, right = 0, ind = 0;
+    for(k = n - 1; k >= 0; k--) {
+        	left = get_child_left(ind);
+        	right = get_child_right(ind);
+        	        if(a[0] < a[left]) ind = left;
+        	        if(a[0] < a[right]) ind = right;
+        	    if(a[0] < a[right]) ind = right;
+        	    if(a[0] < a[left]) ind = left;
+    	//printf("\n%d\n", ind);
+    	if(ind != 0) push_up_heap(a, ind, 0);
+void heap_sort(data *a, int n) {
+    data saved, tmp;
+    int cursor(0), last_cursor(0);
+    for(int k = 1; k < n; k++) {
+            tmp = a[cursor];
+            a[last_cursor] = tmp;
+            if(saved <= tmp) {
+    int left_cursor(0), right_cursor(0);
+    for(int k = n-1; k >= 1; k--) {

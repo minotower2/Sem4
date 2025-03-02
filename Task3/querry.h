@@ -31,20 +31,22 @@ class word {
         if (string != nullptr) {
           for (size_t i = 0; i <= len; i++)
             string[i] = n[i];
+          return io_status::success;
         }
         else
           return io_status::memory;
-        return io_status::success;
       }
-      return io_status::read;
+      else {
+        return io_status::read;
+      }
     }
-    char * get() {return string.get();}
-    int operator< (const word& x) const { return strcmp (string.get(), x.string.get()) < 0; }
-    int operator<= (const word& x) const { return strcmp (string.get(), x.string.get()) <= 0; }
-    int operator> (const word& x) const { return strcmp (string.get(), x.string.get()) > 0; }
-    int operator>= (const word& x) const { return strcmp (string.get(), x.string.get()) >= 0; }
-    int operator== (const word& x) const { return strcmp (string.get(), x.string.get()) == 0; }
-    int operator!= (const word& x) const { return strcmp (string.get(), x.string.get()) != 0; }
+    char * get() const {return string.get();}
+    int operator< (const word& x) const { if (string.get() == nullptr) return -1; if (x.get() == nullptr) return 1; return strcmp (string.get(), x.string.get()) < 0; }
+    int operator<= (const word& x) const { if (string.get() == nullptr) return -1; if (x.get() == nullptr) return 1; return strcmp (string.get(), x.string.get()) <= 0; }
+    int operator> (const word& x) const { if (string.get() == nullptr) return -1; if (x.get() == nullptr) return 1; return strcmp (string.get(), x.string.get()) > 0; }
+    int operator>= (const word& x) const { if (string.get() == nullptr) return -1; if (x.get() == nullptr) return 1; return strcmp (string.get(), x.string.get()) >= 0; }
+    int operator== (const word& x) const { if (string.get() == nullptr) return -1; if (x.get() == nullptr) return 1; return strcmp (string.get(), x.string.get()) == 0; }
+    int operator!= (const word& x) const { if (string.get() == nullptr) return -1; if (x.get() == nullptr) return 1; return strcmp (string.get(), x.string.get()) != 0; }
 };
 
 class querry_1 {
@@ -62,6 +64,7 @@ class querry_1 {
       while (start) {
         r = buf.init(start);
         if (r != io_status::success) return r;
+        if (buf.get() == nullptr) return io_status::read;
         r = birch.add_value(buf);
         if (r != io_status::success) return r;
         start = strtok(nullptr, t);
@@ -73,6 +76,7 @@ class querry_1 {
       birch.print(r);
     }
     int search(char *s) {
+      if (s == nullptr) return 0;
       word buf;
       io_status r = buf.init(s);
       if (r != io_status::success) return 0;

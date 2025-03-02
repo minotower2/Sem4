@@ -81,5 +81,21 @@ private:
     }
     return right;
   }
+  int bin_check(T&x) {
+    int left = 0, right = size-1, mid;
+    while (left <= right) {
+      mid = (left + right) / 2;
+      if (values[mid] < x) {
+        left = mid + 1;
+      }
+      else if (values[mid] > x){
+        right = mid - 1;
+      }
+      else {
+        return mid;
+      }
+    }
+    return mid;
+  }
 };
 #endif

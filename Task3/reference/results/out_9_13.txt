@@ -1,0 +1,397 @@
+#include "task.h"
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
+int find_elem_in_file(const char *filename, double x);
+int find_elem_in_file(const char *filename, double x) {
+    FILE *fp = fopen(filename, "r");
+    int index;
+    for(index = 0; fscanf(fp, "%lf", &elem) == 1; index++) {
+            return index + 1;
+    index = 0;
+        return index;
+    if(argc != 3 || (sscanf(argv[2], "%lf", &x) != 1)) {
+        printf ("%s : Task = %d Result = %d\n", argv[0], 1, res);
+                printf("File %s don't opened\n", argv[1]);
+                break;
+                printf("Breaking fscanf data in file %s\n", argv[1]);
+                break;
+                printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+                break;
+#include "task.h"
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
+int find_elem_in_file(const char *filename, double x);
+int find_elem_in_file(const char *filename, double x) {
+    FILE *fp = fopen(filename, "r");
+    int index, tmp_index = 0;
+    for(index = 0; fscanf(fp, "%lf", &elem) == 1; index++) {
+            tmp_index = index + 1;
+    if(argc != 3 || (sscanf(argv[2], "%lf", &x) != 1)) {
+        printf ("%s : Task = %d Result = %d\n", argv[0], 2, res);
+                printf("File %s don't opened\n", argv[1]);
+                break;
+                printf("Breaking fscanf data in file %s\n", argv[1]);
+                break;
+                printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+                break;
+#include "task.h"
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
+int find_elem_in_file(const char *filename, double x, int *i, int *j);
+int find_elem_in_file(const char *filename, double x, int *i, int *j) {
+    FILE *fp = fopen(filename, "r");
+    int index, tmp_i = 0, tmp_j = 0, trigger;
+    for(index = 0; (trigger = fscanf(fp, "%lf", &elem)) == 1; index++) {
+            tmp_i = index + 1;
+            tmp_j = tmp_i;
+            index++;
+            break;
+            if(tmp_i == 0) {
+                *i = tmp_i;
+                *j = tmp_j;
+    for(;fscanf(fp, "%lf", &elem) == 1; index++) {
+            tmp_j = index + 1;
+        if(tmp_i == 0) {
+            *i = tmp_i;
+            *j = tmp_j;
+    if(argc != 3 || (sscanf(argv[2], "%lf", &x) != 1)) {
+            printf ("%s : Task = %d Result = %d i = %d j = %d\n", argv[0], 3, res, i, j);
+            break;
+            printf("File %s don't opened\n", argv[1]);
+            break;
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            break;
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+            break;
+#include "task.h"
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
+int find_max_elem_in_file(const char *filename, double *x, int *i, int *j);
+int find_max_elem_in_file(const char *filename, double *x, int *i, int *j) {
+    FILE *fp = fopen(filename, "r");
+    int index, tmp_i = 0, tmp_j = 0;
+    if(fscanf(fp, "%lf", &tmp_max) != 1) {
+    tmp_i = 1;
+    tmp_j = 1;
+    for(index = 2; fscanf(fp, "%lf", &elem) == 1; index++) {
+            tmp_j = index;
+            tmp_i= index;
+            tmp_j = index;
+        *i = tmp_i;
+        *j = tmp_j;
+            printf ("%s : Task = %d Result = %d X = %f i = %d j = %d\n", argv[0], 4, res, x, i, j);
+            break;
+            printf("%s : Erorr file empty\n", argv[0]);
+            break;
+            printf("File %s don't opened\n", argv[1]);
+            break;
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            break;
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+            break;
+#include "task.h"
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
+int find_max_monotone_seq(const char *filename, double *middle);
+int find_max_monotone_seq(const char *filename, double *middle) {
+    FILE *fp = fopen(filename, "r");
+        fscanf(fp, "%lf", &last_elem) != 1
+    while(fscanf(fp, "%lf", &elem) == 1) {
+        printf ("%s : Task = %d Result = %d X = %f\n", argv[0], 5, res, x);
+            printf("%s : Erorr file empty\n", argv[0]);
+            break;
+            printf("File %s don't opened\n", argv[1]);
+            break;
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            break;
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+            break;
+#include "task.h"
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
+int find_max_monotone_seq(const char *filename, double *middle);
+int find_max_monotone_seq(const char *filename, double *middle) {
+    FILE *fp = fopen(filename, "r");
+        fscanf(fp, "%lf", &last_elem) != 1
+    while(fscanf(fp, "%lf", &elem) == 1) {
+        printf ("%s : Task = %d Result = %d X = %f\n", argv[0], 6, res, x);
+            printf("%s : Erorr file empty\n", argv[0]);
+            break;
+            printf("File %s don't opened\n", argv[1]);
+            break;
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            break;
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+            break;
+#include <math.h>
+#include "task.h"
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
+int calc_dispers_2(const char *filename, double *x);
+int calc_dispers_2(const char *filename, double *x) {
+    FILE *fp = fopen(filename, "r");
+    while(fscanf(fp, "%lf", &elem) == 1) {
+        printf ("%s : Task = %d Result = %d X = %f\n", argv[0], 7, res, x);
+            printf("%s : Erorr file empty\n", argv[0]);
+            break;
+            printf("File %s don't opened\n", argv[1]);
+            break;
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            break;
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+            break;
+#include <math.h>
+#include "task.h"
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
+int find_seq_type(const char *filename);
+int find_seq_type(const char *filename) {
+    FILE *fp = fopen(filename, "r");
+        (a = fscanf(fp, "%lf", &last_elem)) != 1 ||
+        (b = fscanf(fp, "%lf", &elem)) != 1 ||
+        fscanf(fp, "%lf", &next_elem) != 1
+    while(fscanf(fp, "%lf", &next_elem) == 1) {
+        printf ("%s : Task = %d Result = %d\n", argv[0], 8, res);
+            printf("%s : Erorr file empty\n", argv[0]);
+            break;
+            printf("File %s don't opened\n", argv[1]);
+            break;
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            break;
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+            break;
+#include <sys/types.h>
+class IdrBuffer {
+    const char *buffer[N] = {};
+    void checkBounds(size_t index) {
+        if(0 < index || index >= N) status = io_status::out_of_range;
+    IdrBuffer(const IdrBuffer &u) = default;
+    IdrBuffer &append(const char *t) {
+    void abort(const char *a) {
+class IdrArgumentBuilder {
+    bool stop = false;
+    bool flagIf = false;
+    long layer = 0;
+    IdrBuffer<4*N> usage;
+    IdrBuffer<6*N> Ainfo;
+    IdrBuffer<N> error;
+    int index = 0;
+    void addArgument(const char *name, const char *type, const char *info) {
+        usage.append(" ").append(name).append(":").append(type);
+        Ainfo.append(name).append(": ").append(type).append(" - ").append(info).append("\n");
+    IdrArgumentBuilder(const IdrArgumentBuilder &u) = default;
+	operator bool() { return !stop;}
+	bool operator!() {return stop; }
+        usage.append(argv[index]);
+        index++;
+    IdrArgumentBuilder &arg(int *a, const char *name, const char *info) {
+        addArgument(name, "int", info);
+        if(argc <= index) {
+            error.append("ErrorArgument:In:").append(name).append(":LostArgument<\n");
+            error.append("ErrorArgument:In:").append(name).append(":IntParseError:").append(argv[index]).append("<\n");
+        index++;
+    IdrArgumentBuilder &arg(unsigned int *a, const char *name, const char *info) {
+        if(argc <= index) {
+            error.append("ErrorArgument:In:").append(name).append(":LostArgument<\n");
+            error.append("ErrorArgument:In:").append(name).append(":UIntParseError:").append(argv[index]).append("<\n");
+        index++;
+    IdrArgumentBuilder &arg(double *a, const char *name, const char *info) {
+        if(argc <= index) {
+            error.append("ErrorArgument:In:").append(name).append(":LostArgument<\n");
+        if(std::sscanf(argv[index], "%lf", a) != 1) {
+            error.append("ErrorArgument:In:").append(name).append(":DoubleParseError:").append(argv[index]).append("<\n");
+        index++;
+    IdrArgumentBuilder &arg(char **a, const char *name, const char *info) {
+        addArgument(name, "char*", info);
+        if(argc <= index) {
+            error.append("ErrorArgument:In:").append(name).append(":LostArgument<\n");
+        index++;
+    IdrArgumentBuilder &file(IdrUnitFile *cell, const char *fs, const char *name, const char *info) {
+        if(argc <= index) {
+            error.append("ErrorArgument:In:").append(name).append(":LostArgument<\n");
+            error.append("ErrorFile:In:").append(name).append(":ErrorFileOpen:").append(argv[index]).append("<\n");
+        index++;
+        const char *condition
+        usage.append(" [");
+        Ainfo.append(": if(").append(condition).append(")\n");
+        layer++;
+            flagLayerSet = layer;
+        usage.append(" ]");
+        Ainfo.append("endif\n");
+        if(flagIf && flagLayerSet == layer) {
+            flagIf = false;
+            stop = false;
+        const char *condition
+        Ainfo.append("check(").append(condition).append(")\n");
+        if(req == false) {
+            error.append("ErrorCheck:In:(").append(condition).append("):<\n");
+            error.abort(error_str(usage));
+            error.abort(error_str(Ainfo));
+            error.abort(error_str(error));
+        if(index != argc) {
+            error.append("ErrorArgument:InTheEnd:ALotOfArgs:<\n");
+        usage.printBuffer(fp);
+        error.printBuffer(fp);
+        Ainfo.printBuffer(fp);
+#include "libs/io_status.h"
+#include "libs/idrlib.h"
+#include "libs/idrarg.h"
+	IdrUnitFile fp, xFile;
+	data x;
+	.start(argv, argc)
+	.file(&xFile, "r", "x", "data filename")
+	.check(n >= 1, "n >= 1")
+	.arg(&p, "p", "max print elems")
+	.check(0 <= s && s <= 4, "0 <= s <= 4")
+	.file(&fp, "r", "filename", "data filename")
+	data *bigArray  = cellBigArray;
+	if(x.read(xFile) != SUCCESS) {
+		for(int i = 0; i < n; i++) {
+			if(bigArray[i].read(fp) != SUCCESS) {
+	x.print(); putchar('\n');
+    t = clock();
+    t = (clock() - t) / CLOCKS_PER_SEC;
+	std::printf ("Res = %d\n", res);
+#include "libs/io_status.h"
+#include "libs/idrlib.h"
+#include "libs/idrarg.h"
+	data x;
+	.start(argv, argc)
+	.check(n >= 1, "n >= 1")
+	.arg(&pa, "pa", "max print elems for A")
+	.check(0 <= sa && sa <= 4, "0 <= sa <= 4")
+	.file(&fpA, "r", "filenameA", "data A filename")
+	.arg(&pb, "pb", "max print elems for B")
+	.check(0 <= sb && sb <= 4, " 0 <= sb <= 4")
+	.file(&fpB, "r", "filenameB", "data B filename")
+	data *a = arrayA, *b = arrayB, *c = arrayC;
+		for(int i = 0; i < n; i++) {
+			if(a[i].read(fpA) != SUCCESS) {
+		for(int i = 0; i < n; i++) {
+			if(b[i].read(fpB) != SUCCESS) {
+	std::printf("Created array A: \n");
+	std::printf("Created array B: \n");
+    t = clock();
+    t = (clock() - t) / CLOCKS_PER_SEC;
+	std::printf("Created array C: \n");
+#include "libs/io_status.h"
+#include "libs/idrlib.h"
+#include "libs/idrarg.h"
+	.start(argv, argc)
+	.arg(&m, "m", "additional index for task 3")
+	.check(1 <= n, "n >= 1")
+	.check(0 <= m && m <= n-1, "0 <= m <= n-1")
+	.check(0 <= s && s <= 4, "0 <= s <= 4")
+	.file(&fp, "r", "filename", "data filename")
+	IdrUnitPtr<data> array(n);
+	data *a = array;
+		for(int i = 0; i < n; i++) {
+			if(a[i].read(fp) != SUCCESS) {
+    t = clock();
+    t = (clock() - t) / CLOCKS_PER_SEC;
+	std::printf ("Res = %d\n", m);
+#include "data.h"
+#include "../libs/debug.h"
+void dswap(data *a, data *b) {
+    int left = 0, right = n, s = 0;
+    while(left != right) {
+        s = (left + right) / 2;
+            right = s;
+    while(i < n && j < m) {
+    while(i < n) {
+    while(j < m) {
+    while(i <= j) {
+        dswap(a + i, a + j);
+    while(i <= j) {
+        //printf("i = %d j = %d\n", i, j);
+        dswap(a + i, a + j);
+    while(n >= 2) {
+            if(a[i] > a[i+1]) dswap(a + i, a + i + 1);
+    data n_min;
+    int n_ind, i;
+    while(n >= 2) {
+        n_min = a[0];
+        n_ind = 0;
+            if(a[i] < n_min) {
+                n_min = a[i];
+                n_ind = i;
+        if(n_ind != 0) dswap(a, a + n_ind);
+    while(a != b) {
+int cycle_index(int n, int index);
+int cycle_index(int n, int index) {
+    while(index < 0) index += n;
+    return index % n;
+    int last_index = start_index, index;
+    index = cycle_index(n, start_index - k);
+    while(index != start_index) {
+        last_index = index;
+        index = cycle_index(n, index - k);
+    while(k < 0) k += n;
+    while(sorted_n < n) {
+            if(a[sorted_n] < a[i]) break;
+    while(sorted_n < n) {
+    int cells = 1, i;
+    while(cells < n) {
+        for(i = 0; i < n; i += 2*cells) {
+                a + i + cells, 
+                std::min(cells, n - i),
+                std::min(cells, n - (i + cells))
+            //printf("======= %d %d\n", cells, i);
+            //printf("-\n");
+        cells *= 2;
+    while(n >= 2) {
+        dswap(a + n/2, a + i);
+        if(a[0] > a[1]) dswap(a, a+1);
+    while(n >= 2) {
+        //dswap(a + n/2, a + i);
+        if(a[0] > a[1]) dswap(a, a+1);
+void push_down_heap(data *a, int index, int end_index);
+void push_down_heap(data *a, int index, int end_index) {
+    while((cursor = get_parent(index)) >= end_index) {
+        index = cursor;
+void push_up_heap(data *a, int index, int end_index);
+void push_up_heap(data *a, int index, int end_index) {
+    data tmp, tmp_, tmp__;
+    int s_index = index, counter = 0, cursor;
+    if(index < end_index) return; 
+    index = get_parent(index);
+    if(get_parent(index) < end_index) {
+        dswap(a + s_index, a + index);
+    while((cursor = get_parent(index)) >= end_index) {
+        tmp__ = a[index];
+        tmp_ = tmp__;
+        index = cursor;
+    if(counter != 0) a[end_index] = tmp__;
+        while((p_k = get_parent(l_k)) >= 0) {
+    int left = 0, right = 0, ind = 0;
+        	left = get_child_left(ind);
+        	if(is_valid(k, left) && is_valid(k, right)) {
+        	            break;
+        	        if(a[0] < a[right]) ind = right;
+        	        else break;
+        	} else if(is_valid(k, right)) {
+        	    if(a[0] < a[right]) ind = right;
+        	    else break;
+        	    else break;
+        	    break;
+    data saved, tmp;
+    // first stage
+        saved = a[cursor];
+            if(saved <= tmp) {
+                a[last_cursor] = saved;
+                break;
+                a[0] = saved;
+                break;
+        } while(1);
+        //if(cursor >= 0) a[cursor] = saved;
+        //else a[last_cursor] = saved;
+    // second stage
+    data left, right;
+        debug_print("swap: %d %d\n", a[0].get_m(), a[k].get_m());
+        if(a[0] > a[k]) dswap(a, a + k);
+        //dswap(a, a + k);
+        saved = a[0];
+        while(1) {
+                if(left_cursor >= k) break;
+                if(saved <= left) {
+                break;
+            right = a[right_cursor];
+            if(left > right) {
+                if(saved < left) {
+                    plain_print("(%d)", saved.get_m());
+                    plain_print("(%d)", saved.get_m());
+                if(saved < right) {
+            break;
+        a[cursor] = saved;

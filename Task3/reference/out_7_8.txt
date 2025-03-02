@@ -1,0 +1,130 @@
+            fclose(fp);
+        fclose(fp);
+    } else {
+        fclose(fp);
+    } else {
+        fclose(fp);
+    } else {
+        fclose(fp);
+    } else {
+            fclose(fp);
+            } else {
+        } else {
+            fclose(fp);
+        fclose(fp);
+        } else {
+    } else {
+        fclose(fp);
+            fclose(fp);
+        fclose(fp);
+        } else if(elem > tmp_max) {
+        fclose(fp);
+    } else {
+        fclose(fp);
+    double last_elem, elem, tmp_sum, result_arifm;
+        fscanf(fp, "%lf", &last_elem) != 1
+            fclose(fp);
+        fclose(fp);
+    tmp_sum = last_elem;
+        if(deq(last_elem, elem)) {
+        } else {
+                } else if(max_length == tmp_count) {
+        last_elem = elem;
+        } else if(max_length == tmp_count) {
+        fclose(fp);
+    fclose(fp);
+    double last_elem, elem, tmp_sum, result_sum;
+        fscanf(fp, "%lf", &last_elem) != 1
+            fclose(fp);
+        fclose(fp);
+    tmp_sum = last_elem;
+        if(deq(last_elem, elem)) {
+        } else {
+                result_sum += tmp_sum;
+        last_elem = elem;
+        result_sum += tmp_sum;
+        fclose(fp);
+            *middle = result_sum / result_count;
+    fclose(fp);
+int calc_dispers_2(const char *filename, double *x);
+int calc_dispers_2(const char *filename, double *x) {
+        fclose(fp);
+            } else {
+    fclose(fp);
+    res = calc_dispers_2(argv[1], &x);
+    else if(deq(a - b, b - c)) return SequenceTypeArithmetic;
+    else if(
+    else return SequenceTypeCommon;
+    double last_elem, elem, next_elem;
+        (a = fscanf(fp, "%lf", &last_elem)) != 1 ||
+            fclose(fp);
+                (deq(last_elem, 0.) != deq(elem, 0.))
+            } else {
+        fclose(fp);
+    now = analizer(last_elem, elem, next_elem);
+    last_elem = elem;
+        next = analizer(last_elem, elem, next_elem);
+        last_elem = elem;
+        fclose(fp);
+    fclose(fp);
+template<size_t N>
+class IdrBuffer {
+template<size_t N = 24>
+class IdrArgumentBuilder {
+    bool stop = false;
+    bool flagIf = false;
+            error.append("ErrorArgument:In:").append(name).append(":DoubleParseError:").append(argv[index]).append("<\n");
+            flagIf = false;
+            stop = false;
+        if(req == false) {
+	.arg(&p, "p", "max print elems")
+	} else {
+	std::printf ("%s : Task = %d Diff = %d Elapsed = %.2f\n", argv[0], task, difference_data_array(bigArray, n), t);
+	} else {
+	} else {
+	std::printf ("%s : Task = %d Diff = %d Elapsed = %.2f\n", argv[0], task, difference_data_array(c, n+m), t);
+	} else {
+	std::printf ("%s : Task = %d Diff = %d Elapsed = %.2f\n", argv[0], task, difference_data_array(a, n), t);
+#define solution bubble_sort
+        } else {
+        } else {
+    //else return s;
+        else if(m == j) m = i;
+void bubble_sort(data *a, int n) {
+        } else {
+    int last_index = start_index, index;
+        a[last_index] = a[index];
+        last_index = index;
+    a[last_index] = tmp;
+void lin_insertion_sort(data *a, int n) {
+        } else if(i == n) {
+        } else if(i > n - i) {
+        } else {
+        } else if(i == n) {
+        } else if(i > n - i) {
+        } else {
+        	        else {
+        	    } else {
+        	        else break;
+        	} else if(is_valid(k, right)) {
+        	    else break;
+        	} else if(is_valid(k, left)) {
+        	    else break;
+        	} else {
+    int cursor(0), last_cursor(0);
+            last_cursor = cursor;
+            a[last_cursor] = tmp;
+                a[last_cursor] = saved;
+        //else a[last_cursor] = saved;
+    int left_cursor(0), right_cursor(0);
+            left_cursor = 2*cursor + 1;
+                if(left_cursor >= k) break;
+                    a[cursor] = a[left_cursor];
+                    cursor = left_cursor;
+                } else {
+            left  = a[left_cursor];
+                    a[cursor] = a[left_cursor];
+                    cursor = left_cursor;
+                } else {
+            } else {
+                } else {

@@ -1,0 +1,71 @@
+        buffer[cursor] = t;
+            fprintf(fp, "%s", buffer[i]);
+        usage.append(argv[index]);
+        if(std::sscanf(argv[index], "%d", a) != 1) {
+            error.append("ErrorArgument:In:").append(name).append(":IntParseError:").append(argv[index]).append("<\n");
+        if(std::sscanf(argv[index], "%u", a) != 1) {
+            error.append("ErrorArgument:In:").append(name).append(":UIntParseError:").append(argv[index]).append("<\n");
+        if(std::sscanf(argv[index], "%lf", a) != 1) {
+            error.append("ErrorArgument:In:").append(name).append(":DoubleParseError:").append(argv[index]).append("<\n");
+        *a = argv[index];
+        cell->open(argv[index], fs);
+            error.append("ErrorFile:In:").append(name).append(":ErrorFileOpen:").append(argv[index]).append("<\n");
+			if(bigArray[i].read(fp) != SUCCESS) {
+			if(a[i].read(fpA) != SUCCESS) {
+			if(b[i].read(fpB) != SUCCESS) {
+			if(a[i].read(fp) != SUCCESS) {
+        if(a[s] < *x) {
+        if(a[i] < b[j]) {
+            c[i+j] = a[i];
+            c[i+j] = b[j];
+        c[i+j] = a[i];
+        c[i+j] = b[j];
+    //data x = a[m];
+    //if(a[s] > x) return s - 1;
+    //if(a[s] < x) return s + 1;
+        if(a[i] < a[m]) {
+        if(a[j] > a[m]) {
+        if(a[i] < x) {
+        if(a[j] > x) {
+            if(a[i] > a[i+1]) dswap(a + i, a + i + 1);
+            if(a[i] < n_min) {
+                n_min = a[i];
+    tmp = a[start_index];
+        a[last_index] = a[index];
+    a[last_index] = tmp;
+            if(a[sorted_n] < a[i]) break;
+        //printf("!: %d %lf\n", i, a[sorted_n]);
+        //for(int j = 0; j < n; j++) b[j] = 0;
+            b[i] = a[i];
+        //printf("%lf ", a[n/2]);
+        //printf("%lf ", a[n/2]);
+        i = qsort_divide(a, n, a[n/2]);
+    tmp = a[index];
+        a[index] = a[cursor];
+    a[end_index] = tmp;
+    tmp = a[end_index];
+    tmp_ = a[index];
+        tmp__ = a[index];
+        a[index] = tmp_;
+    if(counter != 0) a[end_index] = tmp__;
+    a[s_index] = tmp;
+            if(a[k] > a[p_k]) {
+        	    if(a[left] > a[right]) {
+        	        if(a[0] < a[left]) ind = left;
+        	        if(a[0] < a[right]) ind = right;
+        	    if(a[0] < a[right]) ind = right;
+        	    if(a[0] < a[left]) ind = left;
+        saved = a[cursor];
+            tmp = a[cursor];
+            a[last_cursor] = tmp;
+                a[last_cursor] = saved;
+        //if(cursor >= 0) a[cursor] = saved;
+        //else a[last_cursor] = saved;
+        debug_print("swap: %d %d\n", a[0].get_m(), a[k].get_m());
+        if(a[0] > a[k]) dswap(a, a + k);
+                    a[cursor] = a[left_cursor];
+            left  = a[left_cursor];
+            right = a[right_cursor];
+                    a[cursor] = a[left_cursor];
+                    a[cursor] = a[right_cursor];
+        a[cursor] = saved;

@@ -1,0 +1,66 @@
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
+    if(argc != 3 || (sscanf(argv[2], "%lf", &x) != 1)) {
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
+    if(argc != 3 || (sscanf(argv[2], "%lf", &x) != 1)) {
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
+    if(argc != 3 || (sscanf(argv[2], "%lf", &x) != 1)) {
+        case 1:
+        case 0:
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
+        !deq(a, 0.) &&
+        !deq(b, 0.) &&
+        (a = fscanf(fp, "%lf", &last_elem)) != 1 ||
+        (b = fscanf(fp, "%lf", &elem)) != 1 ||
+                a == 1 && b == 1 &&
+template<size_t N>
+        if(0 < index || index >= N) status = io_status::out_of_range;
+    IdrBuffer<4*N> usage;
+    IdrBuffer<6*N> Ainfo;
+        Ainfo.append(name).append(": ").append(type).append(" - ").append(info).append("\n");
+        usage.append(" [");
+        Ainfo.append(": if(").append(condition).append(")\n");
+        usage.append(" ]");
+        if(flagIf && flagLayerSet == layer) {
+	.check(n >= 1, "n >= 1")
+	.check(0 <= s && s <= 4, "0 <= s <= 4")
+	.ifCondition(s == 0, "s == 0")
+		}
+	std::printf("Readed X: \n");
+	.arg(&n, "n", "array length A")
+	.check(n >= 1, "n >= 1")
+	.arg(&pa, "pa", "max print elems for A")
+	.arg(&sa, "sa", "formula number for A")
+	.check(0 <= sa && sa <= 4, "0 <= sa <= 4")
+	.ifCondition(sa == 0, "sa == 0")
+	.arg(&m, "m", "array length B")
+	.arg(&pb, "pb", "max print elems for B")
+	.arg(&sb, "sb", "formula number for B")
+	.check(0 <= sb && sb <= 4, " 0 <= sb <= 4")
+	.ifCondition(sb == 0, "sb == 0")
+	if(!arrayA || !arrayB || !arrayC) {
+		}
+		}
+	std::printf("Created array A: \n");
+	std::printf("Created array B: \n");
+	std::printf("Created array C: \n");
+	.arg(&m, "m", "additional index for task 3")
+	.check(1 <= n, "n >= 1")
+	.check(0 <= m && m <= n-1, "0 <= m <= n-1")
+	.check(0 <= s && s <= 4, "0 <= s <= 4")
+	.ifCondition(s == 0, "s == 0")
+		}
+    while(i < n && j < m) {
+            if(a[i] > a[i+1]) dswap(a + i, a + i + 1);
+        //printf("%lf ", a[n/2]);
+        //printf("%lf ", a[n/2]);
+        i = qsort_divide(a, n, a[n/2]);
+    if(k == 0) return -1;
+    return k >= 0 && k <= n - 1;
+        	if(is_valid(k, left) && is_valid(k, right)) {
+                    plain_puts("_ ");
+                    plain_puts("_ ");
+                    plain_puts("_ ");

@@ -1,0 +1,455 @@
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
+    return 1. / back_e;
+    return x >= 0. ? x : -x;
+    return dabs(x - n) <= get_machine_precision() * (dabs(x) + dabs(n));
+    for(index = 0; fscanf(fp, "%lf", &elem) == 1; index++) {
+            return index + 1;
+    index = 0;
+    if(argc != 3 || (sscanf(argv[2], "%lf", &x) != 1)) {
+        return 1;
+    if(res >= 0) {
+        printf ("%s : Task = %d Result = %d\n", argv[0], 1, res);
+        return 0;
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
+    return 1. / back_e;
+    return x >= 0. ? x : -x;
+    return dabs(x - n) <= get_machine_precision() * (dabs(x) + dabs(n));
+    int index, tmp_index = 0;
+    for(index = 0; fscanf(fp, "%lf", &elem) == 1; index++) {
+            tmp_index = index + 1;
+    if(argc != 3 || (sscanf(argv[2], "%lf", &x) != 1)) {
+        return 1;
+    if(res >= 0) {
+        printf ("%s : Task = %d Result = %d\n", argv[0], 2, res);
+        return 0;
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
+    return 1. / back_e;
+    return x >= 0. ? x : -x;
+    return dabs(x - n) <= get_machine_precision() * (dabs(x) + dabs(n));
+    int index, tmp_i = 0, tmp_j = 0, trigger;
+    for(index = 0; (trigger = fscanf(fp, "%lf", &elem)) == 1; index++) {
+            tmp_i = index + 1;
+    if(trigger != 1) {
+            if(tmp_i == 0) {
+                return 0;
+                return 1;
+    for(;fscanf(fp, "%lf", &elem) == 1; index++) {
+            tmp_j = index + 1;
+        if(tmp_i == 0) {
+            return 0;
+            return 1;
+    int res, i = 0, j = 0;
+    if(argc != 3 || (sscanf(argv[2], "%lf", &x) != 1)) {
+        return 1;
+            printf ("%s : Task = %d Result = %d i = %d j = %d\n", argv[0], 3, res, i, j);
+#define SUCCESS 0
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
+    return 1. / back_e;
+    return x >= 0. ? x : -x;
+    return dabs(x - n) <= get_machine_precision() * (dabs(x) + dabs(n));
+    int index, tmp_i = 0, tmp_j = 0;
+    if(fscanf(fp, "%lf", &tmp_max) != 1) {
+    tmp_i = 1;
+    tmp_j = 1;
+    for(index = 2; fscanf(fp, "%lf", &elem) == 1; index++) {
+        } else if(elem > tmp_max) {
+    if(argc != 2) {
+        return 1;
+            printf ("%s : Task = %d Result = %d X = %f i = %d j = %d\n", argv[0], 4, res, x, i, j);
+            printf("%s : Erorr file empty\n", argv[0]);
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
+    return 1. / back_e;
+    return x >= 0. ? x : -x;
+    return dabs(x - n) <= get_machine_precision() * (dabs(x) + dabs(n));
+    int max_length = 0, tmp_count;
+        fscanf(fp, "%lf", &last_elem) != 1
+    tmp_count = 1;
+    while(fscanf(fp, "%lf", &elem) == 1) {
+            if(tmp_count != 1) {
+                if(max_length < tmp_count) {
+                    result_arifm = (result_arifm + tmp_sum / tmp_count) / 2;
+            tmp_count = 1;
+    if(tmp_count != 1) {
+        if(max_length < tmp_count) {
+            result_arifm = (result_arifm + tmp_sum / tmp_count) / 2;
+        if(max_length != 0) {
+    double x = 0;
+    if(argc != 2) {
+        return 1;
+    if(res >= 0) {
+        printf ("%s : Task = %d Result = %d X = %f\n", argv[0], 5, res, x);
+        return 0;
+            printf("%s : Erorr file empty\n", argv[0]);
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
+    return 1. / back_e;
+    return x >= 0. ? x : -x;
+    return dabs(x - n) <= get_machine_precision() * (dabs(x) + dabs(n));
+    int mono_count = 0, tmp_count, result_count = 0;
+        fscanf(fp, "%lf", &last_elem) != 1
+    tmp_count = 1;
+    while(fscanf(fp, "%lf", &elem) == 1) {
+            if(tmp_count != 1) {
+            tmp_count = 1;
+    if(tmp_count != 1) {
+        if(mono_count != 0) {
+    double x = 0;
+    if(argc != 2) {
+        return 1;
+    if(res >= 0) {
+        printf ("%s : Task = %d Result = %d X = %f\n", argv[0], 6, res, x);
+        return 0;
+            printf("%s : Erorr file empty\n", argv[0]);
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
+    return 1. / back_e;
+    return x >= 0. ? x : -x;
+    return dabs(x - n) <= get_machine_precision() * (dabs(x) + dabs(n));
+    double sum_elems = 0, sum_square_elems = 0, elem, middle, square_square_middle;
+    int count_elem = 0;
+    while(fscanf(fp, "%lf", &elem) == 1) {
+        if(count_elem != 0) {
+            square_square_middle = sum_square_elems / count_elem - middle * middle;
+            if(deq(square_square_middle, 0.)) {
+                *x = 0.;
+    double x = 0.0;
+    if(argc != 2) {
+        return 1;
+    if(res >= 0) {
+        printf ("%s : Task = %d Result = %d X = %f\n", argv[0], 7, res, x);
+        return 0;
+            printf("%s : Erorr file empty\n", argv[0]);
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
+    return 1. / back_e;
+    return x >= 0. ? x : -x;
+    return dabs(x - n) <= get_machine_precision() * (dabs(x) + dabs(n));
+    SequenceTypeArithmetic  = 1,
+    SequenceTypeGeometric = 2,
+    SequenceTypeMonotone = 3,
+    SequenceTypeDataLess = 4,
+    SequenceTypeCommon = 0
+    else if(deq(a - b, b - c)) return SequenceTypeArithmetic;
+        !deq(a, 0.) &&
+        !deq(b, 0.) &&
+        (a = fscanf(fp, "%lf", &last_elem)) != 1 ||
+        (b = fscanf(fp, "%lf", &elem)) != 1 ||
+        fscanf(fp, "%lf", &next_elem) != 1
+                a == 1 && b == 1 &&
+                (deq(last_elem, 0.) != deq(elem, 0.))
+    while(fscanf(fp, "%lf", &next_elem) == 1) {
+        if(next != now) return SequenceTypeCommon;
+    if(argc != 2) {
+        return 1;
+    if(res >= 0) {
+        printf ("%s : Task = %d Result = %d\n", argv[0], 8, res);
+        return 0;
+            printf("%s : Erorr file empty\n", argv[0]);
+    size_t cursor = 0;
+        if(cursor >= N) status = io_status::buffer_overflow;
+        if(0 < index || index >= N) status = io_status::out_of_range;
+        return status != io_status::success;
+        if(status != io_status::success) return *this;
+        cursor = 1;
+        for(size_t i = 0; i < cursor; i++) {
+template<size_t N = 24>
+    long flagLayerSet = 0;
+    long layer = 0;
+    int argc = 0;
+    int index = 0;
+        usage.append(" ").append(name).append(":").append(type);
+        Ainfo.append(name).append(": ").append(type).append(" - ").append(info).append("\n");
+        if(argc <= index) {
+        if(std::sscanf(argv[index], "%d", a) != 1) {
+        if(argc <= index) {
+        if(std::sscanf(argv[index], "%u", a) != 1) {
+        if(argc <= index) {
+        if(std::sscanf(argv[index], "%lf", a) != 1) {
+        addArgument(name, "char*", info);
+        if(argc <= index) {
+        if(argc <= index) {
+        if(!(*cell)) {
+        usage.append(" [");
+        Ainfo.append(": if(").append(condition).append(")\n");
+        usage.append(" ]");
+        Ainfo.append("check(").append(condition).append(")\n");
+            error.append("ErrorCheck:In:(").append(condition).append("):<\n");
+        if(index != argc) {
+        printf("Usage: ");
+#define task 1
+	
+	int p(0), n(0), s(0), res(0);
+	double t = 0.;
+	.start(argv, argc)
+	.file(&xFile, "r", "x", "data filename")
+	.arg(&n, "n","array length")
+	.check(n >= 1, "n >= 1")
+	.arg(&p, "p", "max print elems")
+	.arg(&s, "s", "formula number")
+	.check(0 <= s && s <= 4, "0 <= s <= 4")
+	.ifCondition(s == 0, "s == 0")
+	.file(&fp, "r", "filename", "data filename")
+	.endIfCondition()
+	.end();
+		return 0;
+	}
+	
+	
+		return 0;
+	}
+	if(x.read(xFile) != SUCCESS) {
+		std::printf("Error reading X from file.\n");
+		return 0;
+	}
+	if(s == 0) {
+		for(int i = 0; i < n; i++) {
+			if(bigArray[i].read(fp) != SUCCESS) {
+				return 0;
+	} else {
+	}
+    t = (clock() - t) / CLOCKS_PER_SEC;
+	std::printf ("%s : Task = %d Diff = %d Elapsed = %.2f\n", argv[0], task, difference_data_array(bigArray, n), t);
+	return 0;
+#define task 2
+	
+	int pa(0), sa(0), pb(0), sb(0), n(0), m(0);
+	double t = 0.;
+	.start(argv, argc)
+	.arg(&n, "n", "array length A")
+	.check(n >= 1, "n >= 1")
+	.arg(&pa, "pa", "max print elems for A")
+	.arg(&sa, "sa", "formula number for A")
+	.check(0 <= sa && sa <= 4, "0 <= sa <= 4")
+	.ifCondition(sa == 0, "sa == 0")
+	.file(&fpA, "r", "filenameA", "data A filename")
+	.endIfCondition()
+	.arg(&m, "m", "array length B")
+	.arg(&pb, "pb", "max print elems for B")
+	.arg(&sb, "sb", "formula number for B")
+	.check(0 <= sb && sb <= 4, " 0 <= sb <= 4")
+	.ifCondition(sb == 0, "sb == 0")
+	.file(&fpB, "r", "filenameB", "data B filename")
+	.endIfCondition()
+	.end();
+		return 0;
+	}
+	
+	
+		return 0;
+	}
+	if(sa == 0) {
+		for(int i = 0; i < n; i++) {
+			if(a[i].read(fpA) != SUCCESS) {
+				return 0;
+	} else {
+	}
+	if(sb == 0) {
+		for(int i = 0; i < n; i++) {
+			if(b[i].read(fpB) != SUCCESS) {
+				return 0;
+	} else {
+	}
+    t = (clock() - t) / CLOCKS_PER_SEC;
+	std::printf ("%s : Task = %d Diff = %d Elapsed = %.2f\n", argv[0], task, difference_data_array(c, n+m), t);
+	return 0;
+#define task 3
+	
+	int s(0), p(0), n(0), m(0);
+	double t = 0.;
+	.start(argv, argc)
+	.arg(&m, "m", "additional index for task 3")
+	.arg(&n, "n", "array length")
+	.check(1 <= n, "n >= 1")
+	.check(0 <= m && m <= n-1, "0 <= m <= n-1")
+	.arg(&p, "p", "max printable parameter")
+	.arg(&s, "sa", "formula number")
+	.check(0 <= s && s <= 4, "0 <= s <= 4")
+	.ifCondition(s == 0, "s == 0")
+	.file(&fp, "r", "filename", "data filename")
+	.endIfCondition()
+	.end();
+		return 0;
+	}
+	
+	
+		return 0;
+	}
+	if(s == 0) {
+		for(int i = 0; i < n; i++) {
+			if(a[i].read(fp) != SUCCESS) {
+				return 0;
+	} else {
+	}
+    t = (clock() - t) / CLOCKS_PER_SEC;
+	//(void)m;
+	std::printf ("%s : Task = %d Diff = %d Elapsed = %.2f\n", argv[0], task, difference_data_array(a, n), t);
+	return 0;
+#define task 4
+#include "../libs/debug.h"
+    int left = 0, right = n, s = 0;
+    while(left != right) {
+        s = (left + right) / 2;
+        if(a[s] < *x) {
+            left = s + 1;
+    int i = 0, j = 0;
+    while(i < n && j < m) {
+        if(a[i] < b[j]) {
+    while(i < n) {
+    while(j < m) {
+    //if(s == n) return s - 1;
+    //if(a[s] > x) return s - 1;
+    //if(a[s] < x) return s + 1;
+    int i = 0, j = n-1;
+    while(i <= j) {
+        if(a[i] < a[m]) {
+        if(a[j] > a[m]) {
+    int i = 0, j = n - 1;
+    while(i <= j) {
+        if(a[i] < x) {
+        if(a[j] > x) {
+    while(n >= 2) {
+        for(i = 0; i < n - 1; i++) {
+            if(a[i] > a[i+1]) dswap(a + i, a + i + 1);
+    while(n >= 2) {
+        n_ind = 0;
+        for(i = 1; i < n; i++) {
+            if(a[i] < n_min) {
+        if(n_ind != 0) dswap(a, a + n_ind);
+    while(a != b) {
+        if(a > b) {
+            a = a - b;
+            b = b - a;
+    while(index < 0) index += n;
+    return index % n;
+    index = cycle_index(n, start_index - k);
+    while(index != start_index) {
+        index = cycle_index(n, index - k);
+    while(k < 0) k += n;
+    if(n <= 1) return;   
+    n_k = k % n;
+    if(n_k == 0) return;
+    for(i = 0; i < nod(n, n_k); i++) {
+    int sorted_n = 1, i;
+    while(sorted_n < n) {
+        for(i = 0; i < sorted_n; i++) {
+            if(a[sorted_n] < a[i]) break;
+        cycle_k(a + i, sorted_n + 1 - i, 1);
+    int sorted_n = 1, i;
+    while(sorted_n < n) {
+        //printf("========\n");
+        cycle_k(a + i, sorted_n + 1 - i, 1);
+    int cells = 1, i;
+    while(cells < n) {
+        for(i = 0; i < n; i += 2*cells) {
+                std::min(cells, n - i),
+                std::min(cells, n - (i + cells))
+            //printf("======= %d %d\n", cells, i);
+        cells *= 2;
+        //for(int j = 0; j < n; j++) b[j] = 0;
+        for(i = 0; i < n; i++) {
+    while(n >= 2) {
+        //printf("%lf ", a[n/2]);
+        i = qsort_divide(a, n, a + n/2);
+        dswap(a + n/2, a + i);
+        if(i == 0) {
+            a = a + 1;
+            n = n - 1;
+            //quick_sort(a+1, n-1); 
+            n = n - 1;
+        } else if(i > n - i) {
+            n = n - i;
+    printf("=======\n");
+    if(n == 2) {
+        if(a[0] > a[1]) dswap(a, a+1);
+    while(n >= 2) {
+        //printf("%lf ", a[n/2]);
+        //i = qsort_divide_indexed(a, n, n/2);
+        //dswap(a + n/2, a + i);
+        if(i == 0) {
+            a = a + 1;
+            n = n - 1;
+            //quick_sort(a+1, n-1); 
+            n = n - 1;
+        } else if(i > n - i) {
+            n = n - i;
+    if(n == 2) {
+        if(a[0] > a[1]) dswap(a, a+1);
+    if(k == 0) return -1;
+    return (k - 1) / 2;
+    return 2 * k + 1;
+    return 2 * k + 2;
+    return k >= 0 && k <= n - 1;
+    while((cursor = get_parent(index)) >= end_index) {
+    int s_index = index, counter = 0, cursor;
+    if(index < end_index) return; 
+    if(get_parent(index) < end_index) {
+    while((cursor = get_parent(index)) >= end_index) {
+        counter = 1;
+    if(counter != 0) a[end_index] = tmp__;
+    for(k = 1; k < n; k++) {
+        while((p_k = get_parent(l_k)) >= 0) {
+            if(a[k] > a[p_k]) {
+        if(ind != k) {
+    int k = 0;
+    int left = 0, right = 0, ind = 0;
+    if(n <= 1) return;
+    //print_bin_tree(a, n, 0, 0, 0);
+    //print_bin_tree(a, n, 0, 0, 1);
+    for(k = n - 1; k >= 0; k--) {
+        //printf("========\n");
+    	//print_bin_tree(a, k, 0, 0, 1);
+    	//print_bin_tree(a, k, 0, 0, 1);
+    	ind = 0;
+    	while(1) {
+        	    //printf("1");
+        	    if(a[left] > a[right]) {
+        	        if(a[0] < a[left]) ind = left;
+        	        else {
+        	            //printf("*");
+        	            break;
+        	        }
+        	    } else {
+        	        if(a[0] < a[right]) ind = right;
+        	        else break;
+        	    }
+        	} else if(is_valid(k, right)) {
+        	    //printf("2");
+        	    if(a[0] < a[right]) ind = right;
+        	    else break;
+        	} else if(is_valid(k, left)) {
+        	    //printf("3");
+        	    if(a[0] < a[left]) ind = left;
+        	    else break;
+        	} else {
+        	    //printf("4");
+        	    break;
+        	}
+    	}
+    	//printf("\n%d\n", ind);
+    	if(ind != 0) push_up_heap(a, ind, 0);
+    	//print_bin_tree(a, k, 0, 0, 1);
+    int cursor(0), last_cursor(0);
+    for(int k = 1; k < n; k++) {
+            cursor = (cursor - 1) / 2;
+            if(saved <= tmp) {
+            if(cursor <= 0) {
+        } while(1);
+        //if(cursor >= 0) a[cursor] = saved;
+    int left_cursor(0), right_cursor(0);
+    for(int k = n-1; k >= 1; k--) {
+        if(a[0] > a[k]) dswap(a, a + k);
+        cursor = 0;
+        while(1) {
+            left_cursor = 2*cursor + 1;
+            right_cursor = 2*cursor + 2;
+            if(right_cursor >= k) {
+                if(left_cursor >= k) break;
+                if(saved <= left) {
+                    plain_puts("* ");
+                    plain_puts("_ ");
+            if(left > right) {
+                if(saved < left) {
+                    plain_puts("* ");
+                    plain_print("(%d)", saved.get_m());
+                    plain_puts("_ ");
+                    plain_print("(%d)", saved.get_m());
+                if(saved < right) {
+                    plain_puts("* ");
+                    plain_puts("_ ");

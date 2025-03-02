@@ -1,0 +1,294 @@
+double get_machine_precision(void) {
+double dabs(double x) {
+bool deq(double x, double n) {
+int find_elem_in_file(const char *filename, double x) {
+    for(index = 0; fscanf(fp, "%lf", &elem) == 1; index++) {
+        if(deq(elem, x)) {
+    if(feof(fp)) {
+    } else {
+int main(int argc, char *argv[]) {
+    if(argc != 3 || (sscanf(argv[2], "%lf", &x) != 1)) {
+    if(res >= 0) {
+    } else {
+        switch(res) {
+double get_machine_precision(void) {
+double dabs(double x) {
+bool deq(double x, double n) {
+int find_elem_in_file(const char *filename, double x) {
+    for(index = 0; fscanf(fp, "%lf", &elem) == 1; index++) {
+        if(deq(elem, x)) {
+    if(feof(fp)) {
+    } else {
+int main(int argc, char *argv[]) {
+    if(argc != 3 || (sscanf(argv[2], "%lf", &x) != 1)) {
+    if(res >= 0) {
+    } else {
+        switch(res) {
+double get_machine_precision(void) {
+double dabs(double x) {
+bool deq(double x, double n) {
+int find_elem_in_file(const char *filename, double x, int *i, int *j) {
+    for(index = 0; (trigger = fscanf(fp, "%lf", &elem)) == 1; index++) {
+        if(deq(elem, x)) {
+    if(trigger != 1) {
+        if(feof(fp)) {
+            if(tmp_i == 0) {
+            } else {
+        } else {
+    for(;fscanf(fp, "%lf", &elem) == 1; index++) {
+        if(deq(elem, x)) {
+    if(feof(fp)) {
+        if(tmp_i == 0) {
+        } else {
+    } else {
+int main(int argc, char *argv[]) {
+    if(argc != 3 || (sscanf(argv[2], "%lf", &x) != 1)) {
+    switch(res) {
+double get_machine_precision(void) {
+double dabs(double x) {
+bool deq(double x, double n) {
+int find_max_elem_in_file(const char *filename, double *x, int *i, int *j) {
+    if(fscanf(fp, "%lf", &tmp_max) != 1) {
+        if(feof(fp)) {
+    for(index = 2; fscanf(fp, "%lf", &elem) == 1; index++) {
+        if(deq(elem, tmp_max)) {
+        } else if(elem > tmp_max) {
+    if(feof(fp)) {
+    } else {
+int main(int argc, char *argv[]) {
+    if(argc != 2) {
+    switch(res) {
+double get_machine_precision(void) {
+double dabs(double x) {
+bool deq(double x, double n) {
+int find_max_monotone_seq(const char *filename, double *middle) {
+    ) {
+        if(feof(fp)) {
+    while(fscanf(fp, "%lf", &elem) == 1) {
+        if(deq(last_elem, elem)) {
+        } else {
+            if(tmp_count != 1) {
+                if(max_length < tmp_count) {
+                } else if(max_length == tmp_count) {
+    if(tmp_count != 1) {
+        if(max_length < tmp_count) {
+        } else if(max_length == tmp_count) {
+    if(feof(fp)) {
+        if(max_length != 0) {
+int main(int argc, char *argv[]) {
+    if(argc != 2) {
+    if(res >= 0) {
+    switch(res) {
+double get_machine_precision(void) {
+double dabs(double x) {
+bool deq(double x, double n) {
+int find_max_monotone_seq(const char *filename, double *middle) {
+    ) {
+        if(feof(fp)) {
+    while(fscanf(fp, "%lf", &elem) == 1) {
+        if(deq(last_elem, elem)) {
+        } else {
+            if(tmp_count != 1) {
+    if(tmp_count != 1) {
+    if(feof(fp)) {
+        if(mono_count != 0) {
+int main(int argc, char *argv[]) {
+    if(argc != 2) {
+    if(res >= 0) {
+    switch(res) {
+double get_machine_precision(void) {
+double dabs(double x) {
+bool deq(double x, double n) {
+int calc_dispers_2(const char *filename, double *x) {
+    while(fscanf(fp, "%lf", &elem) == 1) {
+    if(feof(fp)) {
+        if(count_elem != 0) {
+            if(deq(square_square_middle, 0.)) {
+            } else {
+int main(int argc, char *argv[]) {
+    if(argc != 2) {
+    if(res >= 0) {
+    switch(res) {
+double get_machine_precision(void) {
+double dabs(double x) {
+bool deq(double x, double n) {
+enum SequenceType {
+SequenceType analizer(double a, double b, double c) {
+int find_seq_type(const char *filename) {
+    ) {
+        if(feof(fp)) {
+            ) {
+            } else {
+    while(fscanf(fp, "%lf", &next_elem) == 1) {
+    if(feof(fp)) {
+int main(int argc, char *argv[]) {
+    if(argc != 2) {
+    if(res >= 0) {
+    switch(res) {
+class IdrBuffer {
+    void checkOverflow() {
+    void checkBounds(size_t index) {
+    operator bool() {
+    bool operator!() {
+    operator io_status() {
+    IdrBuffer &append(const char *t) {
+    void abort(const char *a) {
+    void printBuffer(FILE *fp = stdout) {
+        for(size_t i = 0; i < cursor; i++) {
+class IdrArgumentBuilder {
+    void addArgument(const char *name, const char *type, const char *info) {
+	operator bool() { return !stop;}
+    IdrArgumentBuilder &start(char **argv, int argc) {
+    IdrArgumentBuilder &arg(int *a, const char *name, const char *info) {
+        if(argc <= index) {
+        if(std::sscanf(argv[index], "%d", a) != 1) {
+    IdrArgumentBuilder &arg(unsigned int *a, const char *name, const char *info) {
+        if(argc <= index) {
+        if(std::sscanf(argv[index], "%u", a) != 1) {
+    IdrArgumentBuilder &arg(double *a, const char *name, const char *info) {
+        if(argc <= index) {
+        if(std::sscanf(argv[index], "%lf", a) != 1) {
+    IdrArgumentBuilder &arg(char **a, const char *name, const char *info) {
+        if(argc <= index) {
+    IdrArgumentBuilder &file(IdrUnitFile *cell, const char *fs, const char *name, const char *info) {
+        if(argc <= index) {
+        if(!(*cell)) {
+    ) {
+        if(!req) {
+    IdrArgumentBuilder &endIfCondition() {
+        if(flagIf && flagLayerSet == layer) {
+    ) {
+        if(req == false) {
+    IdrArgumentBuilder &end() {
+        if(!usage) {
+        if(!Ainfo) {
+        if(!error) {
+        if(index != argc) {
+    IdrArgumentBuilder &printUsage(FILE *fp = stdout) {
+    IdrArgumentBuilder &printError(FILE *fp = stdout) {
+    IdrArgumentBuilder &printInfo(FILE *fp = stdout) {
+int main(int argc, char *argv[]) {
+	if(!argBuilder) {
+	if(!cellBigArray) {
+	if(x.read(xFile) != SUCCESS) {
+	if(s == 0) {
+		for(int i = 0; i < n; i++) {
+			if(bigArray[i].read(fp) != SUCCESS) {
+	} else {
+int main(int argc, char *argv[]) {
+	if(!argBuilder) {
+	if(!arrayA || !arrayB || !arrayC) {
+	if(sa == 0) {
+		for(int i = 0; i < n; i++) {
+			if(a[i].read(fpA) != SUCCESS) {
+	} else {
+	if(sb == 0) {
+		for(int i = 0; i < n; i++) {
+			if(b[i].read(fpB) != SUCCESS) {
+	} else {
+int main(int argc, char *argv[]) {
+	if(!argBuilder) {
+	if(!array) {
+	if(s == 0) {
+		for(int i = 0; i < n; i++) {
+			if(a[i].read(fp) != SUCCESS) {
+	} else {
+void dswap(data *a, data *b) {
+int bin_divide_position_finder(data *a, int n, data *x) {
+    while(left != right) {
+        if(a[s] < *x) {
+        } else {
+void merge_arrays(data *a, data *b, data *c, int n, int m) {
+    while(i < n && j < m) {
+        if(a[i] < b[j]) {
+        } else {
+    while(i < n) {
+    while(j < m) {
+int qsort_divide_indexed(data *a, int n, int m) {
+    while(i <= j) {
+        if(a[i] < a[m]) {
+        if(a[j] > a[m]) {
+int qsort_divide(data *a, int n, data x) {
+    while(i <= j) {
+        if(a[i] < x) {
+        if(a[j] > x) {
+void bubble_sort(data *a, int n) {
+    while(n >= 2) {
+        for(i = 0; i < n - 1; i++) {
+void min_find_sort(data *a, int n) {
+    while(n >= 2) {
+        for(i = 1; i < n; i++) {
+            if(a[i] < n_min) {
+int nod(int a, int b) {
+    while(a != b) {
+        if(a > b) {
+        } else {
+int cycle_index(int n, int index) {
+void piece_cycle_k(data *a, int n, int k, int start_index) {
+    while(index != start_index) {
+void cycle_k(data *a, int n, int k) {
+    for(i = 0; i < nod(n, n_k); i++) {
+void lin_insertion_sort(data *a, int n) {
+    while(sorted_n < n) {
+        for(i = 0; i < sorted_n; i++) {
+void bin_insertion_sort(data *a, int n) {
+    while(sorted_n < n) {
+void merge_sort(data *a, data *b, int n) {
+    while(cells < n) {
+        for(i = 0; i < n; i += 2*cells) {
+    if(b == orig_a) {
+        for(i = 0; i < n; i++) {
+void quick_sort(data *a, int n) {
+    while(n >= 2) {
+        if(i == 0) {
+        } else if(i == n) {
+        } else if(i > n - i) {
+        } else {
+void quick_sort(data *a, int n) {
+    if(n == 2) {
+    while(n >= 2) {
+        if(i == 0) {
+        } else if(i == n) {
+        } else if(i > n - i) {
+        } else {
+    if(n == 2) {
+int get_parent(int k) {
+int get_child_left(int k) {
+int get_child_right(int k) {
+int is_valid(int n, int k) {
+void push_down_heap(data *a, int index, int end_index) {
+    while((cursor = get_parent(index)) >= end_index) {
+void push_up_heap(data *a, int index, int end_index) {
+    if(get_parent(index) < end_index) {
+    while((cursor = get_parent(index)) >= end_index) {
+void order_heap(data *a, int n) {
+    for(k = 1; k < n; k++) {
+        while((p_k = get_parent(l_k)) >= 0) {
+            if(a[k] > a[p_k]) {
+        if(ind != k) {
+void heap_sort(data *a, int n) {
+    for(k = n - 1; k >= 0; k--) {
+    	while(1) {
+        	if(is_valid(k, left) && is_valid(k, right)) {
+        	    if(a[left] > a[right]) {
+        	        else {
+        	    } else {
+        	} else if(is_valid(k, right)) {
+        	} else if(is_valid(k, left)) {
+        	} else {
+void heap_sort(data *a, int n) {
+    for(int k = 1; k < n; k++) {
+        do {
+            if(saved <= tmp) {
+            if(cursor <= 0) {
+    for(int k = n-1; k >= 1; k--) {
+        while(1) {
+            if(right_cursor >= k) {
+                if(saved <= left) {
+                } else {
+            if(left > right) {
+                if(saved < left) {
+                } else {
+            } else {
+                if(saved < right) {
+                } else {

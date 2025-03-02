@@ -1,0 +1,12 @@
+    FILE *fp = fopen(filename, "r");
+    FILE *fp = fopen(filename, "r");
+    FILE *fp = fopen(filename, "r");
+    FILE *fp = fopen(filename, "r");
+    FILE *fp = fopen(filename, "r");
+    FILE *fp = fopen(filename, "r");
+    FILE *fp = fopen(filename, "r");
+    FILE *fp = fopen(filename, "r");
+    void printBuffer(FILE *fp = stdout) {
+    IdrArgumentBuilder &printUsage(FILE *fp = stdout) {
+    IdrArgumentBuilder &printError(FILE *fp = stdout) {
+    IdrArgumentBuilder &printInfo(FILE *fp = stdout) {

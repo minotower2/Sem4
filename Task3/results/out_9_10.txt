@@ -1,0 +1,166 @@
+    if(!fp) return FILE_OPENNING_ERROR;
+        if(deq(elem, x)) {
+    if(feof(fp)) {
+    if(argc != 3 || (sscanf(argv[2], "%lf", &x) != 1)) {
+    if(res >= 0) {
+                printf("Breaking fscanf data in file %s\n", argv[1]);
+                printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+    if(!fp) return FILE_OPENNING_ERROR;
+        if(deq(elem, x)) {
+    if(feof(fp)) {
+    if(argc != 3 || (sscanf(argv[2], "%lf", &x) != 1)) {
+    if(res >= 0) {
+                printf("Breaking fscanf data in file %s\n", argv[1]);
+                printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+    if(!fp) return FILE_OPENNING_ERROR;
+        if(deq(elem, x)) {
+    if(trigger != 1) {
+        if(feof(fp)) {
+            if(tmp_i == 0) {
+        if(deq(elem, x)) {
+    if(feof(fp)) {
+        if(tmp_i == 0) {
+    if(argc != 3 || (sscanf(argv[2], "%lf", &x) != 1)) {
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+    if(!fp) return FILE_OPENNING_ERROR;
+    if(fscanf(fp, "%lf", &tmp_max) != 1) {
+        if(feof(fp)) {
+        if(deq(elem, tmp_max)) {
+        } else if(elem > tmp_max) {
+    if(feof(fp)) {
+    if(argc != 2) {
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+    if(!fp) return FILE_OPENNING_ERROR;
+    if(
+        if(feof(fp)) {
+        if(deq(last_elem, elem)) {
+            if(tmp_count != 1) {
+                if(max_length < tmp_count) {
+                } else if(max_length == tmp_count) {
+    if(tmp_count != 1) {
+        if(max_length < tmp_count) {
+        } else if(max_length == tmp_count) {
+    if(feof(fp)) {
+        if(max_length != 0) {
+    if(argc != 2) {
+    if(res >= 0) {
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+    if(!fp) return FILE_OPENNING_ERROR;
+    if(
+        if(feof(fp)) {
+        if(deq(last_elem, elem)) {
+            if(tmp_count != 1) {
+    if(tmp_count != 1) {
+    if(feof(fp)) {
+        if(mono_count != 0) {
+    if(argc != 2) {
+    if(res >= 0) {
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+    if(!fp) return FILE_OPENNING_ERROR;
+    if(feof(fp)) {
+        if(count_elem != 0) {
+            if(deq(square_square_middle, 0.)) {
+    if(argc != 2) {
+    if(res >= 0) {
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+    if(deq(a, b)) return SequenceTypeMonotone;
+    else if(deq(a - b, b - c)) return SequenceTypeArithmetic;
+    else if(
+    if(!fp) return FILE_OPENNING_ERROR;
+    if(
+        if(feof(fp)) {
+            if(
+        if(next != now) return SequenceTypeCommon;
+    if(feof(fp)) {
+    if(argc != 2) {
+    if(res >= 0) {
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+        if(cursor >= N) status = io_status::buffer_overflow;
+        if(0 < index || index >= N) status = io_status::out_of_range;
+        if(status != io_status::success) return *this;
+        if(stop) return *this;
+        if(argc <= index) {
+        if(std::sscanf(argv[index], "%d", a) != 1) {
+        if(stop) return *this;
+        if(argc <= index) {
+        if(std::sscanf(argv[index], "%u", a) != 1) {
+        if(stop) return *this;
+        if(argc <= index) {
+        if(std::sscanf(argv[index], "%lf", a) != 1) {
+        if(stop) return *this;
+        if(argc <= index) {
+        if(stop) return *this;
+        if(argc <= index) {
+        if(!(*cell)) {
+        Ainfo.append(": if(").append(condition).append(")\n");
+        if(stop) return *this;
+        if(!req) {
+        if(flagIf && flagLayerSet == layer) {
+        if(stop) return *this;
+        if(req == false) {
+        if(!usage) {
+        if(!Ainfo) {
+        if(!error) {
+        if(stop) return *this;
+        if(index != argc) {
+        if(a[s] < *x) {
+        if(a[i] < b[j]) {
+    //if(s == n) return s - 1;
+    //if(a[s] > x) return s - 1;
+    //if(a[s] < x) return s + 1;
+        if(a[i] < a[m]) {
+        if(a[j] > a[m]) {
+        if(m == i) m = j;
+        else if(m == j) m = i;
+        if(a[i] < x) {
+        if(a[j] > x) {
+            if(a[i] > a[i+1]) dswap(a + i, a + i + 1);
+            if(a[i] < n_min) {
+        if(n_ind != 0) dswap(a, a + n_ind);
+        if(a > b) {
+    if(n <= 1) return;   
+    if(n_k == 0) return;
+            if(a[sorted_n] < a[i]) break;
+    if(b == orig_a) {
+        if(i == 0) {
+        } else if(i == n) {
+        } else if(i > n - i) {
+    if(n == 2) {
+        if(a[0] > a[1]) dswap(a, a+1);
+        if(i == 0) {
+        } else if(i == n) {
+        } else if(i > n - i) {
+    if(n == 2) {
+        if(a[0] > a[1]) dswap(a, a+1);
+    if(k == 0) return -1;
+    if(index < end_index) return; 
+    if(get_parent(index) < end_index) {
+    if(counter != 0) a[end_index] = tmp__;
+            if(a[k] > a[p_k]) {
+        if(ind != k) {
+    if(n <= 1) return;
+        	    if(a[left] > a[right]) {
+        	        if(a[0] < a[left]) ind = left;
+        	        if(a[0] < a[right]) ind = right;
+        	} else if(is_valid(k, right)) {
+        	    if(a[0] < a[right]) ind = right;
+        	} else if(is_valid(k, left)) {
+        	    if(a[0] < a[left]) ind = left;
+            if(saved <= tmp) {
+            if(cursor <= 0) {
+        //if(cursor >= 0) a[cursor] = saved;
+    if(DEBUG_TEST) print_data_array(a, n, n);
+        if(a[0] > a[k]) dswap(a, a + k);
+            if(right_cursor >= k) {
+                if(left_cursor >= k) break;
+                if(saved <= left) {
+            if(left > right) {
+                if(saved < left) {
+                if(saved < right) {
+        if(DEBUG_TEST) print_data_array(a, n, n);

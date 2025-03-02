@@ -1,0 +1,10 @@
+            printf ("%s : Task = %d Result = %d X = %f i = %d j = %d\n", argv[0], 4, res, x, i, j);
+        printf ("%s : Task = %d Result = %d X = %f\n", argv[0], 5, res, x);
+        printf ("%s : Task = %d Result = %d X = %f\n", argv[0], 6, res, x);
+        printf ("%s : Task = %d Result = %d X = %f\n", argv[0], 7, res, x);
+        if(cursor >= N) status = io_status::buffer_overflow;
+        if(0 < index || index >= N) status = io_status::out_of_range;
+template<size_t N = 24>
+		std::printf("Error reading X from file.\n");
+	.file(&fpA, "r", "filenameA", "data A filename")
+	.file(&fpB, "r", "filenameB", "data B filename")

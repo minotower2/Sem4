@@ -1,0 +1,49 @@
+    } else {
+    } else {
+    } else {
+    } else {
+            } else {
+        } else {
+        } else {
+    } else {
+        } else if(elem > tmp_max) {
+    } else {
+        } else {
+                } else if(max_length == tmp_count) {
+        } else if(max_length == tmp_count) {
+        } else {
+            } else {
+    else if(deq(a - b, b - c)) return SequenceTypeArithmetic;
+    else if(
+    else return SequenceTypeCommon;
+            } else {
+class IdrBuffer {
+class IdrArgumentBuilder {
+	} else {
+	} else {
+	} else {
+	} else {
+        } else {
+        } else {
+    //else return s;
+        else if(m == j) m = i;
+        } else {
+        } else if(i == n) {
+        } else if(i > n - i) {
+        } else {
+        } else if(i == n) {
+        } else if(i > n - i) {
+        } else {
+        	        else {
+        	    } else {
+        	        else break;
+        	} else if(is_valid(k, right)) {
+        	    else break;
+        	} else if(is_valid(k, left)) {
+        	    else break;
+        	} else {
+        //else a[last_cursor] = saved;
+                } else {
+                } else {
+            } else {
+                } else {

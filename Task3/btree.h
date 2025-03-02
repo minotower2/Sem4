@@ -6,10 +6,10 @@
 template <class T>
 class b_tree {
 private:
-  int m; // B-tree base
+  int m = 1; // B-tree base
   b_tree_node<T> * root = nullptr;
 public:
-  b_tree (int i = 0) {m = i;}
+  b_tree (int i = 1) {m = i;}
   ~b_tree() {
     delete_subtree (root);
     erase_links ();
@@ -41,6 +41,7 @@ private:
     }
   }
 public:
+  // Add element x to tree
   io_status add_value (T& x) {
     if (root == nullptr) {
       root = new b_tree_node<T>();
@@ -160,9 +161,11 @@ public:
 public:
   int search(b_tree_node<T> *curr, T& target) {
     if (curr == nullptr) return 0;
-    int ind = curr->bin_search(target);
-    if (curr->values[ind].get() != nullptr && curr->values[ind] == target) return 1;
-    if (search(curr->children[ind], target) == 1 || search(curr->children[ind+1], target) == 1) return 1;
+    int ind = curr->bin_check(target);
+    if (curr->values[ind] == target) return 1;
+    if (search(curr->children[ind], target) == 1 ||
+        (ind > 0 && search(curr->children[ind-1], target) == 1) ||
+        (ind < (curr->size - 1) && search(curr->children[ind+1], target) == 1)) return 1;
     return 0;
   }
 };

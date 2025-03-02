@@ -1,0 +1,10 @@
+class IdrBuffer {
+class IdrArgumentBuilder {
+    int cells = 1, i;
+    while(cells < n) {
+        for(i = 0; i < n; i += 2*cells) {
+                a + i + cells, 
+                std::min(cells, n - i),
+                std::min(cells, n - (i + cells))
+            //printf("======= %d %d\n", cells, i);
+        cells *= 2;

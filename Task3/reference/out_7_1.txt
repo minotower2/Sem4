@@ -1,0 +1,231 @@
+        printf("Usage: %s <filename> <x>\n", argv[0]);
+        printf ("%s : Task = %d Result = %d\n", argv[0], 1, res);
+                printf("File %s don't opened\n", argv[1]);
+                printf("Breaking fscanf data in file %s\n", argv[1]);
+                printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+        printf("Usage: %s <filename> <x>\n", argv[0]);
+        printf ("%s : Task = %d Result = %d\n", argv[0], 2, res);
+                printf("File %s don't opened\n", argv[1]);
+                printf("Breaking fscanf data in file %s\n", argv[1]);
+                printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+int find_elem_in_file(const char *filename, double x, int *i, int *j);
+int find_elem_in_file(const char *filename, double x, int *i, int *j) {
+                *i = tmp_i;
+            *i = tmp_i;
+    int res, i = 0, j = 0;
+        printf("Usage: %s <filename> <x>\n", argv[0]);
+            printf ("%s : Task = %d Result = %d i = %d j = %d\n", argv[0], 3, res, i, j);
+            printf("File %s don't opened\n", argv[1]);
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+int find_max_elem_in_file(const char *filename, double *x, int *i, int *j);
+int find_max_elem_in_file(const char *filename, double *x, int *i, int *j) {
+        *i = tmp_i;
+    int res, i, j;
+        printf("Usage: %s <filename>\n", argv[0]);
+            printf ("%s : Task = %d Result = %d X = %f i = %d j = %d\n", argv[0], 4, res, x, i, j);
+            printf("%s : Erorr file empty\n", argv[0]);
+            printf("File %s don't opened\n", argv[1]);
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+        printf("Usage: %s <filename>\n", argv[0]);
+        printf ("%s : Task = %d Result = %d X = %f\n", argv[0], 5, res, x);
+            printf("%s : Erorr file empty\n", argv[0]);
+            printf("File %s don't opened\n", argv[1]);
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+        printf("Usage: %s <filename>\n", argv[0]);
+        printf ("%s : Task = %d Result = %d X = %f\n", argv[0], 6, res, x);
+            printf("%s : Erorr file empty\n", argv[0]);
+            printf("File %s don't opened\n", argv[1]);
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+        printf("Usage: %s <filename>\n", argv[0]);
+        printf ("%s : Task = %d Result = %d X = %f\n", argv[0], 7, res, x);
+            printf("%s : Erorr file empty\n", argv[0]);
+            printf("File %s don't opened\n", argv[1]);
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+        printf("Usage: %s <filename>\n", argv[0]);
+        printf ("%s : Task = %d Result = %d\n", argv[0], 8, res);
+            printf("%s : Erorr file empty\n", argv[0]);
+            printf("File %s don't opened\n", argv[1]);
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+    size_t cursor = 0;
+        if(cursor >= N) status = io_status::buffer_overflow;
+        buffer[cursor] = t;
+        cursor++;
+        cursor = 1;
+        for(size_t i = 0; i < cursor; i++) {
+            fprintf(fp, "%s", buffer[i]);
+        printf("Usage: ");
+        printf("About: \n");
+#include "tasklibs/data.h"
+		for(int i = 0; i < n; i++) {
+			if(bigArray[i].read(fp) != SUCCESS) {
+				std::printf("Error reading data from file.\n");
+#include "tasklibs/data.h"
+		for(int i = 0; i < n; i++) {
+			if(a[i].read(fpA) != SUCCESS) {
+				std::printf("Error reading data from file.\n");
+		for(int i = 0; i < n; i++) {
+			if(b[i].read(fpB) != SUCCESS) {
+				std::printf("Error reading data from file.\n");
+#include "tasklibs/data.h"
+		for(int i = 0; i < n; i++) {
+			if(a[i].read(fp) != SUCCESS) {
+				std::printf("Error reading data from file.\n");
+void dswap(data *a, data *b) {
+    data tmp = *a;
+int bin_divide_position_finder(data *a, int n, data *x) {
+void merge_arrays(data *a, data *b, data *c, int n, int m) {
+    int i = 0, j = 0;
+    while(i < n && j < m) {
+        if(a[i] < b[j]) {
+            c[i+j] = a[i];
+            i++;
+            c[i+j] = b[j];
+    while(i < n) {
+        c[i+j] = a[i];
+        i++;
+        c[i+j] = b[j];
+int qsort_divide_indexed(data *a, int n, int m) {
+    //data x = a[m];
+    int i = 0, j = n-1;
+    while(i <= j) {
+        if(a[i] < a[m]) {
+            i++;
+        dswap(a + i, a + j);
+        if(m == i) m = j;
+        else if(m == j) m = i;
+        i++;
+int qsort_divide(data *a, int n, data x) {
+    int i = 0, j = n - 1;
+    while(i <= j) {
+        if(a[i] < x) {
+            i++;
+        //printf("i = %d j = %d\n", i, j);
+        dswap(a + i, a + j);
+        i++;
+    return i;
+void bubble_sort(data *a, int n) {
+    int i;
+        for(i = 0; i < n - 1; i++) {
+            if(a[i] > a[i+1]) dswap(a + i, a + i + 1);
+void min_find_sort(data *a, int n) {
+    data n_min;
+    int n_ind, i;
+        for(i = 1; i < n; i++) {
+            if(a[i] < n_min) {
+                n_min = a[i];
+                n_ind = i;
+void piece_cycle_k(data *a, int n, int k, int start_index);
+void piece_cycle_k(data *a, int n, int k, int start_index) {
+    data tmp;
+void cycle_k(data *a, int n, int k);
+void cycle_k(data *a, int n, int k) {
+    int n_k, i;
+    for(i = 0; i < nod(n, n_k); i++) {
+        piece_cycle_k(a, n, n_k, i);
+void lin_insertion_sort(data *a, int n) {
+    int sorted_n = 1, i;
+        for(i = 0; i < sorted_n; i++) {
+            if(a[sorted_n] < a[i]) break;
+        cycle_k(a + i, sorted_n + 1 - i, 1);
+void bin_insertion_sort(data *a, int n) {
+    int sorted_n = 1, i;
+        i = bin_divide_position_finder(a, sorted_n, a + sorted_n);
+        //printf("========\n");
+        //printf("!: %d %lf\n", i, a[sorted_n]);
+        cycle_k(a + i, sorted_n + 1 - i, 1);
+void merge_sort(data *a, data *b, int n) {
+    data *orig_a = a, *tmp;
+    int cells = 1, i;
+        for(i = 0; i < n; i += 2*cells) {
+                a + i, 
+                a + i + cells, 
+                b + i, 
+                std::min(cells, n - i),
+                std::min(cells, n - (i + cells))
+            //printf("======= %d %d\n", cells, i);
+            //printf("-\n");
+        for(i = 0; i < n; i++) {
+            b[i] = a[i];
+void quick_sort(data *a, int n) {
+    int i;
+        //printf("%lf ", a[n/2]);
+        i = qsort_divide(a, n, a + n/2);
+        //printf("%d\n", i);
+        dswap(a + n/2, a + i);
+        if(i == 0) {
+        } else if(i == n) {
+        } else if(i > n - i) {
+            quick_sort(a+i, n-i);
+            n = i;
+            quick_sort(a, i);
+            a = a + i;
+            n = n - i;
+void quick_sort(data *a, int n) {
+    int i;
+    printf("=======\n");
+        //printf("%lf ", a[n/2]);
+        //i = qsort_divide_indexed(a, n, n/2);
+        i = qsort_divide(a, n, a[n/2]);
+        //printf("%d\n", i);
+        //dswap(a + n/2, a + i);
+        if(i == 0) {
+        } else if(i == n) {
+            //printf("!");
+        } else if(i > n - i) {
+            quick_sort(a+i, n-i);
+            n = i;
+            quick_sort(a, i);
+            a = a + i;
+            n = n - i;
+    printf("%d\n", n);
+void push_down_heap(data *a, int index, int end_index);
+void push_down_heap(data *a, int index, int end_index) {
+    data tmp;
+    int cursor;
+    while((cursor = get_parent(index)) >= end_index) {
+        a[index] = a[cursor];
+        index = cursor;
+void push_up_heap(data *a, int index, int end_index);
+void push_up_heap(data *a, int index, int end_index) {
+    data tmp, tmp_, tmp__;
+    int s_index = index, counter = 0, cursor;
+    while((cursor = get_parent(index)) >= end_index) {
+        index = cursor;
+void order_heap(data *a, int n);
+void order_heap(data *a, int n) {
+void heap_sort(data *a, int n) {
+    //printf("Started:\n");
+        //printf("========\n");
+        	    //printf("1");
+        	            //printf("*");
+        	    //printf("2");
+        	    //printf("3");
+        	    //printf("4");
+    	//printf("\n%d\n", ind);
+void heap_sort(data *a, int n) {
+    data saved, tmp;
+    int cursor(0), last_cursor(0);
+        cursor = k;
+        saved = a[cursor];
+            last_cursor = cursor;
+            cursor = (cursor - 1) / 2;
+            tmp = a[cursor];
+            if(cursor <= 0) {
+        //if(cursor >= 0) a[cursor] = saved;
+    data left, right;
+        cursor = 0;
+            left_cursor = 2*cursor + 1;
+            right_cursor = 2*cursor + 2;
+                    a[cursor] = a[left_cursor];
+                    cursor = left_cursor;
+                    a[cursor] = a[left_cursor];
+                    cursor = left_cursor;
+                    a[cursor] = a[right_cursor];
+                    cursor = right_cursor;
+        a[cursor] = saved;

@@ -1,0 +1,424 @@
+double dabs(double x);
+bool deq(double x, double n);
+double get_machine_precision(void);
+double get_machine_precision(void) {
+    unsigned long long back_e = 1llu;
+double dabs(double x) {
+bool deq(double x, double n) {
+    return dabs(x - n) <= get_machine_precision() * (dabs(x) + dabs(n));
+int find_elem_in_file(const char *filename, double x);
+int find_elem_in_file(const char *filename, double x) {
+    double elem;
+        if(deq(elem, x)) {
+    if(feof(fp)) {
+    } else {
+int main(int argc, char *argv[]) {
+    if(argc != 3 || (sscanf(argv[2], "%lf", &x) != 1)) {
+    } else {
+            case -1:
+            case -2:
+                printf("Breaking fscanf data in file %s\n", argv[1]);
+                printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+double dabs(double x);
+bool deq(double x, double n);
+double get_machine_precision(void);
+double get_machine_precision(void) {
+    unsigned long long back_e = 1llu;
+double dabs(double x) {
+bool deq(double x, double n) {
+    return dabs(x - n) <= get_machine_precision() * (dabs(x) + dabs(n));
+int find_elem_in_file(const char *filename, double x);
+int find_elem_in_file(const char *filename, double x) {
+    double elem;
+        if(deq(elem, x)) {
+    if(feof(fp)) {
+    } else {
+int main(int argc, char *argv[]) {
+    if(argc != 3 || (sscanf(argv[2], "%lf", &x) != 1)) {
+    } else {
+            case FILE_OPENNING_ERROR:
+            case FILE_READING_ERROR:
+                printf("Breaking fscanf data in file %s\n", argv[1]);
+                printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+double dabs(double x);
+bool deq(double x, double n);
+double get_machine_precision(void);
+double get_machine_precision(void) {
+    unsigned long long back_e = 1llu;
+double dabs(double x) {
+bool deq(double x, double n) {
+    return dabs(x - n) <= get_machine_precision() * (dabs(x) + dabs(n));
+int find_elem_in_file(const char *filename, double x, int *i, int *j);
+int find_elem_in_file(const char *filename, double x, int *i, int *j) {
+    double elem;
+        if(deq(elem, x)) {
+        if(feof(fp)) {
+            } else {
+        } else {
+        if(deq(elem, x)) {
+    if(feof(fp)) {
+        } else {
+    } else {
+int main(int argc, char *argv[]) {
+    if(argc != 3 || (sscanf(argv[2], "%lf", &x) != 1)) {
+        case 1:
+        case 0:
+        case FILE_OPENNING_ERROR:
+        case FILE_READING_ERROR:
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+double dabs(double x);
+bool deq(double x, double n);
+double get_machine_precision(void);
+double get_machine_precision(void) {
+    unsigned long long back_e = 1llu;
+double dabs(double x) {
+bool deq(double x, double n) {
+    return dabs(x - n) <= get_machine_precision() * (dabs(x) + dabs(n));
+int find_max_elem_in_file(const char *filename, double *x, int *i, int *j);
+int find_max_elem_in_file(const char *filename, double *x, int *i, int *j) {
+    double elem, tmp_max;
+        if(feof(fp)) {
+        if(deq(elem, tmp_max)) {
+        } else if(elem > tmp_max) {
+            tmp_max = elem;
+    if(feof(fp)) {
+    } else {
+int main(int argc, char *argv[]) {
+    if(argc != 2) {
+        case SUCCESS:
+        case EMPTY_FILE:
+            printf("%s : Erorr file empty\n", argv[0]);
+        case FILE_OPENNING_ERROR:
+        case FILE_READING_ERROR:
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+double dabs(double x);
+bool deq(double x, double n);
+double get_machine_precision(void);
+double get_machine_precision(void) {
+    unsigned long long back_e = 1llu;
+double dabs(double x) {
+bool deq(double x, double n) {
+    return dabs(x - n) <= get_machine_precision() * (dabs(x) + dabs(n));
+int find_max_monotone_seq(const char *filename, double *middle);
+int find_max_monotone_seq(const char *filename, double *middle) {
+    double last_elem, elem, tmp_sum, result_arifm;
+        if(feof(fp)) {
+        if(deq(last_elem, elem)) {
+            tmp_sum += elem;
+        } else {
+                } else if(max_length == tmp_count) {
+            tmp_sum = elem;
+        last_elem = elem;
+        } else if(max_length == tmp_count) {
+    if(feof(fp)) {
+int main(int argc, char *argv[]) {
+    if(argc != 2) {
+        case EMPTY_FILE:
+            printf("%s : Erorr file empty\n", argv[0]);
+        case FILE_OPENNING_ERROR:
+        case FILE_READING_ERROR:
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+double dabs(double x);
+bool deq(double x, double n);
+double get_machine_precision(void);
+double get_machine_precision(void) {
+    unsigned long long back_e = 1llu;
+double dabs(double x) {
+bool deq(double x, double n) {
+    return dabs(x - n) <= get_machine_precision() * (dabs(x) + dabs(n));
+int find_max_monotone_seq(const char *filename, double *middle);
+int find_max_monotone_seq(const char *filename, double *middle) {
+    double last_elem, elem, tmp_sum, result_sum;
+        if(feof(fp)) {
+        if(deq(last_elem, elem)) {
+            tmp_sum += elem;
+        } else {
+            tmp_sum = elem;
+        last_elem = elem;
+    if(feof(fp)) {
+int main(int argc, char *argv[]) {
+    if(argc != 2) {
+        case EMPTY_FILE:
+            printf("%s : Erorr file empty\n", argv[0]);
+        case FILE_OPENNING_ERROR:
+        case FILE_READING_ERROR:
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+double dabs(double x);
+bool deq(double x, double n);
+double get_machine_precision(void);
+double get_machine_precision(void) {
+    unsigned long long back_e = 1llu;
+double dabs(double x) {
+bool deq(double x, double n) {
+    return dabs(x - n) <= get_machine_precision() * (dabs(x) + dabs(n));
+int calc_dispers_2(const char *filename, double *x);
+int calc_dispers_2(const char *filename, double *x) {
+    double sum_elems = 0, sum_square_elems = 0, elem, middle, square_square_middle;
+        sum_elems += elem;
+        sum_square_elems += elem * elem;
+    if(feof(fp)) {
+            } else {
+                *x = sqrt(square_square_middle);
+int main(int argc, char *argv[]) {
+    if(argc != 2) {
+        case EMPTY_FILE:
+            printf("%s : Erorr file empty\n", argv[0]);
+        case FILE_OPENNING_ERROR:
+        case FILE_READING_ERROR:
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+double dabs(double x);
+bool deq(double x, double n);
+double get_machine_precision(void);
+double get_machine_precision(void) {
+    unsigned long long back_e = 1llu;
+double dabs(double x) {
+bool deq(double x, double n) {
+    return dabs(x - n) <= get_machine_precision() * (dabs(x) + dabs(n));
+enum SequenceType {
+typedef enum SequenceType SequenceType;
+    else if(deq(a - b, b - c)) return SequenceTypeArithmetic;
+    else if(
+    else return SequenceTypeCommon;
+int find_seq_type(const char *filename);
+int find_seq_type(const char *filename) {
+    double last_elem, elem, next_elem;
+    SequenceType now, next;
+        if(feof(fp)) {
+                (deq(last_elem, 0.) != deq(elem, 0.))
+            } else {
+    now = analizer(last_elem, elem, next_elem);
+    last_elem = elem;
+    elem = next_elem;
+        next = analizer(last_elem, elem, next_elem);
+        if(next != now) return SequenceTypeCommon;
+        last_elem = elem;
+        elem = next_elem;
+    if(feof(fp)) {
+int main(int argc, char *argv[]) {
+    if(argc != 2) {
+        case EMPTY_FILE:
+            printf("%s : Erorr file empty\n", argv[0]);
+        case FILE_OPENNING_ERROR:
+        case FILE_READING_ERROR:
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
+#pragma once
+    const char *buffer[N] = {};
+    void checkOverflow() {
+    void checkBounds(size_t index) {
+    operator bool() {
+    bool operator!() {
+    IdrBuffer &append(const char *t) {
+        if(status != io_status::success) return *this;
+        return *this;
+    void abort(const char *a) {
+    void printBuffer(FILE *fp = stdout) {
+    bool stop = false;
+    bool flagIf = false;
+    long flagLayerSet = 0;
+    long layer = 0;
+    char **argv = nullptr;
+    int argc = 0;
+    void addArgument(const char *name, const char *type, const char *info) {
+        usage.append(" ").append(name).append(":").append(type);
+        Ainfo.append(name).append(": ").append(type).append(" - ").append(info).append("\n");
+	operator bool() { return !stop;}
+	bool operator!() {return stop; }
+    IdrArgumentBuilder &start(char **argv, int argc) {
+        this->argv = argv;
+        this->argc = argc;
+        return *this;
+    IdrArgumentBuilder &arg(int *a, const char *name, const char *info) {
+        addArgument(name, "int", info);
+        if(stop) return *this;
+        if(argc <= index) {
+            stop = true;
+            error.append("ErrorArgument:In:").append(name).append(":LostArgument<\n");
+            return *this;
+            stop = true;
+            error.append("ErrorArgument:In:").append(name).append(":IntParseError:").append(argv[index]).append("<\n");
+            return *this;
+        return *this;
+    IdrArgumentBuilder &arg(unsigned int *a, const char *name, const char *info) {
+        addArgument(name, "uint", info);
+        if(stop) return *this;
+        if(argc <= index) {
+            stop = true;
+            error.append("ErrorArgument:In:").append(name).append(":LostArgument<\n");
+            return *this;
+            stop = true;
+            error.append("ErrorArgument:In:").append(name).append(":UIntParseError:").append(argv[index]).append("<\n");
+            return *this;
+        return *this;
+    IdrArgumentBuilder &arg(double *a, const char *name, const char *info) {
+        addArgument(name, "double", info);
+        if(stop) return *this;
+        if(argc <= index) {
+            stop = true;
+            error.append("ErrorArgument:In:").append(name).append(":LostArgument<\n");
+            return *this;
+            stop = true;
+            error.append("ErrorArgument:In:").append(name).append(":DoubleParseError:").append(argv[index]).append("<\n");
+            return *this;
+        return *this;
+    IdrArgumentBuilder &arg(char **a, const char *name, const char *info) {
+        addArgument(name, "char*", info);
+        if(stop) return *this;
+        if(argc <= index) {
+            stop = true;
+            error.append("ErrorArgument:In:").append(name).append(":LostArgument<\n");
+            return *this;
+        return *this;
+    IdrArgumentBuilder &file(IdrUnitFile *cell, const char *fs, const char *name, const char *info) {
+        addArgument(name, "file", info);
+        if(stop) return *this;
+        if(argc <= index) {
+            stop = true;
+            error.append("ErrorArgument:In:").append(name).append(":LostArgument<\n");
+            return *this;
+        if(!(*cell)) {
+            stop = true;
+            error.append("ErrorFile:In:").append(name).append(":ErrorFileOpen:").append(argv[index]).append("<\n");
+            return *this;
+        return *this;
+        bool req,
+        const char *condition
+        if(stop) return *this;
+            flagIf = true;
+            stop = true;
+            return *this;
+        return *this;
+            stop = false;
+            return *this;
+        return *this;
+        bool req, 
+        const char *condition
+        if(stop) return *this;
+            stop = true;
+        return *this;
+            stop = true;
+            return *this;
+            stop = true;
+            return *this;
+            stop = true;
+            return *this;
+        if(stop) return *this;
+        if(index != argc) {
+            stop = true;
+        return *this;
+        return *this;
+        return *this;
+        return *this;
+#include "tasklibs/data.h"
+#define task 1
+int main(int argc, char *argv[]) {
+	.start(argv, argc)
+	.file(&xFile, "r", "x", "data filename")
+	.file(&fp, "r", "filename", "data filename")
+	if(x.read(xFile) != SUCCESS) {
+		std::printf("Error reading X from file.\n");
+			if(bigArray[i].read(fp) != SUCCESS) {
+				std::printf("Error reading data from file.\n");
+	} else {
+	std::printf ("%s : Task = %d Diff = %d Elapsed = %.2f\n", argv[0], task, difference_data_array(bigArray, n), t);
+#include "tasklibs/data.h"
+#define task 2
+int main(int argc, char *argv[]) {
+	.start(argv, argc)
+	.file(&fpA, "r", "filenameA", "data A filename")
+	.file(&fpB, "r", "filenameB", "data B filename")
+			if(a[i].read(fpA) != SUCCESS) {
+				std::printf("Error reading data from file.\n");
+	} else {
+			if(b[i].read(fpB) != SUCCESS) {
+				std::printf("Error reading data from file.\n");
+	} else {
+	std::printf ("%s : Task = %d Diff = %d Elapsed = %.2f\n", argv[0], task, difference_data_array(c, n+m), t);
+#include "tasklibs/data.h"
+#define task 3
+int main(int argc, char *argv[]) {
+	.start(argv, argc)
+	.arg(&m, "m", "additional index for task 3")
+	.file(&fp, "r", "filename", "data filename")
+			if(a[i].read(fp) != SUCCESS) {
+				std::printf("Error reading data from file.\n");
+	} else {
+	//(void)m;
+	std::printf ("%s : Task = %d Diff = %d Elapsed = %.2f\n", argv[0], task, difference_data_array(a, n), t);
+#define task 4
+#include "../libs/debug.h"
+void dswap(data *a, data *b) {
+    data tmp = *a;
+int bin_divide_position_finder(data *a, int n, data *x) {
+    int left = 0, right = n, s = 0;
+    while(left != right) {
+        s = (left + right) / 2;
+            left = s + 1;
+        } else {
+    return left;
+void merge_arrays(data *a, data *b, data *c, int n, int m) {
+        } else {
+int qsort_divide_indexed(data *a, int n, int m) {
+    //data x = a[m];
+    //else return s;
+        else if(m == j) m = i;
+int qsort_divide(data *a, int n, data x) {
+void bubble_sort(data *a, int n) {
+void min_find_sort(data *a, int n) {
+    data n_min;
+        } else {
+void piece_cycle_k(data *a, int n, int k, int start_index);
+void piece_cycle_k(data *a, int n, int k, int start_index) {
+    data tmp;
+void cycle_k(data *a, int n, int k);
+void cycle_k(data *a, int n, int k) {
+void lin_insertion_sort(data *a, int n) {
+void bin_insertion_sort(data *a, int n) {
+void merge_sort(data *a, data *b, int n) {
+    data *orig_a = a, *tmp;
+void quick_sort(data *a, int n) {
+        } else if(i == n) {
+        } else if(i > n - i) {
+        } else {
+void quick_sort(data *a, int n) {
+        } else if(i == n) {
+        } else if(i > n - i) {
+        } else {
+void push_down_heap(data *a, int index, int end_index);
+void push_down_heap(data *a, int index, int end_index) {
+    data tmp;
+void push_up_heap(data *a, int index, int end_index);
+void push_up_heap(data *a, int index, int end_index) {
+    data tmp, tmp_, tmp__;
+void order_heap(data *a, int n);
+void order_heap(data *a, int n) {
+void heap_sort(data *a, int n) {
+    int left = 0, right = 0, ind = 0;
+        	if(is_valid(k, left) && is_valid(k, right)) {
+        	        if(a[0] < a[left]) ind = left;
+        	        else {
+        	    } else {
+        	        else break;
+        	} else if(is_valid(k, right)) {
+        	    else break;
+        	} else if(is_valid(k, left)) {
+        	    if(a[0] < a[left]) ind = left;
+        	    else break;
+        	} else {
+void heap_sort(data *a, int n) {
+    data saved, tmp;
+        //else a[last_cursor] = saved;
+    data left, right;
+                if(saved <= left) {
+                } else {
+            left  = a[left_cursor];
+            if(left > right) {
+                if(saved < left) {
+                } else {
+            } else {
+                } else {

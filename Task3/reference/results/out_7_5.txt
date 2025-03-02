@@ -1,0 +1,51 @@
+int find_elem_in_file(const char *filename, double x);
+int find_elem_in_file(const char *filename, double x) {
+int main(int argc, char *argv[]) {
+int find_elem_in_file(const char *filename, double x);
+int find_elem_in_file(const char *filename, double x) {
+int main(int argc, char *argv[]) {
+int find_elem_in_file(const char *filename, double x, int *i, int *j);
+int find_elem_in_file(const char *filename, double x, int *i, int *j) {
+int main(int argc, char *argv[]) {
+int find_max_elem_in_file(const char *filename, double *x, int *i, int *j);
+int find_max_elem_in_file(const char *filename, double *x, int *i, int *j) {
+int main(int argc, char *argv[]) {
+int find_max_monotone_seq(const char *filename, double *middle);
+int find_max_monotone_seq(const char *filename, double *middle) {
+int main(int argc, char *argv[]) {
+int find_max_monotone_seq(const char *filename, double *middle);
+int find_max_monotone_seq(const char *filename, double *middle) {
+int main(int argc, char *argv[]) {
+int calc_dispers_2(const char *filename, double *x);
+int calc_dispers_2(const char *filename, double *x) {
+int main(int argc, char *argv[]) {
+int find_seq_type(const char *filename);
+int find_seq_type(const char *filename) {
+int main(int argc, char *argv[]) {
+    const char *buffer[N] = {};
+    IdrBuffer &append(const char *t) {
+    void abort(const char *a) {
+    char **argv = nullptr;
+    void addArgument(const char *name, const char *type, const char *info) {
+    IdrArgumentBuilder &start(char **argv, int argc) {
+    IdrArgumentBuilder &arg(int *a, const char *name, const char *info) {
+    IdrArgumentBuilder &arg(unsigned int *a, const char *name, const char *info) {
+    IdrArgumentBuilder &arg(double *a, const char *name, const char *info) {
+    IdrArgumentBuilder &arg(char **a, const char *name, const char *info) {
+        addArgument(name, "char*", info);
+    IdrArgumentBuilder &file(IdrUnitFile *cell, const char *fs, const char *name, const char *info) {
+        const char *condition
+        const char *condition
+        putchar('\n');
+        putchar('\n');
+        putchar('\n');
+int main(int argc, char *argv[]) {
+	x.print(); putchar('\n');
+	print_data_array(bigArray, n, p); putchar('\n');
+int main(int argc, char *argv[]) {
+	print_data_array(a, n, pa); ; putchar('\n');
+	print_data_array(b, n, pb); putchar('\n');
+	print_data_array(c, n+m, std::min(pa, pb)); putchar('\n');
+int main(int argc, char *argv[]) {
+	print_data_array(a, n, p); ; putchar('\n');
+	print_data_array(a, n, p); putchar('\n');
