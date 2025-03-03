@@ -347,6 +347,7 @@ io_status solve6(const char *a, const char *b, char *s, char *t, int *r) {
             flag = 1;
           }
         }
+        for (; keys[j] == '2'; j++);
         if (flag == 0) break;
       }
 
@@ -468,6 +469,7 @@ io_status solve8(const char *a, const char *b, char *s, char *t, int *r) {
             }
           }
         }
+        for (; keys[j] == '2'; j++);
         if (flag == 0) break;
       }
 
@@ -588,6 +590,7 @@ io_status solve9(const char *a, const char *b, char *s, char *t, int *r) {
             }
           }
         }
+        for (; keys[j] == '2'; j++);
         if (flag == 0) break;
       }
 

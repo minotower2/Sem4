@@ -95,7 +95,7 @@ private:
         return mid;
       }
     }
-    return mid;
+    return -1;
   }
 };
 #endif

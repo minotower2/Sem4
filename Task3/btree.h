@@ -162,10 +162,10 @@ public:
   int search(b_tree_node<T> *curr, T& target) {
     if (curr == nullptr) return 0;
     int ind = curr->bin_check(target);
-    if (curr->values[ind] == target) return 1;
-    if (search(curr->children[ind], target) == 1 ||
-        (ind > 0 && search(curr->children[ind-1], target) == 1) ||
-        (ind < (curr->size - 1) && search(curr->children[ind+1], target) == 1)) return 1;
+    if (ind != -1 && curr->values[ind] == target) return 1;
+    for (int i = 0; i < curr->size; i++) {
+      if (search(curr->children[i], target) == 1) return 1;
+    }
     return 0;
   }
 };

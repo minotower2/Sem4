@@ -1,0 +1,1 @@
+    while((1. + (1. / back_e)) > 1.) back_e <<= 1llu;
