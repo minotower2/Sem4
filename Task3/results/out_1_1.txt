@@ -1,9 +1,14 @@
 _ _  ___b aab   b_a_b__a_ b_b  a_ a_a b_abb_a_bba_ b_ba_ _aa _abba_ b  _a_a ___bb_ _a b a_ baabaa  b___bb_ b   _babb_ __ _ b  aa__bbbb ba a _baabb_ bb _bb_ b aaaaaa a__    aaaa_abba_ba aaa_ aabbbb ba 
+  b bb_ b_bab _a  abb b   _a a__bba_bb_ aaa_____ ___ b __ a ___a __ aa__ _a bab_ _ bbbbbb_a_a__  a__bb_b_aaaababaab_abbaa ba aab    ___b b _b_b aa _a abaab abb__b  b bbabba _a   b  _b b__ _aaaaaaaba a
   a_b __ba a__  b   b_a ab_ aab_  aa  babaa__bbb bbab_ a_b_b_   __ _b__a a__ab  abaab b_ba_ bb _ ab_   ba_a__a _abbaaa_b__ abba_ba_aaaaaa b aa_ b aa  bb_  ba bbab_b___a _b b__ba b b_ aa____   abb_b_ab
 b ba ab_aba  b b_ba__a _ab_bb _b_aa  b  b__   bba__ba a__a _b_a_baa  aaa__ __ baab   b_ _ba b_a_ba_a_aa_aab_  abbb   b_ _b_a aaaaaa_ a a _b babb_ba  __ __b___ _ b  bbb b baaa _ bbabbbbaa_  aa b___a_b_
+__a     baa _b_aba_ab_ _____a _bab  aaa __b_aa_ba__a__ bb  aabba_b_ a_bbba_a_b a  _bba_ab  _ a  _aa   _ bba _abaa b  bb ba__ _ a___b__ b_  abab a ___ab babba b babab __b_a  aa a _  __abab bbbbbb_abaab
 aab   a__aaaa   _babab ababa_b_______a  aaa   a_b__a_b _aaaaaa b   b  _a_a  _a__a_a  a _abb _ a bbba  b_ab_a_ a __b_b ba b___ bab a _ bb  ba_bbb_a_ab_bbb bb_ba ab __bbba a_  b_ _ba_ _b_b abba a b__bb_
 b _b _ab  a _a_ bbabb bbba_aab aa __a _ab _ _a a _baa_abaa__a__a  aa ___a  a__bb_abb_ _ b bba _aa__ bbbb_b_a _  _b b_ bb ba_abbbba _ab bb_bb___  __ ab aaaaaa_baa_ab  b__ _b aa  aaabb  _  _ a bbb _a__ 
+__aababb_  b_ba b  _bb__aaa_b b_ a_ab_  abbb_ _b a_ _a  b _b b_a b b_b_ab_bb  _ _b  abb ba_aa_b _b__ __a   bbbbbb_a_a_ a_ aa   b b_  baa__   abb_aa _a_aa ba__aaabaa_ aaa__ab__b _b_ aaba  a  baaba _ab_
+b__ba_ _b b__ aab b_ab_a bba_bab_ab_ a__aaa__ a  bab ab_abab_  a aa a ba b__  bba_b_a _a _b__  __  aabb   bbbbbb   _b_a aa a_aaa__ ab_baaaaa_ _ b_bb  _b _ _ aaaabb b__b_b a__  ba _a b__b  b _a bbb_a_a
 aaab_abba    baab_b_ _b_   aaaa_baaa_ __ a_b _ _ a bbbab_b ab_a_ b _ __ b __b_b     ba b__ _b_ _aabab  a_a_b_aaa  aabbb b__a _baabbabb__b b__ b abbaab__ab b  aaaaaa_a _b _b  b a a_b_ _a _a_a_b_b_  bb_
+bba_babaa b a aa_ba __ab_ __aaa_b__ b a_abaa_b a a aa  ___a _ a b__b_babbb_a   b a _b__abba_  _abb_ _ b_abbb a_ba_ bab _  __ab a  _ a_ba__b  _baa_ba_aaa  _bb_b_ab___ a bbbbbb_ bba _b  a ba  aa  ab__  
 b b_  a  b__b_a  b____aab aba b_b _ __b _b_ b a b_ b aba_ba abbb bab   _baa a  b_a_bbb_bbb__ a_bbb _a_a __aa_aaba  b aa abab_ab aab__b ba b_  b__   a_a__ba__ba__a  b __ _ _ bb __aaaaaa b_ aaaa_b aaa_b
 bb__a _ba_bba _aa_ b _b _b__b _ab_aa a_a  b__aa ab ____  _a_ba _b_ a bb__   _bb_ab_ aa__baabaabab ab    b__ _ b_a _aab _ababab___ab baab_abb baaa_ ab__  b_a _b_ ab b   ba baaab a_a_ ab b  b  bb __aab 
 _aa a  b_aabb  _bbb b_aba_a___b_ aab_ bba__bbb_a_ba _ _aa_aabaaa_b  __abbaab __b  ab   aa__b_  _b_ b_aa a_b _b_ _ab_b _babaa_abba_b_b_   b  _b_ a   _b_  bb   a a baa__a b ab_ aab_ababab_abab _a    _ _
@@ -11,46 +16,73 @@ aa__aba__a    b b abb _ ___b_ aabaa   a____a_b___  _aa a b ab___ __bb_b  ___b   
 _ bbb aaa ababab__ __ abbbb_a _b__ a a_aaaaba    bb_  bba_b__a aa ba  b_ _bab b_b_b  _a_ba_b_ ___bb_aaaab_b_ __a_ a a_a  ab _aa   _bab b_a bbb_aaa  a_ aa_ bb_bbb ba  _  b _b bb_ bba  _aa____ _ba aa_a_
 _b    _b_a a  bbb _bbb b_ _ab____ ab b_a b_a_b _ aa _b_b a_bb_ ___babba _ _a b    ba_b a b_ bba_aaba a_ba_b_ _aaba_aa_aa a_b_  ba_ab___ abaa_ bba  __b_ _a_a bab b b _a_a _a_bba  a_ba aa ababab baab  _
 b_   _ _a___ ba__ _ _bb_ab b_ba _ab b _  bbab_b abab _b a_bab  a_a_aab__a_ a b aa b_b_aa_baaa_ a__ a_b b_ b ba b_ bbb_   ___a bbab_ bb_aabbb_ _b_a_aaaaaa_bb a_ a a __  _  _ab a ab b_ _b  bab_abaaabaa 
+b bb_  aa_ _a  aaa a aaab_b_  _ a  aa  b __a_ a_b_ _a a __b  a b bbbbba_ba a bb _a bb_aa_bbb___a_aa _ __bbbaa_  aa babbb_b __ b_ _ aa___a__ba_bbaaa_b ab __ _a __b baa  a  ba_bbbbbb_bb_baa _ab __ a_ ab
  aaa_bba_ab aa_a_  _b_  ___ _ababbbb a_bb_bbabbbaba__ _b b_aab _ab__ba__b __ b ba_  _  a_   __bb  ababba_b baba_b_b  a b__  a  bbab__  ab_ b_ b_  ab b_ b  a a__aa baba_aa_aaaab_ aa___b_ aaaaaa _b  _  
+ bb_a_bb_b b b_a  bb _bbaa_bb__ ___b_b_a a_aaaa  bb_b   aaab _bbb bb__a_  _  _aab ab_b_aab __aa ba_ aba _aaba_a a_a_ bbbbbb b a__bab __a_ _ abb  ____  _ aa ba b__ a b__a a_aaabb b a_baa  aa _ a a__  b
 abaa bab____ _ba_abb b __   _ _ab___ ba  _  a_ab_ abb_ a b_ba_ __a  ab   a__bab  bb__aaaaaa b _aa_    a _ abb aab_bbbb___ _b_a_bb _aba a_a  ab___ab bb a_bbbbaba _b_ _b ___babb_a aaba   b aa  a_bab_aba
+ bbbbaaaa_a  a aba____b_a bb_a _b b a_b_bbbbbb _   aa a_a _ b__ b b _   aaaba b_bab b a__ _a _ __b__aaabba_aaab baa _bb _ aba  b__   a bb _ aa__ _aabababa__ aba_ab__  _baaa__b_b_ _a__ b_ba  b__bb ba  
 __b_  b _aaa_ a  _bbba_ __a bbbb_bbba__a babb__ aab    b _ba _a_ a__ ba a _aaaaaa_a_b_a b_b ____bbbbbb  a b _a_ baa_b b_ba__a aabbaa __a _b  b baba  a a aa_ b _b_b  a__a__b b  _baa__b aab_ a_ bbba  a_
 __ _  a baab_b  _bbb __ bbaab b_b b_ab_b b  ab    ___ba _ ba_b a __ab   aaa_ab_aab___a_abb ba b  _baaba b ab_ b__ a_  a a__aaaaaa_ba_ab abb_ _ _bb _ __ a_b_a_a_a_aba b_ babb abb _aabab_ a  _a_bab _ b_
+ _ __ b a bba_ _   a_ ___ ab _ab _a  _ aa_abb aab_ baa _aa__ _b aaa a_  _ __a_a a  abbaabbaaa a_b   a__bb_b_bbbbba aaa_b ba   abb_a _a_  bbbabb_b__ bba_aaba  _b__ aa   b__b a_ab_bbbbbb_a____ _ab bbba_
+baa_bba a_ a_baa __a _ab  baa a_a ___  _ bbbbbb a  ___bb_a_baa_a  b_aaaaba__abbbaaba b  _aa_aaa_ab  b_bbaa baa _a_bb_a aa b_b__b _b a_ _b_bb_ b_ _bb__b  abaa  ab_  b __b_ aa_bb _a b a    bb  _ _b__ _ 
+a___abbba_ba _  aa _ab_ a  b bba  __a ba a a_b_bb _bbb_a aa _ _b_bba bbbbbb _bb__a b _ a ba  bbaab_ _b_ab_ _a_a  baba__b_b _a_ a _bb_  _b_ aa b __ ba a_ba_b _a_aaab  aaa_  __b_ a _ba_a_b a ba b_aaaa_ 
 b __a a abb b __aaab__aba  __a__aa b_aba _abb _ _ __abb  _ b bb_aaabaaa_b    a b_aab a  __ _bbb bbba b__b_  _a__aab b _aa  bb  _bb b_ab  _aaab ab   aa__ bba__ __ baabab__bba_ __ b__ _ba_aa a _b_ababab
 bb_aaa a  _aaa b b __abb_bba _ba abb_ab__ _ __bb_abb aaaaaa  abaa__ab a __b ___ _   _b_ b___a  a__  _ ab_ bb___   b    bbaaab  b bbb_ aaa  ababb_abb____bba__aaaa _b ba bbaabab__  b_ __ba___ a b  babaa
+  _ __bbb  bab _ bbb ab aaababb _ ba aab_bbbbbb _b_a__   baa_aba___a_a_ b_a_aaa a   b_a aba aaa ab bb__b_bb a___a   _aa_b_____ aa_ab bb b_b  a_____   _ _b _baba_bbb bb_ ab_  aa_a _bbaaaaa _   _  a_aab
 _ba _  _aab_ab _abbbb_aaaaaa__  aaaaaa b____bb_  aa aa__b_a b bb b_ b_ab b  b_a bb _bb  b  __ a_ba_ _abb a__b  a aa_bba _ _abab_  bb_ ___ba_b_ _ _ bb_b abaa bbbab_ _b_b_a_a a_b ba aaa_a aa a   ___bb  
 _b__b ab_abba  _ abbba_a_ab_ababab ab _baba ba___b_  ababa __   _ aaaa__ _ba___a   b _a ab  _aaab  a__ba __b __ __ba aba a aba _bbba_  _ba aaa_ __   b a  _ba_bb_____a  bba b ba_ab bbbba____bab bbb   a
+ a___   b b _bb b_ a_ abb_a b a_aa _bab _a_  _a aa__ba b  aaba__a_  bbbbbb _ab b_abaa_b _a__ b_ba__aba_ab a bb _ab aabab b_bbab_     _aabab_aba _ bbbabb _   __b___aaaa_  a__ a__baab____   aa_aab   b_b
+ _a __aa_aaa bba_  _ a_ b _ _b a_ ba___a__ a aa_a_ba_babba  bbb aba__ba_ __b_ ab__ __a bab_ a  a_ba_b_bbbbbb_bbb_  aaab _bb__ab bb_  baa b _a _b aa_bb a_b    _   a aba_a  b ab_aba_aa bab_ba _a b ab __
  a_ ba  bbaaa__ _a_ _ab  b_  a a   baba a__b_b__a bb __ _bb__ b__a_ ba b__  abb_aaaba_ _aaab_a a__bb  ba _b ba  _ababab_bab _a__ ab b  aab b  b_b bb b__aba___abaa_b  aa_ _ aaaa  bb_ababba_ __ab _b__b 
   baab __ _bb___ba bb _b_aaab a   b  baba_ bb_b bbb _b  aa_b_ab_ __b  _aa_a ___ aaaaa_ aa __b_ aaaaaa a bb___ b__bb _ab_ _b_ab aab b aa _ba_bba ab ba _ a  _a_a __abab b__bbba abaabb_b a   ab__  ___ _b
+__ba  a_aaa bbbbbb __ b_ bababbb_b__ a   b ba_a_a__abb ba_bb_aa_a abab _a _a ____  aba___   b _a__aa_abb ab_a__ ba a_a a _b ba  a _a _b _ b  a_  aba_ b ababa__ b__b_a abba  a a bbabbb_b a _b_b__  baa_
  bba__aa_  bb_b_a bbbb_ ab  _a aa   ab _a_ba_b b__ b _b_bbbaaa__b_  b  bbb b _ baa a_ __a  _a _a _b a_bb_a___ _b_ababab _a_a _bb__bb_baaaaab_ b_aa_ b a  aba_  ab_a_b_ abb _ba  a  b_ _aa__  _a  aaabbaa
+ a   aa_ba  b  b _b_b ba__bbb_a_a  ___b baaa ___ __aa b_ ba__ b_bb b_ ba a a_a _a_ ab b bbb_ _ab_b_aa_ a _b_ _aaabb_bbaa   _a b_aa_b b    ab_a a_ba aaa abb _aba baa a a_ __ bbbbbb__b_b_a_ b ___a_aaabb
+aa_ aa_baa _aa abb bab_b  _ ___b__baa  _  bbab a _ab  a  aa aab_a  ab_ba a_ a__a_b_ba ab_ba_b b__ b b  a_b_ bbabbbbb abb _ _bbaa__ _ aa  a_ba a b a_bbbbbb___a _a _a_b aa__ ___ b b_b_bba a _ __ aa_ _ab
 a_b__a_a_a aabbb_a  _b  _ ba a___ _a_ bb a _bb _bbabb b _bbb a_  ___bb  _ b____ba baa__  aaa __a_ba_b_ba_ b_b_aaaaaa ba_b   _ b _ b_a a_ aaa abb   bbaba   baabb ___ a bb abb abab_aa_aab __ _abb_ b aa_
 b  a __b_b__bb  bb_b_aa__ aaaaaa abb _a bb_bb___ a a_a_baaaa baabbaaa___ b  _b_b_a  b  a a _ a a__b _ _b _bbb bb b ab bb b_ __b___b__aaa_ a _a_ babab aa__bb bb__aaaaa b  b_a_a b  ba__  _aaba  _ ba b _
  b  _ b  b____aabb a _b a ___abababb  b_b____aa bb_a _ab bb _aa_b  _a_bbb b_aaa  __ _aa aaaba_a ab  aaa a ba _baa____baab ababab  __b _ba   ba_ab _a_ a_b_bb_a_b aa___   _bbb_b _  bb  ba  b_aab_ab_a_b 
+ _b_ b_a_  b __b ____ b___ba_ babba ba_aaa _a aaba_ba__  _ab bab_a  _bab     aa  baa b_ _ a _b_bab_aa b___b_a  __babbbabba  _a ba_ b bb _a_bbbbbb bb a_a_a__b b __baaaab_a_ a _aa  b _bab __ab aa a _ aa
 b ba _ _  _ a_b___  _a__bba_ bb_ _a  a__b  bbbb_ abbbaba  a_aaaa__aaa __ ab_ a aaab_b_ _ b__a _a a a  ab b  baa_b_b  __a_a _   abaa ___abaabb__bba a_baa_ ba ab_ba _ababab  _b  b _bb_bb _ bba__bba _bab
   bbaba a bb_bab __ _ baa aa bb  ab_a_b bb__bba a b   __ a _a_ __ babab abbb_  _ _ baa _aaaaaa _ bb  __ b___  b_aa _aabbaab_bbb_____b a  ba _ _baa _baaa__ _ab_b _ baa_a   b_bb _bbab_a_b_aba_ aaaa___ b
 b_aa b_bb _ __ b_ aabaababb_ab b_ _ abb_ aa _ abb  b _b_a_abbb__abba_aa _bab _ab _b __ bab      aaaabab_ a__ a_ b_ba b_a_a _a_a ababab _b_ab   a b____ba_b__a_  a aaa_b___ _aa_ b   bab_b__    aa abb bb
+ aa _b abb__ba__ _aabb_b_ babaabba bb__a ba  a_a_ bb ba ab_    _b__ _aba_bb _ab_ _ a_bbbbbb a__aabab__  a b baa a baa___bbbaab a aaa a_ abb_ab   b  a___ a ___a_  bba  b b aa  _a ba _b______a _a_ bb_a_
+aaab_ _b   b __bb_  a_ __  bb _a__bbbbbb aa_ba_a _a    _bbaba_aab  b a_aa _abab_ab_ b bb_aa ab_aa b_aa  _abbab_b_ _aa_ b a_bb__aa ba _b abbbb_ a _aa_ab a_ b  a_bba_ b_ _bb_b__ aab  _ a_a_b a a __a  __
 a__ a_  _ab bbb _  b_ b bbaa__abbb  _ aa __a_ bb_ b_aa a_ _ababab_   ___bb_a_   b   ab_ _  _ab_ b_ _bba  baa_a_a_a_a_ _b_aa__b_ab bbbab a_a a a_baaa b _ab _aab aa_aabbb__aa baabab _ bb__abb b_bab _   
+ __b_b b_ abaa__a_ bab_abb ba b a ba a_a_a__b b  aa_b  a  bb _b a aaab __b_ a_a b b_a_b __bbbbbb  bb __  _ a___ b_ ba_ aab_ a_a b_aaa_ aa_aa a _b bbbba__a ____  bab abab__ abbbabb ba ab a a_ a_a_a__ _
  b_   b_b bb abba    bbabb__abb ab_ab_aa_aba a a _a_aaa_ b__baa bb_ba   b__a_b_ _a a___ab a_a __a__b  aa a  ab_     ababab_b baaab__a_ _a_ b_b b__ab_  _ba_b_ab_baaaa_b  _bba__  _aba_a  _bbb b  _a_b  b
  aabb_b  __ a aa_b b__aaba _ b_ba aaa_a ab _b_ ab a bab _ bab a b_a ______   bb _aa_ bbbab      _ba__ba  aab_aab_b_b_b ba   ba_ababab aab_b _b abb__bab a_ bb_b_a a _b a__aa  a _ba____aa b___b a __bba_
  bb_  _bbaa_aa b aaba a_b bb _ __a_a____  baabbbbb_ a ab aaaaaa_a_   _ba  aaa   a_ba b b _b   _bb_ _bb_aaa a__ab _ a aabbbbbb___a_b_  _bb_ bbaa_  b  bb _bba__ _bb___  aaabaa__ _bab_ b_ aba___ a _ _baa
  ab_ ab a____a bb abaab bab bb_aaa___   _ a _ba  b_a_b b_bb _ baab      _ababab_babbb   __ a aabb__aaa _ a_b ba__b_ _bbba_aab_  _ bba__aa  b _bb__ba _  __aa___a __abb   ba_b_aaababa_ab  _a__b_ ba aba 
+  ab__a__abaaa_ aba _   _ b _aa   _b_b _b_b_ a b_ ba_ab_ba   a__a__ b_a_bb b_b    _aa_  bbab__bab_a___   b_ aa_ a b_a_aa_bba__bbbbbb_ bb  abaabbb__b  _ a a babbb_aaaaa b ___bba_a_aa   abbaaaba b_ a _ 
 a abab_a_babb a b  aaabbbaa__a a   a_aaba _   bb__     bb_aa_ba aba a baa____  _bab  _a_  b_bbb b_ __ba_ _a  _aa_ba_abb b_a    a _ b_ba_ b a_ba__bababb b__b _aa__b__b_   __ _a b_abab ab_a_b __ababab_b
  _a_abbbb  b_ba_ ab   _ab a_a_aab_ aa b____b b aab_b__b b_bb _abb aababb_____a_a a bb_  aaaaaa_aa____aa_ aa_b b___ bb   baabb _ a b    ___ a  a_ab  a bb   ab__bbba__  _ _baabab _ba_aa bb_ a_bbaa b_ b 
+__ bb  aa_a _baa __a_ab ab_b ababa  __ __b aa bbbbbb b__ab bbb_aa ba_b b   aabbab bbbbb b_ _   _bab aa b__a_b _b _ aaa__ aa_ _aa  __a_ _a ba aa  b ___a __b abb_bb__ __a__b _b _bb b  b_ aaaa_aaaaa_a_a 
 aa _b _ _ ba_a_ ab_  a_bb ab_ _ ab b aaba aabbbab_ abaa__a __b _aababa bb_ ba aa_    aabbbab_bb b _a_   a_ a_ba_bb___ ___ ___  bbabbabbb a a_  b  b a__   aaaaaa abb___bb_ _b_b___ bbb __aaab___ baa_a  
   aa__baa __a_  baab bb___bb___b_  _a_  a  __ _a_ab_b ab_aa _a bb ba_ __ _aab a b_  _ __aba _b _ab_ bb_ba ba_ab_aabab a _ ba _abbbbbbbb b _ ba aaaba   b_  bab_bba_aaaaaa b __baaab b  a_b b  _b__ _a_a_
   bbab_a a   b b_ _b aba aa_abb_  _bb a_ _b_a__b_ __bbba  b a ba_a aaaaaa___ b _baab___  b _b b a__ab___ a ba a _bba ba__aba _ aab b _aa bbaba a  bb___a _aabbaa___a ab_a__ __bbbaba_  _b_a  _bb _ bb ba
 aabbbaba_bba a _a ba a__a b_aa_bb_b_ a _b_   _ab__b__ab_ b  b_aaaaaa_ bbaa _aba _b a __bb____a_b b ba ba a aa a  a  a_ _ ab__abba __ _ a   _ _bb a_ aab __ aba b_bbb_bbbb_ _ a_aa _ abb_baabbbb_ __  b_ 
+ __ba_ab  baaa a b__aa__abbb_b_aa_aaaa_b_b__ba   abbb   b___ ab_ab ba  b_ba_ba aa_ _bba_ a _aaa ab aba__bbba b____   baba _b_a_b_   ___ab  __a _a_ aaa_bbbbbb_b_ a__ abaab  a  __ a  bb  bbb_aa  b b_   
 __ _ab_b__b_ b _ba bbba aabbab __b b__ _aa b  ba ba_b a_ b_  ab_bba  ba  _b a aababbaba  bb bba_aaaaaa_ ___ba __a_ _b _b _aabaab  ba_ a_ bbb aa b_a_  a_a _____ba__b_ a  bb  a  aba_a____baa  baab_  _b_
 _a b __b baa _b _b_b  aaba b __ _ baa b _ bb__  b  b__aa b ___aa_ bbbb_ba  a_baaaaaa a _aaaaaa  a__a_a_aaab bba _ a_a _b ab_b b b__b _a babbb_babaabb_b_bba_b_abba __ a _ __ ba __ b_  b _  b ba_a__b _a
  abaa abbaa ab__b____b_ b  a aba abb_  bb __abb b_ab  abbb__ __ _ b   a aba   aa ___a aaaaaa _bab_a aa b b  ab_b b___aaa__bb__ b __baba__bba  b_b __baab __b__a baa a a__ _bb b b__ bbb _aa__ b_aa _aab 
 a_ aa   _a  b_ab bb b _b_a _b  a_ abaaaa_ ababab   b bb_a _b   _aa__ _a bbba aaa b _aba_b ba bba_a a_ _bb_babba_ _b_ ba aa_b_b aa___ _a a___ _b_a__bba bab a  bbbb_ b_b _aa  a_a _ab_ba_a_ b_b_b __ _ab_
 b a bab ab b __b__  b_ b_babbbaba___ab _aab     _b_b_a ba_  aa_b_ab____  a aabb__ aba bbaabbaba   __b b_  bbbba_  __aaa_a_a _aab  a_ b_aba_b__a_aaa  b__ _  _ababab _bbaa_a b _ _a_ab_bba a b_b_a   a _ 
+a ba b_bb__bbaa _ _aab _   a_b  ba ___b _ a_ab abb _bb  _ _ __aab ab__b_ba__a____baa bbbbbb_aba_ab   _aa_a_b__b_a_ a aaa_baaaa_ b  _a ba b  bab abb _a  ab  aaa_  bba __ bbbaa __ba b_abab _b  b _a_ _a_
+bba  a_b_b___ba_b__ab  a_ _a _a__a  _aba aa a   _ b_bbaa _baa  a a aa a _ __ ab bbbb_a baa_a abab__bab_ a_a aab_  _ab_b__ b bbb  __a _b_ ab _b_aab a a_bb ___  ba __a__ bbbbbb  b__ab _bb_ baaaa  _bbbaa
  b  ba_   ab_ a   ab a_a_abb  __ab__a_b _bbab a_ b  b abaa b_ba  _aaaa bbb_b bb_aa _____aba  aabaabaab_a b_b_b   bbb _b_bba_   b  __ ababab_ aa a bbb__a _b_baa_ ab a_ _aab___ a_b_ ba__ _a_aa bba _____
+aa b aabbbba _ bba abbaa__   a_abb_a_b___b b a b _b  _a   _  __b __aa_ababb ___ba __bb b _bbbb_a__ _ b b_a ba _ _b a_ab a__a_ababaaa a_a a aa    aaa_ ab_bab_a _bb _ a__aa __ ab_bab_ a bbbbbb  aa ___b_
 aaa _baabb  _ bbbb ab_ __    b ba   __ababbbab aaba  a bb___b_  _a_ ______ bba b_a_ba _ a_  b_ba_b  ababab_ b aab_bb  ab_a__b_a _baaa    a a  __a  b_ab__b__a_b aa_ab_ _a a _aab baaa_b_ab_ab___abbab b 
  ab _b b ba  _ab _b___a b  _a ab_bb a a _a__b bb___bab_ab ababab_a   aa__ _bb      a__aa_baa__ b _bbba ab__a_bb _ba_ baa_ aa_a  b_b a___ bb b aaaa bbaa_b a__b_ bba_a abaa__a    b__bbbb__a aaa__bab   _
+bb _  bab  aaaa  _b__ abbba_bb aab b aaa_  a _a  a_baab  _ __ab_a _ __bbaaa_ abbbb_  a_ _bbaba_ab bab__b_b _ _b _ab b_b   _a_bb__ aaaa  b abbaaaaa b_aa_ a aba __ b bbbbbb b a__a b_____ _ __aa_ ba ____
      b b_ babbab a _bba_ _  _bab a a _ __ b_aba _ aa bb_ ba_  a baa_abbb_b_a a a   __b_b_a_ bba a __bba__a_____  _a  __ a a_ bbbba___baabbabb_bab ab _ ab____babbaab _a_ab_ aaaaaa_ b_b a_ bb __ bab aaa
+a_bbb  _ab_ a_a_aaa_b _bbaa__ b bb _b ab_a_  ab__ a__bbb_ba aa__  _ aaab__aa _bab aaba__bbbbbb_a__aa a _ aa_  a_  _ b  bbb_a b _bab bab  b__aa_b ba ba__a   a _ab a_ab bab_bb ba____a a_b_a_  b_  ba    
 aa aa b a   _a   _bab_ a_bba ba  a_bba a__bba a_bba__ a_ ba__ b__b_b _a a  bb b____bb baab__b aaaaaa bb_aa aab a_ _b aa aab_b a b_b   __aaab_bb__bab__ba aaaab_b  _b_ b bb_b_bb__   __a a_ _ _ __b abb_ 
 _b __  _bb ab bb b_b a ___  bba_a__b ba_ab_ba_ _b_  b_b abaa_b__ baa_aaa_ab bbaa ab  a  _ b_a_aab__ab a_a  abb baa aaba_b   _ b __ aa_ _ a b b b_b aaaaaa_b_a b baab_ bb b___ __bab  _abaa_b__  _ab_a _b
+b__a_ a_a aa b_a a_b bbb_  __ _a_ abb___aa aa b  _a b b a bbab_bb __bba_b_ _ a   _a _ab  abbb_ab_a a _aaa b_ ____ a a__ bbab_ab__a_b_bbbbbb bab_ bbaaa a aaabbaa_ b  b_b a a b_ bb_aa  _  ba___b__a_ aa 
+ ba ___ _  a b___bb ab  aaabbaa_aba  b__aa _baa _ab _abbaa b b  a___b_   b__ a_ab b_b_ _ _bbbbbb__aa_b_bb_bbba_ _ab bab __ aa   b ba aa__aab_a_b b a b_ba__ _ a  __aabb__  _ b_b_ab  aaa_b ab_aaa aa  ba
  aaa_ba _ab _  _  _a aab aab_ b_ bbaba _ _a_b_ab _a _b  ba _ababba_ abb_ab a _b_  b___b ___a__b_ _  aab _   aab__ab__aaaaaa_baabaaab a_  a  bb_b_abb__b __ a__bba bbb  _ba_ abb   b_b b a _ __a_bb abbba
+ _bbbb_a bb_  _a  aabb___aa_b bbbbbb___a_ b__a_abaaaba a_b abb     a __a_ _ _a_bbba _a_a_ ab b ab_a  bb  ba b ab_a _a_ba_ a _aaa bb__b_aa   abbb _ba ___abba a  aaba_  a_aa_bb a_  _ __ab_abb _ b __ _ba
 b_a a _ abaa_b  _b a_ bbb_ab__b __ __b__b   _ba__a_bab  b_  aaaaaa_aa_b _ab_ab_b__b _b bbb_ab__a_ _bb  bab   ab  aaa a_ b ba_a___a_aab_a  b   aa a__ b aa_ba a aa  _bb bb __ bab_b aaaa b bbb_b_b_a ab _
 aaaaaa_b_b_a _b ab_b a  bb bb_b a___bb   baa_ b_a __bab  __b  _abbbb _baab _ ba b a_bbb_aaa_ ___ baaa__ _  b  _b a _b_ab _   ___baa   b__a_abab b_ba__b a aa b   a  _b_aabab_aaab_a__b_aa b __ab b_ba aa
 _b_a b    a_  _ __baaa ab __bb_b_b __b a_bbbb_b   a a_ba_ a a__b aaaaaa_ ba_b  bb b_aa_ b_b_aa  bbb_aaba__    a ab__a_a_b a aa_a  _ a__ ba_a aaa _ _ _b b___aba_bbbbbaab_bb_    bbaabab_ b _a ba a_b_b_b
@@ -58,14 +90,21 @@ _b_a b    a_  _ __baaa ab __bb_b_b __b a_bbbb_b   a a_ba_ a a__b aaaaaa_ ba_b  b
 aaaaaa ba_  a_a a__baa_   a_a b  b_ __a b _b b_ba_ab abbbb_abb bb_a__ bbb  aa_b_ ababa ab b_ ab __b___b b_ _baaaa     ab_a abb  b_ab_b  a_ b__b_a baa_ bb__a_bb__ ___  baa __b _baa__a_a   ba_ba aa _ bb
 bbba____ _bbb_a ____b bb   ___ a b_baabbb_ a bbbab  b _ba_aaaaaa_ _ b_ a a_abab_b__a__b aa _aab  _  b_bab _a_baa _ab a ba__  bbabb     ba_b__aaabaa b_ aba_   ab ba aa_aa __b __aa _ bab_ ab  ab ___b b_
 __  _a_a  b__aaa_ _a ba_bb  _  _ _aa_ b _ baa   _bb_bba aaaaaa__ab_ a_ ba b aa_ _ b aa_   bb  ab_bb__baab_ ba__ ab_bbba  a__b b_a_b  baab_ab b__aaab b bb_baa__ba __b_ _b _b_abb a  _ab_bb  a__bb baaa a
+__a bbabbaa__bba_a  a_a__aa__ b  a _bbbbbb  _b b_a bb a_ab_b aa baa ____bb  __a  _bb_ab   a a_a_ba_baa aaaa_ __ab  _ ba bba_  bab a_bb_ bb_b  bb_aa _bb__ab baab ___a  _a_ ab  aa b__aab_    _ b ab_aa__
 ab_b_a_ba_ba a _b__a aababa__ b_ bbab  b __b a__ aa_b_b  b b __ _bbab__bb_b_aab   aa  a_b _baa _ b a_a__ b_ ab _b  b__ab_ _b_ababab aabb__b abb a__aab a b  aab ab _  a_ a_bbaaa _a b_ _a__a b _ a a_a b
   a ba b _ baab_b bb b__ aab__ _ abb__bba_ _  ab bbaaab_aa_bbabbb  _  bb b_ _ aa babbaa _ baa_b_ab ab ___b bba b b _  _ ___aaa aba_bb aa a _ b_a_aba_ b_b_b_ a_a_ aaaaaa a b___ a__ba_ ___aba b__b__a   
 bbbaa ba aaaaaa_abb_ bab _  _ b_aa_ bbbbbb  b _bbba _baab  aaa___b__b ab_aaa ______b  a _  _ _aa abba     baba_ _b_aa_ba a  b_bb_ a _ a_a_b__ a_ba _ baa a__bbabab _ b_aaba _b_ _bb_b  __b_ab_  a_ab_   
 a_a _a a ba a a_a _ a__ b  ab b a b_ _a__   _bb_ _aa _b_a_ bb_aa _bb b b b_  ababab__ab__bab_ ba_bb b _baa  _b__a b___bb__ _b_ba a_ b_ ba ba ab_b  ab aa   b_bb_aabba_baa a _aa aa bb ba__a b_bab__a_a_a
+_ b  b_bba_ aaab_b _ba__a_bbbbbb_b __aaa_baaaaaaa  a _  _b__b  _a _ b  _b  b   a   b  aa_ b_bb_ __aa _aba___ab___baaa_ _ aba ___ba aaabbb _a __aa bbb_a   aabba _b_a _baabba  aa_bba bb__ ba____ b  bbb 
 _ab_b_ba aaba_b a_b a_ a _aaaab ab a_bba_ a__ba __ b __ _ba_ a_ __aa aaaa__b _ab___ b_ _b b_bab_b b__  b ab  ababab __ab_b _aabb abaabb  a __ab_a_bb _  _ _  _ab a_b a   a   abb bbb_b__bb b_ aab_aaba  
 b_a__  bb _bab b _b_bbb_ ba_bb bbbb___abb__aaa  __a _ babb__bb_ a aba_baaa_  a_   _aab_ababab b ____ba_ _ba bba_bba a_ _  _ab ba_bb _ __aaa  a    abbbaabb_  __a _ _   _ __aaaa_a  aaabb b_aa   aa_a ba_
    b ab__b ab  bb__ aa__ a_ b bbb  aab  b _  ba___ ba b_b_b_a_a_baa_b__ _abab_b_ abb  _ab b  _a b__ aab__  aaaaaa a__b ab_b_ ba bb _ab_a _aaba_a_aaba  a babaa__ababb _bbb_  a b ab_ a b _b__ __a _aba__
+aba_b_abba  b  _b  b_    a_bab  aa_b_aaaaba  a_____bba_b_aa  aaa ba _aba _a__a_ab__  a_a_  _ aaa _ bbb  _b a_b __ __a__b baa_ab bbbbbb b b a_ _abb bab   aa ___ ab_bbb b a___ __ ba__aa__bbbabb aab _ba 
+a_ _b_a_ ___aa  baba_a  b_b_abbab_ aa b_ _a_  _b _ab_ bb__ab _abab ba_a_ a _ab a__ba aa _aaab  _ba a a bb_  a  abb_b aa_a_b __a_b aabbab_  b bbaa b_  _ a a_b  bbbbbb_b_b_ a_aab aa_ __ b_ aab  __bb __b
+_ab__b_  _ bb bb_b a__a_  _ b_a a b _ a_b a _a_ aaa  __ba abba ___ab baa  a_aa_aaa _a a a_ bab_a___b __abbb bb   b b_bbb b_ aaa  bbbbbb  _a_a babbba b b__  baa_ __  bbbaa__a___ b b_abaaaa ___ab_ba a_a
+_____a _bba _b__a  aaab _  ab  ab_abbba a aaa abbab_a  b _b_a_ b ba___  __ba bbbbbb baaa_bb_  _ a _aa__aaba  _bb  _aabb_a_a b_ _b___b a_b _ab_ baaabaa  b__abb ab    a _ b___b_a_ aa_aa _  babbab_ b _b 
  _ bababb a_a ab_ab__a__b ___ _a_aa baa_ a_ aa bb bbaabb b __a_ b b_ababab_aaa__ bb  baa_ab _a_  bba a ba _a_a a _a_ab __b    bb __b_abb_a b_abb_ __a_aaba bb__a  _ b__  abb_ a  b_ a abbbb __ a_ bb_  a
+  ___   aaa a a  _abab_a aa_b_aaba_aabbaab _b_  __ _  a a b_ba a b  __ _a _b b___ aaabbb__ab ab__ _  _bbb_bba a aa_aab   ab_ _____ba_bbbbbb bbab a _ba_ ba_bb _aba_a b _ _ab_ abbbbb_  bbba__a_aa_ a _ a
 bbbaa  _ba _bbb_ _a a_ _aaa_b_ b  ___aaa_b bba_   b_b_  aa a_aa ba b__b_  bbaa ba_b_bb b  ba__ba b_a_a__   aba_ a__  _ b   _a_abab  aa_ababab_bbab _b_ bb_b bbb aaa_ __b bb a_a aa_ aa__ b_aa a b__b __a
 baab_ b bb_aab   ba_bb___a  aa_ a_a__bb a_bbababaaa__ba _ b a_b  _  _bab _a_a_aba_b  ___ _bbb__ _ b_b _bbbab a_ b aa  a__ ababab__ba  b_aab_a a_  _ a__a_  aa__ bbaaab_  _a_  bb_bb_abb  aababb a  a_   
   b_b  ab ababab_ a ba  b _ba b__b _ba ba aba __a__a _b__a_b___a_ b__a_ _  _aaaab a _ a   abbbab__abba_a_b baab_aaa __ b_bb_a_ab__a   aabb_  aabb aab_ bbba_ _b_a_abbab a_  ba_ b_bbb  _ a ba  _a__ b_  
@@ -81,15 +120,22 @@ aaba_ b___aa bab___aa_ba_b_bb   b_baa_b _  _bb_ a_ aaaaaa_bbbba___ a abbab  _b_ 
 aaa__abbbb ba__a__ a__  babb  aa_b_ _a a baab_  ababab__ _bbb ba__aa ba_ab__  _b__b abbb_aa  _babb _ _baa abb _aa  ____aa  abba baa a _a_a __ b_ bbba_b_ a _b _ bab  _b  _b b_ ba ba_abba aa  b  ___ _a_
 _bbaabab __b_a_ babb_aa__ _ abab aaabbb  abb_ b   a__b__b_ ab__  _ _ _ b_a ___aa_ba_  babbba  babbaaa   __ _  _ bb_ b _ b_aaaba_ab_a_ _b_ _ab abaa b_ __aaa b_ababab_aab_ _aa bbab_ a__ b ab  a b a b _ 
 __aaa__ _a bb_   aaa_b _a_  b __bbbbb___aba    _aaba___bbba aaaaaa  bbb_ _ba_bb _ba  abab_ bbaabb_  aa _  babab _b a_ __ bb__  _abbb_ ab_ab_bb_a_aa a _abba _b_b_ b__ ba   _b ab_ a aa_b b___  a aaa  _a
+ _ab_ab_b aa  _bbaa___b __b_ab  _ba a bbb_aa    abab_b_ aba_ _ ab__b_b _ aba _aab ___ _a a_abbb_ _aa a a  bbbbbb abbb_aaa_baa   ba___a_a_aa ba baa bba _ _ b__bb__bb_a__b_  b baa  ___abab    a  baa__  
  ab    bb b__aa b abababab_b_a_ab aab_b b__ _a  _  aab_a  _aa____bbbbb_aa__bbb_ b  aa __bb ___ ababab  _bbbb a_aa _a   a _b  ab _b_ab_  _a _  a___baa_b  baab__ abb_ bab_aab_aaa___a a__ba _ aab ab b _ 
+_ bb  a _b _ _ b b__aa_b_bb___  a _a aa_bbaa_ b ab b b_ba a_a_ _ba_a_baab  ab_ a b__ __a_ _ b_a aa_a_ a bb_baab aa_ _a aaaab_a bbab bb _ab_a b_ __bbbbbb_b a_ab abab  aa__ _b bbb_ab___ a   baab a a  __
  _ aa  __b__  ababab  b_aba_ba_bb_b__b_   bb ba   _b _ abbb_ abb a_ _ab a b aaaa_ aa_bbba bb__ _b aa  ba_ a_  _a a__a_ab_ba aa_aa _a_  aa_a_bbaa_ bba_abbb b bb_abab__a__  b b_ a   bb_aab_b __ aa _b___
 bb_b bb aaab_a___ b_ aab__b a a a __b b ___  ba b_ b_ ba__ b b ___a__bbabbbaab baa__  a  b  b___aa ba _aab__  a bbbb ___baaaaabb_b_ba__ab a_ aaa    bba_b a_a_ __aaab b_aa _b b  _a  ababab_aa_ a bb __ 
   a_ b__b  a a__a__aa bb  _b bba_ aa_  bb   ba___  bbaab_abb_ababb ba __b  _ a_a  bb_ ba  a _bb___a _ b_baa_baa___  a _a_bb_bba ba aaa_ab_aa a__b _a_bb bba_b_a_a_ b_b ababab_  b_   _aaa _   babaa_abb_
 aa__  a bbb aa__  _ab a _a a _ a ababab_babb  a b_ab b_ba_b a_ _bb  aba ab _b___bab_b  b  b ba  aa__ a__a_a_ba_bb _b_ab __ _ab __ba_baa_aab___ _ _a  a_  baa_ab_abb_a_aa _abbb_ba b abbb _b_ a_  _ bb a 
+b_ ba ba ___a_ ba_abba_ abaaaab _ _a_a b __bb a__b_    a_  b_a _ ba_a_a_  b___aa_  b abb   b bab a  a ab_babaa _ ab_a _ a abb_b aaab____b_ b__b  a____b ba_ aa_ab_aa _ab bb baa_aab bbbbbb b__ _a bb ab_
 ab b ab_ __aba_ b_bb_a_b  a__b_ a_  b_ aa ab_   __baa   bb_ abbbaa  b_ab___b_   a__aa_  ab_ _ __bb    a_ababab_ __babaaa  abb_b__aa a_b _ aaa_ bb_ba  bab   abba b _ _ab_aab_bbaab_  a__b_a bbabbaa_a__ 
 _aba  _ _a_   a_bb_a_ __  b  _ _ba_a_b _ _b _b_ _baab aab   _abb bb_a  b_ b__baa_ a b_ab_bbaaa ba_b_b____b_baa_ababab___bb   bb   baabbb_ _aa bb aaaaa bb_a _baa_a _ b a    ba___aabab  b__ba_aba a a_a 
 b_a _a __a__ababbbaaba abbba _  _ab __aa_ aa__aba_abaa  a a_b__    _b  bbbaabb_aba_ ba bba b_b __aab  abb_ _  _aba_ _b a ababab    _b_a_ bb   _ _a_ba_  bbb b  a___b__aabb_ aa_b _ b__  aab_b ba_a_ab__ 
+   aa_ __ba b_a  a_ba_ ___a _b _abb_aba_ bbbbbb _b a__a_a _aaaa_  ababb__ ab_ba__ _bbab  b ba_bb   __b  _  _  ab_b  _a _aba b _aabbba aba_ bba ___bbab a_ _a_ aab__aaa b _b __  aba_ a__ ba bbaabbabaa_ 
 _ab__aab  _abab   a_ aa_b_b a_a_b _b_ab_ b _b_a_b__ a a_ b_a b_aa_aa _bbab ba  _ a __ _  b  _ab b a_ a b _ba   aab__ babaa_ __ aa_abba_  ba__ababab __ bbab  bababb__ abaa a_ba_bbba___ _  _bbb b_b  aab
+  _ ba  ___ _ _a_  ba__ _a_a_aa  bb aaaa    babb _a_aaa a b_ababbaa b b b__ _ a aaa__bbbab bb bbabb_ _aba__ab_baa babaab_a b_  ba_a __a ba_  a  baabba  _a__b___ba___a  b  bb_ba_  bbbbbb_  __a__a_b__ b
+a_abbaaa__ b_a_aa a _a __ba a_a  b__b _ _a___ baab  a  a ab_ a _ aaa_a  _ ba__ a  baba bbabaa babbbba_b__ __ _bba_a_ba     _ a  __ aa__abbb_ _abaa_bbbbbb_____bbb  a a     _b _baabba bb__ _b_bb b_baabb
+a_bbbbbb _ _aaa_b _   b bb  aabbba __b_ b_aaabb b  b _aa   a_ _a_ba b _ _bab__bb_a__ abb__   ab _ab a_bab_ aaab_ aabaa_aabba_ab__ bb  _ aa ab___bbbb_a_a _ a_b  _  ___b_a      aa  a_b_aab_aa__aba_ b_ba
 __ babb_aa  a_   aa  b ab_a_baa bb b  b  __ aab_ a ab__a___b ab_ bb_a_a bbbb_aab_aaaaaa_bbb  _b_bb___baa   _ab bba_  ab  a__ a___ab_ba  b____a_  _aba_a_ b_bb  b_a_aaab_b__baba _aba b _ b b b _ aaab   
  bb__bbb__bb _aa_ aab_  _ b aa__b abab __ ab bbb _____aa___b ba a_ a   __bb__aa_a___bab_babb_ab bbbaab baa ab_ b aa b _a__aa___bb _   _b _b a  ab a_abbbaba  b bba _aab __b a_ b_a aaaaaa   _  b_   aaa_
  a aab abb_baaa _b__ _aaab__ ab b__ _    _abbba  _abbb b aa__ a  ba a_ b_b  aaaa_ abb a_b_b___a  _ aa _ a __a baab b   _abb__a_a_baab _bb__b_abb_  b__b aa_b_a a_  b___ba__ababab   b a___bb_bb ab aba b
@@ -101,6 +147,7 @@ aab_a__b__ b __b_ bb_ba bb__ aab__ababab_bbaaa_abb b b__b  _aaa__ab    a a  a  _
   _b_abbba ababab  a  _a bbaaaabb bb__aa _b _bba___a a ba_  b  _ _a baa _ _ abbb_  __ a a_bb___bb__bbab__  a_b _aa_bbaaa_b_ abb_ _aabba _baaa  abb_a b_a_b  _   aa __ a   __aaabb aa_b  b____a__b bbb_ a
 _ab  b b_ba _bbaa  a__a_bb baa _aaa_ aaaaaa  a   b__abb_____ _b_a__ba  __aab baaaa _ a _ _ba__b abb_  bb _aa __a _  b_a b_b_b b baa b  b_aa_ba _ab bb_ ___abb _  aa _b_ab__b bb _b_babaab_a   _aabb bb b
   _ba  bbab_aaabb  a __b___aab__aabb a a_ _  aba_a __ b _____aaab __  _b_bab_a_b__aa _  ba   ___ b_abbb b aba__  aabb ababab aaa_a _ b  b__baabb    _abaabb_b_ bbb b _  _a b_aba bbbb a_aa_ bab_aa_  a__
+b  _aa _babbabbaaab aaba a bbbbbb _abbb b__ ba _   a_ _  baaa_ _ab _ a_ b_  b  a aaba_b_a _ bbbbba a _ a_aa b _____b__b __a_bb___ bba abbb b__a_a_ b  _ a  aa_ bb aabb__aab b_a_aba_aa__ ___b _a  aa_ a_
 ba b  b_ a_aaaaaa   a_a _a_ __ _aaa bb_b a_b_a _ b_a aa_ a _ _ bba   aabab b__bb_b__aab_b b aaa _ b aababb b_b___a__bb __aa a_a_bb_    a a a_b ba  _   abbb___  b_ babaa_b_bbb b_b__abb abb_b___a  bba_a
 abaa a b ba __b_bb _a_abaabb _ ____b__b bba     ba _bb__ _a _aaaa _b_  a_bb_b b _ aaa  _ aaaaaa_bba  __  __a_b_b b_b_ b_ab_   baab_a__aabb b  aa  aaab_bb___ b_ aba_aa    _ba__bab abba_b_ba ba_b bb a_ 
   _b a __b_b_bbb bbbb a    a  b _a_ab_ab_aa_a  _ _  _aa b_a _ bba a_ab___bba_a_aaaaba_     _ aaa_ba b_bbbbaa bb__ a  _ababab_ _ab_ abab_b_  ab a_a_a  b b _abb aaa_b aba____ b a _b a b___b_ab_a__ ba_bb
@@ -108,25 +155,34 @@ bba aa_b ba_abab b   __b   _bb _b_b baaaa  aab a _ _a a bb_   _a _ b___bbb__a_ b
 _a b aba_ aa_a _aa _ b__ b__  a_   _baa ab__ _  ab___ _ bb a_b _ ab bab_a _ababab_baab _a_abb _a_aba a_ a ab__a_b _a   ab__bb_b_a  b bba b  b  bbb_ba_baa__baabab_b aba_aba_ ab  a_a aa   bb_bb__ _b_b _
 b_bb___ bba__a ab_aa aab_ bba b _b_a_b aabba  abbbb _a_b_   __a _b ab _b _ abaa_ __ab_a__  b_ a aa a b _ b  _ba __a ababab __ b__ba_ _b_b   bb _  a_  b__aab aba_b a abbab_a aab aab__b_a_ba__ b a _aaab
  _b a  _aa  _a a __aa_ _baa aab b _baa  aaa_ a_b__ bbb__bbbaaabb __ a bb bb__aab_a__bb _b_ a_ a_b__ba  ba_ _  a_a aa_bba b_bba bbabbbb___  abbba__a__   bbbbab bba b _ a__ a_ __ _ a  a_ a _ ababab a__a
+_b a_a _   ba  b__b_ab aaa_aba bb ba ababa_aa_b_aaa_b bba_a  _aa___ _bbb_  _aba_ ___abb  b__bbbbbb  _ a  ___a   a a aaba_b__b ab_  ba  _b_a_bb___ba abbaba aab___a_ a_ b ba  a_b _abb _b _ba ba_aab   _ 
 _ __bb_ab b b bbb__ab_b_a  ___b_ aaaaaa b bb b aa_b _bb_bb ab_a aaa ba_a __ a__a a a  abba_a _b_bb_bab bb bb_ba_b b__ _b a__  b a___  aaa_a_ _b  bab baa_ b_aba _aa_ ba__bb_aa a  a_a   b _ _ba _a  b_aa
 b__ab aabb ab _bb_____ba_ _  bb_ aab a  __abb_ _ __ aaba _ bbb _ bb_a __b_b bab_ a  aaa _abb_b_baab_b_ba_ aa_a__a a__aa  _ b  a ab__a_a  a  abba_ababab ___a_ aa_   abaa  b_ba bba_ bbbaa_    _ bbbab_b 
 _b bbaba bb  _aba_baaa_bbb b_ _a abbbaa_a___ba _aabb b a_ b_a__  a ab__bb_a a  _ _b_ __aa  a bb _ a _ _  ___ b _b b _a abb_ba_ bb  a  aa_aa _b_bab_a__ baaba_ b_  __ababab__b bb a_ a_a_b ba  a ba_a_aab
 aba bb__ _  _a a _b  b__b a_b_  ab  bb_  _ bb a aba__babaa  b bb abba   a_b__ab _  a _a__ba_bba___ba aa_a b_ bbb__  aa_ab a_ abb  _b__bab aba_ abbb__bb_b_  aa_ bb aa b aaaaaa_ ba__aaab_ _a a_bb___a_ _
 bb_b _  a _b__b ____aaa_ bb_b aa b _ ba _aa a  bb_aabaa  _ __bb a _b_ b aaba_b a_ __a  _aa  _ba b_b b aaaaa ababa__ bb  a  abb_ b ba aa_ ___ b___ bbab_ b_ ba _baa_ a__bbaaab b_ababab_baabba _ __b_ __b
  b a__b b__ab_b aaa_b b b_ _a_a aa_aaab _a_ baa _  b_b   b aa_ abb aba__bab_b_b_ab_   bb_a_a_a   b_ _aa __a b_bb b_ab___ a_ _bbb__aa ba a _b  bbb a_  b    _ _a a _aaa_abbb  bb_aa b_ ababab___ab_aba_ba
+_b _ bba a_a _ b_ b ab aaa___ b _ aaa_____ baaaa_ a   _ a___ b ___bbabb___ba ab a bb aaa_aba bb baba_ b_abaab_aa_b__b  bbbbbb _b b _a_ba b ____ aabb aab a _b_ bbb aaa_   aa___ bb a   b__ ba aaa_ba_b _
 ab_b bb_b_a a    a _a __bab_    a b _abab _b___a _aab_aaaaaa_bbab_bb__b_  aaaba aa __b__b  a__ aaaab_a   abb_   ab__b_bb b b_  _aa _bb bb a_b_ a_babab_ bb   a__b  _bb_a a b ba__a bb abb _ab___a__a_ aa
+ b__aaaabb   a _a_  ___ _abb_b__b_ _a  _ a _ _b a abab_baba_ b ba_ bbbbbb _a_bb_ a __aa _b__a_ba_ ab_aaba aab  _ _a__ a b__aba  abb  bab __b _bbb_ a abbb__b   _b_ba ab ba__aa a_bbaa  a bb _aba_a aa_ a
 __ a  bb _bbaa_a______  ba  bb_ab_ab b_b_a_ bab ab_ab_aabb b ba__   b_b_ aba_a_ _ ba _abb_ a  b_aaab_  a_ _bab_aa b_a  _  b_aa_abb bba _ ab aaba ba _b_ baa_ ba _ b__ba_ bb __a__ _ababab a_ b _aa a a b
 b__ __a_aa___  b  aa____b_baaba baba__bab_bb___b_a  a_ b_ab ab  bb__ ba a b__ _ b_a_ bb   b b_aa  b  _ _b_b_aa_aaaaa   _aaa b aa ab_b aa b_aa ba_abb  _a  b ab_ab  _bbabb_baab__ababab__ __   _bb bab  a
 aaba b_ a___bb baba  bbb a_ aaba_  a ab__a_b_b  a _ _bbaa__b _ a bba b__ a aaaaaa____ba aa_baaa b ___ abab_ b bbbb _ab a__a_ ba__ _ abbbb_b_b b_ _abb  _ab_bba___ a_a__a _   a a a_ba   bab_b   a  bb_b_
 _    a b ab b_b aa__a_  a_  a   _b a___aa ___aa__b_ababab_ _  ba  b_aa a_ _ b_  _ ___bbbb b b_b__ab _a  ab _baa _ba abb_ ____a baa aaaabbbaab_ a a__ __ __bbbba_ bb_ abbab aabbbbb_  a baa_aa_bababb _ba
+_   a_a_ bb aabb__a   b    _ aa ba  a_bb_bbbbbb baa a  bba_a _b_a_b_aa_ aaa_a_b  a_ab  a_a_b  a_b ab__ b_b _a____ _  ba bb_baa aa b_b_b bbaa  b_b ab _aa baa_b _bbbaab__aa_ _ _bb a_a_ ab_ __aa__ba__b b
+aa_a _  _a_ababa   ___ b_a  __  ab_   _bba__baba_bbba abb abaa a b __ba a _a ba ba __ ____a_b_aa a ba_b_bb_ _b b baaaa _abb__a bb a  __aa_ a b  b__  b_ baab _b_ba__ba _bbbbbb b__b_abbaab a a  __aaa_b 
+a_ baaa_   aba__ab_bba__ bbbaa aaa___aaa_a  ba___b_aa_ aaba ab_baab_baa_ab bbb a _ bb  bb_ a _ a abaa  b b_a b_aa_b _bbbbbb ba_a  b__ b b  a___  _a_  __b  bba b  ___ __ b_b bab_ba ba ba_  __ b__aa _a_
 aa  _b ababab_aba b_ _ ab___  _baabba aab aa_a a_b__a__b _b__bbb_a_ _abab _  _   b _ba _ babbbba aa_a a  _b a b_ _ b_aaabb bbaba _b _ a_a a _abb_ba b  a_ b___ab_ __a ababb_ a__a  ab __ _ aba b_ bba_b_
  _abbbbb_ab a_a _b a bb b_aa _bbab_bb b_b__aaaaaa b_ba a_a_b bba_ba_aaaa b_ b ___ba  a ba _   b  _ __  ba ba_ba  _b   ab_a_  _b__ a bba_b__b_ aa _a__ b_ b _b__ab  aaa  _ b__ bab_b_baa __aa_bbaaaa b _a
 b ___bb__b_a_ a  abb__bbaa _ a_ aba_a__bb  ab___  _ ba_a  abab__a_a bab aba_bba  _  aa_bb_a_b_ab_  a a  bb_ ab_ bab_a_ b_  aabb aa_ __ _bbaa abab_ a _abaab a ab_ b _a bb a_ _ababab_  b__ _baabbb _ _  
 b_aaaaaa _b __ab  _ a   b b a b_a_bab  bb_aaa ___b aabba a__b_  b a _ _a _b bbb__aab____b  ab__ b__ ba b b_bab_ ba b b  _ bb__aa_ab _ _  abbb_b ba b_abba_ ba___a___ __a__ a_aaa aaa baaaabb  bababa_b  
 a_ baab_ _b_ a___b_  bb a_ b_  aab__bb  __b b ba __b _ a_ abab_a _ ba__ baaaa_a a aba ba_ a__  __ba b ba aaa a__b_b  aaabba_bbb b_b baa_ _bb_a b__aaaaaa _b_ abb__aaa _ _ babb b_ b_  b_baa a b _b b __b
 abb bbb _  b b_ b_  b ___  __ _ baaaabab___b    b ba aa_   bba_b_  b _bba bbb_aaaa _a _ b_bbb a _ _aba_aaaaaa abaa_ ____b _b_ba_ _b  baba _aa __a_baa a_ab____b _ a_aa_a_ab baa_bbb b  _ba_ b baaa_b ab_
+ b ab__ _a_  bbabbb a_b_ aa_b _ abba_a ab _   a__aa bb_b____b a__  a___abab ab _ba bb ab_ _  _ _ ba_aaa b  a _b baaabbba_ a  __ aa___a__b a_aaa_aab_b_a _bbbbbb _ _b _b a_ab _bbab aaa__bb   ab baa ab _
 bb __ _ b__a_ b_   _a_b_  abb  bbaa  bb ba __a_a_b_ a_ __  ba_baba  _a_ b__a  bb_abbbba b_aaa ababab _baab b_ b ___a  b__a_aa  ba aa bba a_a___ _bbab_ a_b_ b__baba bbaa__a ab  ba a _aabaa_ a ___b bb a
+ba__   bbbbbb_a___bb _   b a__      a_aa b_ a ba_  b _a  b_ab_  _  _aa_aaaab_    a _b_a aaa _aa_aabaaabbb a_bbabbbaa   _b_ba___a_aaa_ba__ba_a a _ba_bb_b_  bbab _a_b_ba_  bbba _ babb _b bb_a ___baa_b _
  _ba  __b_ b_aaaa_a_ ab bb___bb  aba_b_ _a _ababb __ _ abbb  b__a_abb a__aa__a  _ bb aaaaaa_ _ b_b_bbb_ abb  aaa_ab  aaaab_aba__b_a _ __b   bb_a bab abb_bb_ba b b a_aa_ a a_a b b __ a __  ab b_b_ab   
+_bbbbbb b bab__abba _ a b_a  a b ___ _a_ __aa__bbba__  baabbabbaaaabb_aba  b_  _ b_ ba ba aab__aab _a_ a _b_  ___ _ _ _aa _b__ aa ba __a  _bb bb_abab _ aab  _bb_aa  bb ba_aa_ bbbbb _a aaa_aaa_   a_ __
  bb___bb  baa_ b  b_aba   abbab_____  ababab ba aaa  __aabaab_a  _a_b__ab  aba_a a_a bb_  bab  _ abb_b_ a_b__a a_bbaa b ___ _a_  bab _abba ab_ bbaa_a_ a_a  ba  _a_b a_b_b_b _a_ aab_bb_bb  a _b_ b_  _a
  ab _a a_  a__ba a_b__ b__a  babb_bbaab _ababb__ a_bb__b a b_ _babaaabb _aba  __aba ab __ bb_ ab _ b_b   a_ a bb_  __b ba _bb___aa_ _b_a aaab a_b_b _a_   ba_bba_ bba_a  aba_b b aa a_a __a   _ababab a_
 _ b_ aabba _bbb  b _  ba_a a_ b_b_ba_a_a __ _ aba  ba_ bab_ababab ba_ _aba_ba abb_bbabb_a_a _aabba _ba__a_abb_    _  a_baaa_ b_a a_b bbbab_   _a__abb   bbb_b_ a_b _a _b__abb_a      __  aa _ a_aab__ aa
@@ -137,15 +193,23 @@ abbbabbab a __ a__a  _b aba a__  ababab_aaaa bbaba  _aa  __ bbb _b bbbba_a ba__ 
 _bb_abb_ b _ aba  a___ b abaa_  ababab a_aab___ _b_a__a_ b__baa  b _b  ba _ab  a b a  _a_  aa_b  a_aaab_ a b_a_a_  b _bbab b  a__abba_ba bb bba b_ _a_a a_b_ b_baaaaabb_a___a_b_a b__b b_aa    b bbb _b_
  b_ ab_bb__a__ab __bab_ _aa_b abb_ bb b ba_ ab_bbaa __ abbab a_ _a aa a   _ b aa b_bbb__a____a_____ a_aabbbb    b__  a a  baababa  _a_b b_bba abb a_bab__ a ba bab_b _ab b__ ab_aaaaaa __aa  _ a b  b_ _
 __ aaab_  a__a___aa__a _ _ __b b __b    b   _a _ a_a bba__  __babb_aaaa aaab__ab_a a  a_b baaa  a _bb__a___bbbabb____b_ababab b__baabbbbb  b_  babbb_ abb__b abab bb _  a bba  b   aa  bba_a _a_ _aa baa
+a_a a_b _baa_a__ _ _aba_bbb_b bbbbbb a aa_b_ aa bb_ _aba__baa  b_b bab__baa _a a_babb a   b_____a  _a_bb__aba _ a aa_  bb bb_bbbb __ a baa_baa   baaa a_a__a_ a  _a_  a_ b  _ b  b  b_baaaab_b  _b__b_ a
    b  _  ba __   _bbb_   aaabba__aaaab _ ___b_ab_ba aaba___a_bbaa__a __  a__bababaa _b_aabb   b b__b_ab bbba ab _b b __aaba b_b__ aab_ b_b __ _ab  b aab_aaaa__ _ababab__ baaa  b__  a  bb a_ bb __ aabb
 baaa_ _b a_b  babb_a__a  a_a _a__ b ba ba ab_____bb _ba__aba a__ _b__    _ a_ aba aa aa bb_ a  b_babb ababab a_aaa_b_ abb_a_b_aab _a  b_ _bb _bab_a_ ab_a  aa b_a bbb _  ___b_b   b aab  _bab_  b_abab_b
+a ba b_a__ a_b_ bb a_bb_b a _a   a_ _  _b ba_ aa_aa _aa bbbbbb__ab b aba_ baa_b  a aa _aba_ab ___ __aab_ _b_a    a__aa___a aabb_ab bb  ab_bbab_a_ab__b b_ba a  b _b_b  bba__a abb_aa_bbb_a _   b_b a_ a 
 b _ab abb a abb abaaba ___ __a_ b b_bb_b ab_  _a __a_ba _ab__a aa_a baaa  b ba__ bab _  ab_b abaa  aa___ __b_a_a__bab _a_a___b_b  _ aab_a_a b a b  __a b bb bb__abbbbaa  _b _ababab__ aaa  b_ba bb _ b  
+ b___a  b  _aabaaa abb _b__a__a_a _ab_  aaa__ b b_bb _abbb a  abb  bb_abbaa__ _aa ab _ _  _ a_bb b _ _ aaaa __bbbbbb_b  _ab aa_b_ b_  b _a_a _b__a_ a _aab b_b_b _ab_aa b a__abba__aaa ab _ a_b bab bb a
+ ___ba__bb__babbb_aabb_    __ a _  a a a_ab_ baba ba__b   abab   ab _ b a_a a a ab_   a_a _ba b__ab__ _aa____bb_b_  bbbbbb bb _ ab_b_a _aaa_b_b_  aab_b _a__  __a  a aab aaa abbb__abba   aabaabb_ab__ab
 aa _ b__   b _a__ _aaaaaa _ba _b_bbb_ba_ a ababb a__   b a_b__a  _ b ba__b___aaaa bbb ab_b__ ba_b_ bba_ a_b bab bb bb aa_  __  aababba    b _ aabba_b__b_a_ a_ab_ba  _a_ba b _ __aba_  a_b_aaabab a b_b 
 _bb _b_ab_b a  b_ b_aa_ _a abba _ bbbbb _ _aaba_bab_b_a  bb ___a a aaaba_a _aab_ __b b_ a a b_b aa   __ baab ba_ba  aaabb ab b a__a__a   __bbbaa_a a_ __b a _ab_ bb_  ba ab b_ b a__  a___ababab__b_ _ab
 _ a aa b_b_a a  _bba b__bba _b_ba_bb_a aaaaaa _   b_ a_ ba _b_ ___a_ baa__aa_ _bb a _aaaabb__   __ a bbb ab _ a_a  ab b a__ b_ bbab ab _a_baa ba_baa a___ _ba abbbb__aa bba_ bba_a_    b_b_bbba_b _ _b b
+_b   __ba   _bb_ab_ab_bb _b   __baaab   b   b_bba  abbb_a bab_a_ ___ba_a__aa  bbbbbb_ _aa_b aa  _ __aab_a_a_aaba__a _aaa_a_ ba_ _bb ababb  _b  ab_aa _b_baa_ aa a_ _b  _aa_bb a   bb_bab__   ab  aaab_b_
+aaa ab __  _aaa_bb __a__a a_b aa a _bb bab abb b_bbaaa    b_ b_ b_bbb b _  _  babaaa a_ ab_aa _bbbbbb a a _ _ab a_ bb_a _baa_ ba _ _b_ a   aabb_baaab_bb _  a_b__b_  ___aa_a b b_____baa_ bab_a_a_ba __b
+b___a  ___bab b_babb__b_a ab_a_ ___  __b ab _aab_aaab b_bb_a  _ ba b ab  a_bba_b_ _b ab__ a  a_bb___aaa a_ aa _  bbbbbb___ a a_ab  _ a ab ba  b_a _ab_b   _ b aaba_abaaaaab __ _a bbb abaa ab bb  ab___a
 _bba  a_ b_b _b _  _bab_bb bb a bb __b baa_b _bab_aabbaa_   ba_ aba aabb_baa b  _a  _ __a__a a_a_ aa  _bb_ _ _ aba a b _  b_bb aaaaba aaaaaa  a_ _bb ba___ aa_bb_ba_bb _ a aa  ba___ab bb_b ba____b__b__
  a bbbaab_  _a__  bab__aab   _aa_b_b a bb  ba_ba_  b aaaaaa  ba _aaba_a  a b_ bbbbb  _a  ab_a bb_a __ b_aab_ _a_ baa _b ab_ba__ba_a_  b  _ a b  b__ b_a____ bb___b_aab bb_ _ba _ a_a_aa_abba___  bbbbbaa
 abbb ab  _ __ab aa__bab__ a__ bba_baa __a  __bb_ab b__ _ ba___b _ b b_aab   aab a  aa a b bb _ab   abb _ab_b_ bb__ __  aaaaaa  __ a a ___ba abb _ _aaabaa  aa__ _aaabaab_a bb__a  bbbbb ba__a_bbb_b__b b
+a aba_b_a a_bbb__ bba_ aa_ a_a_b_  b_ a_bab_ abb a__a_ _ aabaa_bb abbb _a_bb_abaa   a _ _ a __aa _      aa_bbbbbb_   a_ b ba aa abaa_ a_ _ba  b_abbab__b _  _b b__b__ a  ba___ababb_bb _ _a_b__a aababb 
 a___a_ a a abb_  b_aabab aa_ a___ _baa  ___ b aab_ab ab___  b baa_aba__  aaaaaa_aaa_b_b   _b_ _ _ ab_abbb b a_ abb b_     _bbb_____babab_bb _aa __bb b a ba  ab  _ b  ab_b bbba_bbab__aa b__aa_ bab  b_a
  ____a a b a_ab __a b abababa_ abaa_  _   bb  baa a_ _a_ b_b__a aa  __aa  _ a_aaaaaa _b bba bbbb b  ab_ b_ab_ab___ b_aa _ b  b__aaa__abb_ba b b_b_ a  bbb__a_ab__b_b_b_b_a _  bbba__bbaba a b ba  aba_ _
 bba  __a __a  bb_ b ababa__abb bb_bb__aabab_  aaab  bb_  bab___a aaba_bb  _a_a  aaaaaa_b  a b_  _baa aa_ aa  _a_ ________bba bbbbb_ a aa____aaa_a  b_b   b_a __ a bab_b__b   a__  bbbbb_ bba bb_a aa_ b 
@@ -155,10 +219,14 @@ a_b_ __a__ ba_aaaaaa a__b__a ababbaab_ba_aaa b  _b___ baaa  a ba_  a b_   a   __
 a_ _bba  b  b___ _ _  __bb__aa___ab  a  ab_b_  b  b_a__ aab ab__a_a bb b abaa_ __aba bba ab ab b_ baa__b a_ b a b_ _ a  aaab _b bb _aabaab_aaaaaa   abbbb_ a_ b__ _  baaab_bb_ab_ab__abb b __bab __aba__
  bb_ba_bb__a ab_a__a_ a_ _bb   bab  _a_b ba_  b_ _b a aabbbaba  ___a_ aa_ababab_a_  b_  ba_a _ba_b b  b _  _b__a_ a  _aa_ aaabb_ba _b __b__bba baba   a a_  aa _b_ab bb ____ aaaaa_b b a_bb a__a bbbbaab
 bbbbbbaa  a_a ab _a__bbbabb_bba_  a__  baab_aa__a_ _ aa_ _b_abb_ aa   bb_ab _a _bbbaaa _b_ _ b__ _  b_bab b  _ _ _b  aaaa    b ba_b __a_  bb_abba   _a _ ab_bb b_ ab ____ab_a  aaaa__ __baa_aba a_ababab
+aba  ba a_a__  _b aa  a_bbbbbb _b  a_ba __b___ _abab a__b a bb_ a_ _b_bb ba b _b_a_ab b  aba   b abaaba____a__ _ _ ab   bb_b_ b  bbb_ba_ a _aaabbabaaa__    aaaa__  a a__aa _aa _ab__aba _bb_b a__b_bbba
 _  _ab _bab_bbaba__ aa b_ b_abb_b   ab __bbaa a b baa _b b a b_  bab b ab_ _a_  __ _aa_ba   baa_ab_b_baaa_ab_ a__b b _ab __a_abab__a_ba  ____  a_ab_aa  ba ababab babb_ a _ bab_a_ a a__a_ b b b _ __bba
+_ _  __a_b_b _b_bb _b bba_ ab_babaa   ___b_ab  _aa_  _ba a_ b   _ab__baa _bb _ aa__ b _ab  __a__ab_  b __ab ba  bbbba ab baaa aba aba_ b___a aab   _b  _b _aab a  b_abaab a_aaaaaabaaba__bbbbbb__  ba___
 a  _ bbb__ _bab bbab  bb_bbaaba_b_abba  _  ab__b __b_a  b_bb_abaa_b  _bb _ _a_  _ab  __ba aa_ _a_ _b_ _b  ba  __ aaab_aa_ __ b___a_a_ baa _aa  __a aa  abb_a b b_bbbb a  _ab _aaaaaa_aab_ba_bbb  ab ab a
 ____ a_ b_ aa_b_bb__bbbbb_bb a_abbab__    aa __b aba baab abab _abaa _ab ___baaa _bb_b a b  _abba __bb a_a aa ab _aa b _bba_aa_ba  bb _  __ a abba _  __ b __bb ___ ba a_aaaaaa_b a_ ba ab ___a _bb _  b
 a  _bbb _  a_b_a _   ba aaabb _abbabb bbb _abbb_ _ab _ba ab __ _aaab_aa__b_b   b______ _a_ _a ab_ __b_b  _b_abb _ababba baba_aaaaaa_b a bb _ba_a  _bab___ baaa_b_ b  a  aba bb_  baaa ab_b _ a __ _ a_ a
+ba __bba_ b aa_ba_bab ab_  aab  aab_a a_ b _b_a_ b_bbbbbb a b_babba_a_b aabb _  a aab _ aa abaa  _abb _bba    ba _b __bab__baa___a b_b___ _  _ b  ba_bb   _a_bbaaba ___ a a _bb____baa_ aa__aa b  __a a_
+_ aaaaa aa_ a __ _a_b ab ba __b bbbb b_b_abba _ab  _aaa aaab__a _   a_b _ abb____ _bbb_ab_ b  _aaa_ab  _aa_bbbbbb b aba__bab __b_aba ab_bb a b aa_a_baa  b_b_ a__b  a b_ ___ b_aba_ _  a_ _ a  bb_ab  ab
 a a_b bba _a _ababab b_ b_bbba _a b __b bbbb__a_ab_ba a ba a_aa__ _ _ababab_b _a b a _aa_abab _bab___b b bb_a_ _a  _bb aa  _  b_ bbb_ __ba__  _b  _a _ a  _b b aaa _ a_aaba  __aaabbbba b _b_ _ __aa_aaa
 a_a _  aaab__babb ababaaa__b  _ab   b__b aaa bbba_abb baa bb a bab_bb__a _ ___b__aba_a_  _b_a _ b_ab b b  a _  a_ bbaba  _  bbba _ab b _a_b_ __b _ab   aaaaaa_b _b ba_ b_baba __ab_a __ baa___ b_ba_a_  
 __  b__ babbb___ab bababbb b aa_a _ a ba b_aabb _b__ _ab b a  _b bba_b__a a_  aaaa _  aaaaaa_____ b  b  a b__ _b a_ aa_bb__b_b b____ abbb a _b_bb _aa    _ba_aa  aa _a_a_b_bb ___babb ba aaa abb  _abaab
@@ -170,62 +238,95 @@ ____ a__ a ab  a_aaabb aa a_ba_ _a __b _bb__ _  _bb_abba  _aa _ ___ b_bb aaab_a_
 aa_ _aa___ a_a _ab _bbbab_bb_bb_b a_  ab__aab_a__bba_a_a _aaba_ bbbaaaa_b   a b_ abab_aaa  a b_b  aa   b  _b_ b   _ a___a_abaaa b b a bb_a_ ab___bab_b_   b a ababab_ba_ba _ _a_bbbb  ___  a_bb   b  b__
 __b_a a_ __b a     a_babaabb_  aba _a__ aab_abb   b_baab__a_bb_ ba_b_  _a_ b  bab a a_b a  _b_ab_bab b_ _   a__b bba_ba_ ba __  a a aa    ababab_a_baa b_b_ ab aaa_ _b ababaa__ b_b_baa _ab__b__ _bbbb_a
  bba_a   _a_bbaab __aab b   a   _ba  __ a ab____bbab__ababab _ab b_ a__ ba___ ba  aaaa_ab_bb_b_b  ____  b bbaa_b _ a a _a_b _ba aba _b_ b   b _  baaa_a____b b_b a_bbbabb a__ba _ bba_ a bbaaaa_aaab_ba 
+abaaabb   _ _ba b _b___a _ bb  aba_ a aa__abba__ ba_ab_abaa_b_bba_a__ _aa_ba bab__  aba ba___   a_a   ba___abab ___ b b _b  ba a___b _ bb  a_abb a  a_ba_ a_ _b_ baabb___aa _b bbbbbb ab baab_  aba   a_
  b___a  b__aaaaaa a aa_ baa__b ___b_a b _a_ _aaab_b _a b   a__  _b _babbabb_b_aa_a _bbab bbb  abbbbbaa _ a_bab_baa   aba b_b  ___b__a _ ba   _ a a_  aa bb _a_  aba_a_ab_bb b___aab_ a_bb bb_a_b _ bab  
 bb b_aa_aaab  aa_ b _bbb a_b b_aaaaaa aaa_bb__bb aba ba_ bb _b b ba___a  _b_abbab _aa  b a b _b  _ _ba____a_a  b b aa__a_bba_ __ ___ _b ba_a   _bb__b bbba_bb_ _a ab  aaa bba_ a _a a ab _b__a ba_a__ b 
+babb_b ___ _aab_ b_  __ a _b_aaba aaa ba_bb_a_ b _aba   b_ aaa a__ _a  ab __ b_ab a a a  b a_ab aa  _aabbaa__ba_ b__b_ba__a_  bbbbbb bab_ab_b_  _ ba_ab  ab_ _b_a_abb_b a_aba_ aaa b bba_bb_b_b    a__  
 aa ba b aa  _b_ab _a_b_abaa   b _ba  _ ____ __bbbb_ a_   __  a_bb aabbba_ _b_a _  a__bb _   ab_baabb  b_ ba__b_a aa_aaab bb ___b  b__b a_ __aaba_ab_b  __bb bb_aaaaaa_b__ aaa _abaa_bab abaa   _ bbab bb
+__ abbb_a babbbab b_  aa  _b__b_____a_aba _a _bb a_b_a baa bb __a__ a aaba  __baba _a_  a   _b_a_ab  bbbbbb_bab aaa_b_ __baa  __b_ b_aaba b _ _aab __  bba a _aba_b a_a   a  _ a__ aba_ a _b bba babbb_a
 _baab_ _a_babbaba__ _ bb_ ababab   __aba_a_ab___ b_a a a_ a _ _ a b a_b_ b_aaaa__abb ___b__b_a ba  _a _   a  _b  ab_a_      babb_ b bbb_abb_b_ b aa ab bb_aab_a__abbab_  aa  aa__b  b bba_ __a_bba ababa
  a_  _a a_ a a__  ababab_ b__ _b babbaa  baa_a bbabb  _b __bb  _a_ b_ __b   b_aab_ab____ab_  ab a_bb ___abb baa__abb_ __ _ba_ _b a ab _bba_aa_ _abaa b  aaa ab_b_ b_abab a__ baaaabba_bbb_  b_a  a_  a b
  _ aaaa a bba  _a  _bb_a__bab _b _ bb__a_ a_a _bb b _b_aa  _ __aa__aaaaaa b_bb_   b___b__ a_a_a _ aaaababb_b_ b_ bb_b   _bbb a_a a bba_b_a_ _ab aa _babab_b bba_ ba bb  _a_   bbba_ a  _ ba ___bba baaab
+aaababba  bb_b b  bb__b__a_ bbab bab   ab    _   __abbb_a_a  b_aaa_a_a__  __ b_ab_a a_bab _a b bbbbbb_   a_b_a_aaaaa_baa_a a_  aa _b__abb_ __ bb b _b_  _b a a_bbabb_ba abb_ baa__  a_a _aa___ b  _a a_a
 _ _ a__a__aba__   _ aaba__b _aa b_ _  __a_a b _ ___b_aa b     aaba_b_b a_a a b ababab bb __ __ ba_bbaa_ baa   bb _ ______ _a_b_ababb  b _bbba aa_ b_bb_bb   a_aaabba abb_ a _ a bbabbaaaababab _bb a_bab
  baa _b b_ __bbb a _ab_ _ a b b a__   b _aaabb a __aa   bbbb__b __ b_a aa___ aaaaaa_b bbbb__aa_b_b__abaa __b__abaaa a b___aaab__   bb _bba aaa  aa _ba__bb_baabb_ aab _  _ab _b __ aa   b aa b _b b_bb_b
+b_ __ aa a_ba  a a  aaaa  __ ba __b_ baaa__ba b _bb __ abab aa__babb  _bbabb__aab aa_aa__ba_ b___b _ _b  _b  _ _bb__ b ba b_b___b_ a_a_ba   a___aaaba a bbba bba  b_bbbbbb_aaaaab_  aaa_a  b bba__ b  _ 
 a__b_abb__bb_bbb aaa_b_ _  a_ baa__ b b_a _ b a_ _abaabba bba__ aaa b__b_a_ _a_ _b  ba b bab _ bba   b__a ab ab b_____abbb  _ b baa  b aab ababab  _a__abb_ba _ a   ab_b_bb_a___ a b _aaa  a__a a_ab_ aa
 _aa_  _ _ a  __ _aa__b ___ab a   ab b a__ba__aaa___bb_ _b bb_ bb b_ab b aab  bbb _aa_ab_ _ab a_ _bbaaba b ab bba_a  a___ababab_abaab   a__ aba b_  _ _bb a __ba_ba b  bab_b _aababba_aa b__aaa  b _ __bb
 ab a bb_a b_ a ba baa  __ a ab_a a__ __ ba b__abb b  _b  abb_b_bba __b bbaabaa_ababab_aab___bab _ aa_ a b__a  _ ba_b_ baab_a b __b  b aaabb_ _b_a_a ___b _b_ b _a_ aa _b_b a _a ab ab_ab _a  ab__b aba_ 
+a ba ab a  a_ aa_ a_a__b___ abb_b   b_ ba aab_b _bb b babbaab_ _b a_a   a aaab  b_ _a b_bbbbbb_a _aa__aa aabbb_aab _ a b_ a b a_ aa_abbab_a _b  bbaab_a__ bba__a     a_aa   ba___ _b a_b__b__bbb_b _____
+ bbabba_ bab  ___ _bb   a_a_aa  a_ __ _a baa_a__ _a_ __a__aaaaa__ _abaa _b a__ b ab_ a ab_b abbab _ a  ba abb bb _ bb_bbbbbbb  a___aaa  a  bba_ __aaa_bbbbbb_b_b __a_ab a_ babb_a  _aba ba_ a  bba_ _  _
 a__ a b b babbb_ab  _ab aa_ba bbba__ _b_ab aa__ _bbbaa_a a a_____  ___b_ b _b_aaa__baa_a  a abb bb_b  aa_b_ba a a_baab b bb _ aaab     ababab  a b _b baaa a_b_a_____a_  _a_bab_ _b b  bb_  _b_b a_a_b a
 _ _bb_bb_ bbb  _b b_aaaba_ a __b   a__bb ab_  a a_b_b___ _ _b  abb _aa_ babb_ _ ___ _aab_bb ___  a_babaabbb__   baa _aaaa__ a_baaa_  a bbabab  _bba abab _b_ b_a_b aa_bab _ba a_a  b  ababab  a__a a_aa 
 bbbbaaa     babaab bb_ aab_ bb a_baa _b_ba b__baba  b a_a__ba_ _ b_ ___b_   baaa ba b_a_aaab bbb_b_b  _b a_baa _b__b_  a b b__  __a_  b_ __aaaaaa__a_a__ bbb_ab_ba   aabba aaa_  _a _   ba_aa____b  bb b
 a__bab  b _ba aab___    __ b _  b abba _b _a_ab aaa_ab_b  a_ babb__ ab  aaabab_ababa_bbb   ab  a____  bb_a_  _ b b_a _b b_ab aaaaaa__ bbb b_bb b_b_b_aa  aa_a_ aabb_ aa a___b__ a_ab_ab __ aab_b _b_ a b
 bbabbb_  abbb_a__ba_ a  _ aab  abb_ _ b_b b  bb__b   aaaaaa_a  ab bb_ _abb__a  aab a __abb _ab_abb_ b _bbb ab  b _a___   _baabbaaab baa _a __b_aaaba_aa b  a_a  a ___ b_b bb_b__ a_ _a__a_aba____b_   aa
 a_ba_  bab_bb ba_ a _b   _bbab_  ___ba b_b a a_ a bab_ a_ __a_  _aaa bb_a__bba ba_bab abab__a_   abbaba_b a_   _  aaba_b  _ ____b_ab_bb___b  _abbbbba baaa  b_a a a_ _b aaaaaa_  _ab_bbabb__aa_ b  b a _
+a__a_abbab_____   _ ab_ baa_a a a_ b  _b__ abbb_bab_ _bb_ ab b_bba  b babab_b ___   aaa b_a_aab_ aabbb a a aaa_ab__b_b _ _ _  bb_a_a ba__ ___b _ a__baa_a abba a a aa a b b_  a____ba  abbb aa a bbbbbb 
 a _a__ba _ a_ab _ b ab_   a_ab_b__ b ab  b__aaa_ _b_  bbb a_bba _ b__ b   __aaa_b_ b __bba aaab aab___b_b b_ b b_a_aaa a a_ a_aa_  ab  ababab_  bb_abb _aa__bb aba ab_a _a_a aabbbab_b_ba  _b_b ab_ b_  
+ bb aa _aa__ ba_  b__a_bb_  _a_ a  _ b_a____ab ab _bbbaba_ _ab a____ a _b_b a b a ba _a__a a  _   b _b__ aa_b aa baa  b  __ a_ b_bb aab_a _b _bbba_  bab_bb bbbbbb_a baa  _b_ab  ba_aaab_baaaababa_a_ba_
 a a_bab_a _aabba_b_ab__b bb_a a__aa_ b__ a ab bb a_aa a_a_ bbbaab     b_b_ _a__aab  a_a  b_ b b__bba   bbaab ba___a_b_ababab  _babb__ b  b  aba__ a_aab__bb_a_    bab__bba      _ba _bb_aab  __aaa_a__  
 _b b_ba aba b babbbb aab _ _ab_  __ _aba_ aa   _b_____ba_ a a bb_ bb   ab_a _aa_ _bb_a_a__b_b   _bb__a_    b_b_abb__aaaaaa____baba_bb_   bbab b a_a a a__ _abbabbb _aaaaaa_ba b a  b ab_ b  a_a_ bb aa_ 
 _aa__aaa_bbba a _abbba  _   b_a_bbbaba b ab_  b ___ ba__ab_a a__ba a__b  b__a_a_aa _  aabb b b _  _abb_  __b_     b_abbbab__a_    ba _  b_b  aba _ bb ababab_ba _a_b_b_ aba_a _a_baabaaa bb__bb _aa _aa_
 b a____a_  __ba_a_  ab   b bbabaaab__ ababa abbbb____ ___bb a    b _ab___b _a_b_bb __aba__bb _b  bab a_b __b__b_ab ab b a_a_ a_ abb aaaaaa_a_ _ba_bbbaaa  b b_ _b b    aaab b_b a  _a baaaaa a_b a_ a b_
+a_a_a aaba _ _a_  __ _a a  b _b_b_b_bbabb _ba a _a__b_bba _b_   b_ _bbaaaa_bbb_b_  a__b___  __aa _aabaa_b_ a a__a_  b  ba_aabbb_bb abaa b_bbbbbb_bab _  b  aba ab_a___b  a_ab_a_   baa   abba a aa _b a 
 aa b_b_ab   __  a a _bb_    bba_b  bbab aa__ _ _a  bb aa__  _a_aa_a _a b_ a aabb_ab a  a_ababab_bab bb_a__a ab_a   _ _b_aba_b_ba_ b _ba__ baa a_babbabba_bb _  _b aba _ _____ b_a  __bab_bbb a_babaa a_b
 b b __aab _b_a_aabb aa_ababab__   _ _a_abb_ b __b_aa   a_bb_a__a a  __b_a bbabb__b aba_b_b_aaa_bbbb    bb_ b_bb  ba a a__aab ba_aaa a___  _ a  a_a_aab b  ba   _b_a_a a_b _a b _bb  _aba_ babb_ba ab __ 
+ __ba __b a  bbbbbb_  a _  a a  _baaa____b_bba__ bb _abaaba  babaa _a b_ a bbbbb a_ba ba___ ba_ba_abbb __ aaa _b  a  b  b ab aa___a abba__a_a_b__ ab__ba  _bb__ _  aaa_ b b__bb a__ ab_ baaa_aab b_a_a  
 ab _bba aaaaaa_____ __a_bb _a b _aaba a bb_ abba__b  bb_aaaa _bb ab__ba _bbb_a_b_aba__ba bb_ __aa_ _ab bba a b  aab  a aa_      ___b   _ _ _bbba  abbb_a__b_ba  b_abbababb__ ab_   a _a  a abab_ ___ ab_
    __ a ab_b    bb aababb_b_a___ab __a b __ _ bab b_b_  a_b_ _abba_a__ab bb_b b_ __baa b_aba  _ba _  bb a_aaa_bbab_a _ab abab a   ___b_a_ b_a a   ababab ababb__bbb____bab_ aaab b_  _ aaa _aa_aa _ b aa
+_  a  a__ba__ba_  bbaaabb abaa_ab ba ___b_ b ab_baa bbbbbb_abb  b   a_bba_ a_ _b ab_ b___a_ a __ab_abb_ba__b_b b aa _ b_aba _ _b _ba a_a___ b  _aba_abba _ a _ baabab_aaa__ b a__  aa_  ba a ba__ ab  b 
+_aa_ ab_a_a  a_b abbb_ba_bb ____ b _bbbbb  __b b_aaa_a___bb_aa  baabbb _a_  __aaba _ a aa  b a__aa_ a _ _b___a b_aa___ba bbbbbb_bbbab _b b _b  _ b _abb b aa _  a b _a_ aa aaabab_ab    b   ba a__a__aaa
  aaaaab a b__ b bb   __  _b b__b b__bbaba_aaaaaa_  _babab a _ab_   abb ba_  b bba_aaa_a _a__ aa_  b b  _bb_ a b__ _a ba__ba_b_b_   __ba_baaaaa__bab bab _ a   ba_a_baab__a_b_b _a _ __bba_ ab  b_bb_bb a
+ba __abaa__b_a_ _ a ___  b_ab a_ _ __bb_ bbb_ aa aabaabb_ _a_aa _aab  ab_a ab baa bbbbbb a_a bba_a a_ __ b  bb_ _ aaaa b_ab_a_b ab_b bbaaaa_  _abb    aaa  aab a_b_ _ba_b_bbbbab_ bb_ ab_ __  _ b ___ _ 
+_a  ___a_aaaba  __ba____a   ab__ _abb__    _ abaab__  b_a _b ba ba_a __ababbabaa    ab__  b_b a___a a_ bbab aabab__ b aaa__ ba _b__bbb_   bab__ ba_bb b bbbbbb___b_ baa a_  baaaa  bba_aaa ab a _b_ab b 
+_a  __aa _ aab  _ _a__b_____ aa_ _ab__ab__  abab_a __ab a abaa_b  _bb  a_ _ba b_ba _abb_b aaa_   a_   _bb_b aaba _b_a bab__ _b aababbba_bb b_bb  b aa __bbbbbb  _ _ba b_aaa_b_ baa _bbaa b _aaa_ b  b aa
 a_b_ab_b  b ab aab__ bb     b_a_ _b ___b _a_b_ bba   _aa_aaaaaa_  aabb ba    bb___abb____  __bb  a  a_ba__b_b ab_b a b_b ab_aba_a_ _b ab aabbb__aaa_aa bb__ a__ba_  ab_bb_ ba  a ab  bb_a _ ba_aaba_a ab
 b__aba a _a__a_ b aaaaaa _a _ _  _ aa ba bbb_  _bb__a _b_abaaa b__a__ a_b_ b bbb a_bbb_aaab ___ abbbab _a abab_a  _ ba_a_aaa  _a b__ bab b   _ bba a_ a b_a a   b_a_b__a_ b_ ba_bb_ abb b_b__b bb a_bb a
 _ babb__a abb_abaa   b____ b b b___a   _a bbb_b _a_ a_aaa  b_abb_baba_a_  __a _a_b bab _a_ b   b_bbaba b bab b  a  a__bb_ba_ aab_ba_ba_b   bbbbbbaaa_bb___bba  _a _  _a_ _b aaaaaa aaa  _ _a___b _aa a_ 
 b_    a__ b__a_ba aaabaab bab b_a b__    b _abb abbbbb  aaabbb b__b b__ __b  b___ _ba_ b_ab__ a_ ba __a b__ba  b__b ababab ba  a_a  a___ ab__bb bbab_ ba  aa_ab_ _b ababaa aaaaa__a__a a baa  __ _a_ba _
+a baaa__aa aba_abba__ a__ a____b_bbba_  a _a a_bbbbba __a  _a  b_a_abb___bbbbbb  b bbba_  _b aba_bb ab _aab _b aa_bb b__ a_  bb a ab_abaaba aa_   _ bb_ba_ baa a_ ab  abb__a_  _ a_a   _a____a_ba     _b
 b _baa b   _ _ ababab_ b abaa __abbb  _____aa_b b a_a____ __aabb  bb_bb_a b b_a  bab__a b_  b    a_ a a aaab___  _ _baabb aa_a_b_a_bbb_ _ab   a __a  aa_abb__ b a_a__a_bbb_a  _a bbbabbabaaab a ba b__ba
 aab bbbab aaaaaa b_abb _b_aaba_b_a __ b  ___ b_ a_b_bb b_a   ba  bbaa__ b baaab   bbba__ _ a __aa_babb_ b __b  __ab ___  _aa_bb___ab    b ab_ a  __aaaab___aaaa_bbbb_bbaa____a_b_ aba  a  ba ba a  bb _ 
+___b ____bbbbbb_b aab_ b_b   bab ba_a__ba aabba_  _a  aabb_a  bababa_a  ba  aaa  _b_aaa__aa_  b   b__aba __b __aba__b_  aba _baa bbab _bb b _a baa a____b__ba b bbb__bba_ aaaa   b_a ab  __a_  _ b__aa  
 _  a_ _bbabbabbb__ a__a_bbabb aaaaaa _aba_bb__aabb    __b_bababa      __b b _ _a a a aba _  a b bbabb bab_b_a _b_a_baa ___    bb_abab__ba _a_b____a_a b   _a _bba_b_  b _aabaab_ bbaaa __a  a _b_ ba __a
 ab  b ___   aa    _  a__aa_b baabba_b__b_ aa__ba a b ab_   _b _a b_ __bab__b__b_ bbb  aba_bb_b  _ b  ababab__aa abb bb_ bbaaa__ aaa  b_b   b aabbab_ _ab___ba_aabaa a  __b_a_ _a ba  aaa bba_ba_a__ab_b_
 _ ab_aa _ _a __  b_b_ b__b b__bb aa bba__b bba _a_ __a baa  aa_bb_aa   _ab _ a_b  _abbb b_bbab_ aa a_ b_ba ba _ aa aa b_ba bb abbbb__ _aa  a  ababab_b _ _ _ab_a__aa __aa baa_bba_aab _aa_ __b  bb_ b_b 
+ a_bba_b_a  _ ___a ba ba_ba aaa  bbbbbb aa baa__  _ ab_b_ba b   a_ba_a_a b  ba a ____b  b  _ aa_b__ab ___baa bba___b_bb ab_ ab b____ab_aaa _ba b ab_ a_ba_ba_baaa _  ba  _ _a  _aba_a b  b_ b_bb baaba_b
 _  aaa_b_a bab  _baa_a  __a _abab_  aa _ _  _ba__ b _a_ __ba_  b_ b_a_b  b_b_aba aa_     b_aa__abb babb _ __ _a bbbb__bb b__aa a_ abb b_ab a__b_ bbaa  b aaa_ b_a abba_ baab_aabba a a __b ababab b_b__b
 a_b_a_aaa___a_a b_ aa  __a_b b ababab__abb_b aa_b _b_ b_ b bbbbbb  a__ a_ _ _ babba  ba_ aa __  b aa_bab_ aababb a a_bb  b_b _ b b_b_aab_aa b  _baa _baa___ b_a _a _bb   b_ a b_aa a_a_ _ ba_abba_ ba _ 
+aaa _a_ba_   a ab_abaa  bbbbbb_ ab   ___a_ b ba _bab _baba_ b____ b   bb_ba a_bbaa_b_baabb b_ _abb___bbaa_abb   b aaaba a a_b_aa _ b abba_b a _a a_ aa ____  a_b_b    a _bbba_ _  __b_bb a _b___aaa_ aa_
+_ba _  a _bbb aa b __bb_ b__b___b_  bbbbbb___abb_  ab _baa_ aa ba_ _ b_bbaaa b baabaa a  _bbaa     aa___a  aab_ b_a bab_a_b  _b_ babbb babb _a _a__ _ aaabaa_ ab_b__baba_ab _a_ab _ a__a__       aa_a_ba
 aba_a  a_aabaaa b_ ___ab_baab   b _   _  _b_ba  __ _ _ab_ ab_a b__ b_b__ abaab_abbb_a  a_b_abb_a_ababab    b b  aba_ ba   a_ba_ ababaaa_bb  bba_bb__a_bb b   b _aa __ a _ _aa_b_abbba_a bb__b a __ab__ a
   ababab b a_aa  bb aabba  b __aaba_bbba  _ _b_aa   _bab_a_a__ba___b____b_a_ bab__aa _ b_a_ b   b__bba _ b  _ a _ab_ a_ab_ bbba_bbbbabb_ a    a _ba_b_b__ bb_ aa_ bba _baa_ aa_aa_b_aaa  a_a bb a  ba  _
 a_aaab_bbb _ __ aab_ab___aaab ab  aa_b _bab_abb a  ____ _ b_ba   b_abba_ b_bbb  b b_babab _ b  a_ _a a a_a a_bb_ _  bb _aabb b _aa_ aa__ba_   _b __a___ b__aa _bab_b ab _aa  a_  bbb  b_b b_bbaa_aaaaaa 
  ba aa_ab bbbb __b_b ba   b_aaba_aab _aa_a  bbaa_ba__b__a____b _aa  ba   abb_bab_b    aab _baaa a __ _ abbb_ b__aba__bab_a___b_ b bbaa    _ba   bb ba b aaaaaa a_bab__b_b a_ b _bb a  b __aa___a_ __b  _
 aab___    bb  a_ b  _aba  b ab aba___   bb_babb ba a__bbabbabb_a bbaa __ __ a_a ab b_ b__a_aa_ _a _ ba___ b__ _a _bb aa ba bbb_ba  _ _a_ a  ababab_a ba b__aaa a ___a_ b _abbab_abb_a bbab__aba_  b __aa
   a_ab ba_bbb__b aa b __aa___ ba _aab_ab_a__ababab _ab _bb_a baa_aabbbb  __aa    _ab aaabaa_a    _bbaab_a__aa_bbb ___ _bb__abbaba _  a_bbb_ a_b_ b    a_ a _ba_ a_bab_b ab_ _b_  aa   __b a bb _ b_   ba
+a b_aaab_ bbb_aab a __a a__  bb _ __ a a aaa_ab  b aa_b_ _bba_baaa_a_ba_ _b bb__bba__baa ba  _b_ab__a  b___  _aaaa_b_b a _ _aa_a babaa_aba _b baa_ aab _  _ _ bbbbbb_bbb   ab ba  a b b_b__ _ a  bb_ _b_
+aaa__   _   ___a__b b_ bb_  _ab_b _aa __a     ab_ababa_b b_ a _aa _ b    b a  _ __ba _b b_b_   ab__abb aa aaa_baa__baa baabab_b_baaa_aab b_b _  _b_b_bb ba  _baaa_ aba__bbbbbb_aaa_abbaa_b__ _aba b_bb  
  _ aa aa_ a a__  aa_ abaa a b __bbbbbb _ bab_abab_aabbb _a_bab ab_a _bbb  b___  a_b_b_ ____b _b b__b aa_a b  babaa_   _ b_baa___bbbb  _ba a abb  aab_ba _a_ba_ aaaaaa bb__ a __  _bb_b_ a_  _a a_ab  _ab
 _ a _ aa bb b  aba ababab_a_ b_aa b abb aba _a b _a_ba_ a _ab__  bbb__ _b_b a b _ab_ a b a __ab_a__bb___ba ___baba b_aabb   a_aa  ab  b_b__ba bbb_a b_  aa_a_aa ___b bb aa aa  b ___aaa_ __ aabbbb_bb __
  b_  b_bb_b__  aab  _bb_b ___b_a b_a_a_b b aaba_b aaaaaa aaa _b__a__ a_   a_a __a_aabbbbbabab_ _a aa_ ab __ a_b_aabb _a  aaba  aa__b  a  _a __a _b  b a_bb   b  _b b_ab_ bbb _ bbabbaa_bbbb a_aa_ _ b__b
 _a    abbb a _ b_a_b_aa b ba__ b_  b___a_ bba_a__b bab _ba a_bb_ _abb_b_  _a aaababbb ab_ _abbabba_ab   ___ba ___a a _  bba_ a a _a_bbbba ba  a_bb  _aaaaaa_a b_ b aba_ b_b a_   ba _b a  __b_abba__a_a_
+_b  baa  ab  a  _____ aba_baa_aa  abba bbb b__bbbb  _a_a_a___baa___ ab_ba _b bb__ a_b_ab     a   a a__ _ abbb_bbbbbb____bb_a _bb_ abaa_  _aaaaab abba_ _ab a__  a_a__  _ b_aa_baaa_bb  aabaa b abb  _ b 
+b _ __ aaab _a_ b__b aba _aab _a_b_bbba_a ab_ baaa_ b_   bb _ _b_ab _ab aba b_a _b   a_ baaa__b_b__ b ab a _ _ __  baab_  b___ aaaa_aab_bab_  b_ b aa a_ a_b _bbabaaa_a_a a_bbbbbb b a _ bbaba_  ba_b__ 
  _bbbaaa_bb b a_ab_   babb a____ bb _aab_ab_ aaaaaa _b_b _ a  _ _ab_ab_  a__b_a__a_ a_b ba _ aa b __ab_aaa_bb_abbbb_ba b_bb b  b   b bb a a a_a_a_  b_a    ba __ _abb ab__  a aa_a__bbab__ba _ a a_bb_ab
 __b _baa bbb __    __aaa_bb __a_ b _  babaa__b baaba ba  aa_a aab  baba__ba __  aba ababab_ _b____b_ a  bb  b___ __ba aba__  ___  _a b_b_ _babba__aaa__b_aaaab abb  _b b _aabb_bbba_aba    _  bababb aa 
+_b_a_ ab_b b__ _ba a_  a_bbbbbb _ abbb_a b b___ a_bbaaaabb abaa_b__  _b__a  a _bbbbab_a_b_b_aab__a  _ab  __   _ba_  aa__aaa aab_b_ bb _bb  b a_abb_ ba__aaaa_a bab_  aa  b aa a baa ab   b _  _ a_ba___ 
+_b a_b___   _ a __aa b b_a_bbbbbb_a bb_a_baaab bb __   b_a   a_ baaaaabaa_ a_  ___a __ b__ bbb_b b__baa _ba_a _bbb_a  ___ba_aa___b_aaba bab b_  bb__ baa_b __ abb b_ b_a aaa bbbb aaab  aaaaa   a b  a _
 bb _  bbbb  a_bba   bba_babb  __b   __b_ ab ba a_b aa__ba a  a_b    aba_ aaba aaa_ _bba__b b ab_  b _ _aabaaa_b__   a  _b_bbab__baabbb_a___b____ba_ bab__ __abaa_ _ _b aaaaaa a__ aabbbb a _bbaa _ __a_ 
 ba_ aba_a baaaa_aba_  abbb b a_abb_ aba_ _ _aaaa_abb_aa_b_b ab a baab _ab_bb__ b aab_ _  bb_ ___aa  ba_  bb babba_abbabb __a_a  _  _b_ __aaa b__aab__ b_  __ _a  b b__ b   ababab  _ a_a   _b___bbab b_ 
 abb b____b_b   ___b_a__ _bba bbbb _  b  a aa   baabbaba _abab_a aaaaaa__b a  bbab ab_aaabbab  a _ab ___ a_ aa a bbab  abbab b___a _b ____b __aaba  aa bb a  b_ aa ab_ba_ __a ba____ abb ___b b___ _ bb_a
 _ b _ba_bb b_aab  bb_   ba b__bb a a_aaa_ a   a___a_b_ __ ___aa_b a _b_b __ba abba b    bbab _ _ bb a aaaaa _  _b_ b__a  a _aa_ababab_b__ _baaa_bb _aa a_b_b b_ba_b ba bbab ab _a_aaa_b __baa__ab ab bb 
 __b   bab __b __ _baa_b bbaa  __a_baabb a ____a__ a_bb baa aa_ b _bbb     bb_ _bbb bb___ba__ __aa_abb_ _ababab_ aaa b _aaaab a_b __aa  a  abb a __aa_ ba aa ab_ a bbbb  ab_b__baa_  bb abb__ _ba_a a a_ 
+ ab ba_ _ __ _aa bb_baabab bab_b  __bb a bb_  _bb_abba__a_bb _ aa   __aa_bb_b _a_  _bbbbbb_a abb_b__  __ abaa__ a_ _ aa__ bbbaa_abb abab_   a___baab_a b_b_   _aaa__a_ bbaaabab b a baa  a_   a_aa   a_ 
+ aa_ b__ baaab  baba _a__ aab_aa_bb_ __ abb aa b _a _ b___ _b _a b bbaaaaa_ ba_b  b_ a a__ ab _bbbbbb _aaaaa_b___ b_ bbbb_a_ a _b_bb__a_a a aa  ba_bbab   abaaab_ b_  bb_ _b_  abb___a_aa  _b_ ba _   ab
   b_ b_ab b aa_b_ aaa_ba __ bbb_ ba  b ba a _aa_ a a ba_ b a_b  abb_a_a abab a a_ab_ _aa   b_a_a  bba a _ ba  bb ba_  __b  b__a__b_ a bab  ab_bbbb_aa_bbbab__abbb_ _a_b____ba_b__  aaaaaa_ b____b__ a ba
+a _ b_ _b   bb  a_ __b _ba _a_   _aa_aaababa bb___ab   _bbb_aa a  _   _  a_babbb_ _  _a_b_b_ _b abaa__  __bb   aa aba _bbaaab_bbba a ba__b _a__bab__ba_aa b_a_bbbbbb  a_ a  ____aab aa_abb_ababb aa aba_
  ___ _ _   __ _baaa_ababab__b b ba ab_ ba __abaaab b _bb  _b aa__b  b  b_b aabaa_ba_abbabab b_b_ba_ab_aa__ b b_a_b  _ ab aaab  a  _abb _a_b__a_a__ a  aa_abb_ b _ aa_  _bbb__bbaa  ba  b_aab_ba  _  __ba
+a _b  bbaaba aaab_ __a__ __ bb_babab _a _b _ab aa_babb ab __ ba__a  b a__  b_aba babaab__aabb__  aa _ b ___b aa a_a _ba b ___bb_b_b ___ ba  _ab_ a_ aaa b_a b bbbbbb baa_a_bbb b   aa_a_aa  _ b_ a  b_a_
+_   __ba__baa a_b aaa bb _b__ba a    bbab bbaabbab a_ab_ a_a_ _ _a__ba_bba_ a a_ _a___b __b___a ab_ a_aa a_ aa _ b  b_abbbb b b a a_bb aa_ __ b_  _  abaa_b ab a_a  aaab__bbbbbb  b_ aba_ __ b_a_bab bab
 __aab_babb___ab___ ba aa_a_  __b_bba  bba   a__ b_ ___b _bab _ _  bab _bb__ba  aaaba_a a__ ab _bbb baba_  _b_a__  abb_ b bbbb b_b    b_ _ aaa_b  aababbab  _a a a_bb___ a abaa aaab_ _  b aaaaaa_b __aab
  _b _a_ _bbbab ba    __a   _ab _b_babbaaa baabbb _aab_b_ _b_a_ _bbab bb    _ ab__aa_b_ b a_a_ a  a _a b_a_ b__a ab ab b_a __aaaaa b _b bbaa a__ baabbb_ b_b_ba_ba_ ___aa_b     bab_a  b__ _b_bb_aaaaaa _
+b_b_aa ba___     _ b b bab__ aba ab bbbbbb ab_aaaa    _a_a aab_ _____aabb__b__  bbba ba b_b ab__ab_a_a aaba  a_aba _ b  b_a_  _ab_aabb_a aa ab_b_ a_ab  b  a__ a  bbbb _ba_bb__bb__a  aba___ab a  _a __a

@@ -163,7 +163,7 @@ public:
     if (curr == nullptr) return 0;
     int ind = curr->bin_check(target);
     if (ind != -1 && curr->values[ind] == target) return 1;
-    for (int i = 0; i < curr->size; i++) {
+    for (int i = 0; i <= curr->size; i++) {
       if (search(curr->children[i], target) == 1) return 1;
     }
     return 0;

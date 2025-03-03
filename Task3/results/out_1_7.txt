@@ -2,12 +2,22 @@
         if(deq(elem, x)) {
     if(feof(fp)) {
     if(argc != 3 || (sscanf(argv[2], "%lf", &x) != 1)) {
+        printf("Usage: %s <filename> <x>\n", argv[0]);
     if(res >= 0) {
+        printf ("%s : Task = %d Result = %d\n", argv[0], 1, res);
+                printf("File %s don't opened\n", argv[1]);
+                printf("Breaking fscanf data in file %s\n", argv[1]);
+                printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
     if(!fp) return FILE_OPENNING_ERROR;
         if(deq(elem, x)) {
     if(feof(fp)) {
     if(argc != 3 || (sscanf(argv[2], "%lf", &x) != 1)) {
+        printf("Usage: %s <filename> <x>\n", argv[0]);
     if(res >= 0) {
+        printf ("%s : Task = %d Result = %d\n", argv[0], 2, res);
+                printf("File %s don't opened\n", argv[1]);
+                printf("Breaking fscanf data in file %s\n", argv[1]);
+                printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
 int find_elem_in_file(const char *filename, double x, int *i, int *j);
 int find_elem_in_file(const char *filename, double x, int *i, int *j) {
     if(!fp) return FILE_OPENNING_ERROR;
@@ -22,7 +32,11 @@ int find_elem_in_file(const char *filename, double x, int *i, int *j) {
             *i = tmp_i;
     int res, i = 0, j = 0;
     if(argc != 3 || (sscanf(argv[2], "%lf", &x) != 1)) {
+        printf("Usage: %s <filename> <x>\n", argv[0]);
             printf ("%s : Task = %d Result = %d i = %d j = %d\n", argv[0], 3, res, i, j);
+            printf("File %s don't opened\n", argv[1]);
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
 int find_max_elem_in_file(const char *filename, double *x, int *i, int *j);
 int find_max_elem_in_file(const char *filename, double *x, int *i, int *j) {
     if(!fp) return FILE_OPENNING_ERROR;
@@ -34,7 +48,12 @@ int find_max_elem_in_file(const char *filename, double *x, int *i, int *j) {
         *i = tmp_i;
     int res, i, j;
     if(argc != 2) {
+        printf("Usage: %s <filename>\n", argv[0]);
             printf ("%s : Task = %d Result = %d X = %f i = %d j = %d\n", argv[0], 4, res, x, i, j);
+            printf("%s : Erorr file empty\n", argv[0]);
+            printf("File %s don't opened\n", argv[1]);
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
     if(!fp) return FILE_OPENNING_ERROR;
     if(
         if(feof(fp)) {
@@ -48,7 +67,13 @@ int find_max_elem_in_file(const char *filename, double *x, int *i, int *j) {
     if(feof(fp)) {
         if(max_length != 0) {
     if(argc != 2) {
+        printf("Usage: %s <filename>\n", argv[0]);
     if(res >= 0) {
+        printf ("%s : Task = %d Result = %d X = %f\n", argv[0], 5, res, x);
+            printf("%s : Erorr file empty\n", argv[0]);
+            printf("File %s don't opened\n", argv[1]);
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
     if(!fp) return FILE_OPENNING_ERROR;
     if(
         if(feof(fp)) {
@@ -58,13 +83,25 @@ int find_max_elem_in_file(const char *filename, double *x, int *i, int *j) {
     if(feof(fp)) {
         if(mono_count != 0) {
     if(argc != 2) {
+        printf("Usage: %s <filename>\n", argv[0]);
     if(res >= 0) {
+        printf ("%s : Task = %d Result = %d X = %f\n", argv[0], 6, res, x);
+            printf("%s : Erorr file empty\n", argv[0]);
+            printf("File %s don't opened\n", argv[1]);
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
     if(!fp) return FILE_OPENNING_ERROR;
     if(feof(fp)) {
         if(count_elem != 0) {
             if(deq(square_square_middle, 0.)) {
     if(argc != 2) {
+        printf("Usage: %s <filename>\n", argv[0]);
     if(res >= 0) {
+        printf ("%s : Task = %d Result = %d X = %f\n", argv[0], 7, res, x);
+            printf("%s : Erorr file empty\n", argv[0]);
+            printf("File %s don't opened\n", argv[1]);
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
     if(deq(a, b)) return SequenceTypeMonotone;
     else if(deq(a - b, b - c)) return SequenceTypeArithmetic;
     else if(
@@ -75,7 +112,13 @@ int find_max_elem_in_file(const char *filename, double *x, int *i, int *j) {
         if(next != now) return SequenceTypeCommon;
     if(feof(fp)) {
     if(argc != 2) {
+        printf("Usage: %s <filename>\n", argv[0]);
     if(res >= 0) {
+        printf ("%s : Task = %d Result = %d\n", argv[0], 8, res);
+            printf("%s : Erorr file empty\n", argv[0]);
+            printf("File %s don't opened\n", argv[1]);
+            printf("Breaking fscanf data in file %s\n", argv[1]);
+            printf("Undefined error: ret=%d in file %s\n", res, argv[1]);
         if(cursor >= N) status = io_status::buffer_overflow;
         if(0 < index || index >= N) status = io_status::out_of_range;
         if(status != io_status::success) return *this;
@@ -106,6 +149,8 @@ int find_max_elem_in_file(const char *filename, double *x, int *i, int *j) {
         if(!error) {
         if(stop) return *this;
         if(index != argc) {
+        printf("Usage: ");
+        printf("About: \n");
 		for(int i = 0; i < n; i++) {
 			if(bigArray[i].read(fp) != SUCCESS) {
 		for(int i = 0; i < n; i++) {
@@ -167,6 +212,7 @@ int find_max_elem_in_file(const char *filename, double *x, int *i, int *j) {
         cycle_k(a + i, sorted_n + 1 - i, 1);
     int sorted_n = 1, i;
         i = bin_divide_position_finder(a, sorted_n, a + sorted_n);
+        //printf("========\n");
         //printf("!: %d %lf\n", i, a[sorted_n]);
         cycle_k(a + i, sorted_n + 1 - i, 1);
     int cells = 1, i;
@@ -177,10 +223,12 @@ int find_max_elem_in_file(const char *filename, double *x, int *i, int *j) {
                 std::min(cells, n - i),
                 std::min(cells, n - (i + cells))
             //printf("======= %d %d\n", cells, i);
+            //printf("-\n");
     if(b == orig_a) {
         for(i = 0; i < n; i++) {
             b[i] = a[i];
     int i;
+        //printf("%lf ", a[n/2]);
         i = qsort_divide(a, n, a + n/2);
         //printf("%d\n", i);
         dswap(a + n/2, a + i);
@@ -193,20 +241,24 @@ int find_max_elem_in_file(const char *filename, double *x, int *i, int *j) {
             a = a + i;
             n = n - i;
     int i;
+    printf("=======\n");
     if(n == 2) {
         if(a[0] > a[1]) dswap(a, a+1);
+        //printf("%lf ", a[n/2]);
         //i = qsort_divide_indexed(a, n, n/2);
         i = qsort_divide(a, n, a[n/2]);
         //printf("%d\n", i);
         //dswap(a + n/2, a + i);
         if(i == 0) {
         } else if(i == n) {
+            //printf("!");
         } else if(i > n - i) {
             quick_sort(a+i, n-i);
             n = i;
             quick_sort(a, i);
             a = a + i;
             n = n - i;
+    printf("%d\n", n);
     if(n == 2) {
         if(a[0] > a[1]) dswap(a, a+1);
     if(k == 0) return -1;
@@ -216,13 +268,21 @@ int find_max_elem_in_file(const char *filename, double *x, int *i, int *j) {
             if(a[k] > a[p_k]) {
         if(ind != k) {
     if(n <= 1) return;
+    //printf("Started:\n");
+        //printf("========\n");
+        	    //printf("1");
         	    if(a[left] > a[right]) {
         	        if(a[0] < a[left]) ind = left;
+        	            //printf("*");
         	        if(a[0] < a[right]) ind = right;
         	} else if(is_valid(k, right)) {
+        	    //printf("2");
         	    if(a[0] < a[right]) ind = right;
         	} else if(is_valid(k, left)) {
+        	    //printf("3");
         	    if(a[0] < a[left]) ind = left;
+        	    //printf("4");
+    	//printf("\n%d\n", ind);
             if(saved <= tmp) {
             if(cursor <= 0) {
         //if(cursor >= 0) a[cursor] = saved;

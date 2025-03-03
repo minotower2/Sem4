@@ -1,12 +1,12 @@
 
 Task1
-./a01.out : Task = 1 Result = 231 Elapsed = 0.00
+./a01.out : Task = 1 Result = 332 Elapsed = 0.00
 ./a01.out : Task = 1 Result = 332 Elapsed = 0.00
 ./a01.out : Task = 1 Result = 332 Elapsed = 0.00
 ./a01.out : Task = 1 Result = 527 Elapsed = 0.00
 ./a01.out : Task = 1 Result = 527 Elapsed = 0.00
 ./a01.out : Task = 1 Result = 71 Elapsed = 0.00
-./a01.out : Task = 1 Result = 237 Elapsed = 0.00
+./a01.out : Task = 1 Result = 297 Elapsed = 0.00
 ./a01.out : Task = 1 Result = 297 Elapsed = 0.00
 ./a01.out : Task = 1 Result = 297 Elapsed = 0.00
 ./a01.out : Task = 1 Result = 49 Elapsed = 0.00
