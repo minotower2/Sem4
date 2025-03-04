@@ -56,10 +56,10 @@ Task5
 ./a05.out : Task = 5 Result = 0 Elapsed = 0.00
 ./a05.out : Task = 5 Result = 0 Elapsed = 0.00
 ./a05.out : Task = 5 Result = 0 Elapsed = 0.00
-./a05.out : Task = 5 Result = 1 Elapsed = 0.00
-./a05.out : Task = 5 Result = 1 Elapsed = 0.00
-./a05.out : Task = 5 Result = 1 Elapsed = 0.00
-./a05.out : Task = 5 Result = 1 Elapsed = 0.00
+./a05.out : Task = 5 Result = 559 Elapsed = 0.00
+./a05.out : Task = 5 Result = 276 Elapsed = 0.00
+./a05.out : Task = 5 Result = 509 Elapsed = 0.00
+./a05.out : Task = 5 Result = 327 Elapsed = 0.00
 Task6
 ./a06.out : Task = 6 Result = 771 Elapsed = 0.00
 ./a06.out : Task = 6 Result = 68 Elapsed = 0.00

@@ -189,59 +189,48 @@ io_status solve5(const char *a, const char *b, char *s, char *t, char *x, int *r
   const int length = 1234;
   char buffer[length];
   char buffer2[length];
-  int flag = 0;
+  int flag = 1;
   while(fgets(buffer, sizeof(buffer), fin)) {
+    flag = 1;
     for (int j = 0; j < length; j++) {const char c = buffer[j]; if (c != '\n') buffer2[j] = c; else {buffer[j] = '\0'; buffer2[j] = c;}}
     start = strtok(buffer, t);
-    flag = 1;
     while (start) {
+      flag = 1;
       for (long unsigned int j = 0; j < len; j++) {
         if (strcmp(conditions[j], "<") == 0) {
-          if (strcmp(start, words[j]) < 0) {
-            flag *= 1;
-          }
-          else {
-            flag *= 0;
+          if (strcmp(start, words[j]) >= 0) {
+            flag = 0;
+            break;
           }
         }
         else if (strcmp(conditions[j], ">") == 0) {
-          if (strcmp(start, words[j]) > 0) {
-            flag *= 1;
-          }
-          else {
-            flag *= 0;
+          if (strcmp(start, words[j]) <= 0) {
+            flag =0;
+            break;
           }
         }
         else if (strcmp(conditions[j], "<=") == 0) {
-          if (strcmp(start, words[j]) <= 0) {
-            flag *= 1;
-          }
-          else {
-            flag *= 0;
+          if (strcmp(start, words[j]) > 0) {
+            flag = 0;
+            break;
           }
         }
         else if (strcmp(conditions[j], ">=") == 0) {
-          if (strcmp(start, words[j]) >= 0) {
-            flag *= 1;
-          }
-          else {
-            flag *= 0;
+          if (strcmp(start, words[j]) < 0) {
+            flag = 0;
+            break;
           }
         }
         else if (strcmp(conditions[j], "=") == 0) {
-          if (strcmp(start, words[j]) == 0) {
-            flag *= 1;
-          }
-          else {
-            flag *= 0;
+          if (strcmp(start, words[j]) != 0) {
+            flag = 0;
+            break;
           }
         }
         else if (strcmp(conditions[j], "<>") == 0) {
-          if (strcmp(start, words[j]) != 0) {
-            flag *= 1;
-          }
-          else {
-            flag *= 0;
+          if (strcmp(start, words[j]) == 0) {
+            flag = 0;
+            break;
           }
         }
         else {
@@ -250,12 +239,12 @@ io_status solve5(const char *a, const char *b, char *s, char *t, char *x, int *r
           return io_status::format;
         }
       }
+      if (flag == 0) break;
       start = strtok(nullptr, t);
     }
     if (flag == 1) {
       (*r)++;
       fputs(buffer2, fout);
-      break;
     }
   }
 
