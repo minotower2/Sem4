@@ -21,11 +21,11 @@ Task2
 ./a02.out : Task = 2 Result = 2455 Elapsed = 0.00
 ./a02.out : Task = 2 Result = 5000 Elapsed = 0.00
 ./a02.out : Task = 2 Result = 0 Elapsed = 0.00
-./a02.out : Task = 2 Result = 352 Elapsed = 0.00
-./a02.out : Task = 2 Result = 0 Elapsed = 0.00
-./a02.out : Task = 2 Result = 12 Elapsed = 0.00
-./a02.out : Task = 2 Result = 22 Elapsed = 0.00
-./a02.out : Task = 2 Result = 0 Elapsed = 0.00
+./a02.out : Task = 2 Result = 495 Elapsed = 0.00
+./a02.out : Task = 2 Result = 266 Elapsed = 0.00
+./a02.out : Task = 2 Result = 523 Elapsed = 0.00
+./a02.out : Task = 2 Result = 535 Elapsed = 0.00
+./a02.out : Task = 2 Result = 513 Elapsed = 0.00
 Task3
 Task4
 ./a04.out : Task = 4 Result = 1 Elapsed = 0.00

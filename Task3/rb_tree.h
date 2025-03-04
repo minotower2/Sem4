@@ -85,8 +85,8 @@ class rb_tree {
       return 0;
     }
 
-    io_status add_value(T& x){
-      rb_tree_node<T> *curr = new rb_tree_node<T>(x.get());
+    io_status add_value(char * x){
+      rb_tree_node<T> *curr = new rb_tree_node<T>(x);
       if (curr == nullptr) {
         delete_subtree(root);
         return io_status::memory;

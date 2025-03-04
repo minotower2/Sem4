@@ -92,12 +92,9 @@ class querry_2 {
     querry_2() = default;
     io_status initialize (char *string, const char *t) {
       char *start = strtok(string, t);
-      word buf;
       io_status r;
       while (start) {
-        r = buf.init(start);
-        if (r != io_status::success) return r;
-        r = birch.add_value(buf);
+        r = birch.add_value(start);
         if (r != io_status::success) return r;
         start = strtok(nullptr, t);
       }

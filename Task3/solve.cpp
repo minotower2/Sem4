@@ -45,8 +45,8 @@ io_status solve2(const char *a, const char *b, char *s, char *t, int * r) {
   const int len = 1234;
   char buffer[len];
   char buffer2[len];
-  int flag = -1;
   while(fgets(buffer, sizeof(buffer), fin)) {
+    int flag = 0;
     for (int j = 0; j < len; j++) {const char c = buffer[j]; if (c != '\n') buffer2[j] = c; else {buffer[j] = '\0'; buffer2[j] = c;}}
     char *start = strtok(buffer, t);
     while (start) {
