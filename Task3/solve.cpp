@@ -68,6 +68,35 @@ io_status solve2(const char *a, const char *b, char *s, char *t, int * r) {
   return io_status::success;
 }
 
+io_status solve3(const char *a, const char *b, char *s, char *t, char *x, int * r) {
+  querry_3 quartz;
+  io_status read = quartz.initialize(s, t, x);
+  if (read != io_status::success) return read;
+  FILE *fin = fopen(a, "r");
+  if (fin == nullptr) return io_status::read;
+  FILE *fout = fopen(b, "w");
+  if (fout == nullptr) {fclose (fin); return io_status::read;}
+
+  const int len = 1234;
+  char buffer[len];
+  char buffer2[len];
+  while(fgets(buffer, sizeof(buffer), fin)) {
+    for (int j = 0; j < len; j++) {const char c = buffer[j]; if (c != '\n') buffer2[j] = c; else {buffer[j] = '\0'; buffer2[j] = c;}}
+    char *start = strtok(buffer, t);
+    while (start) {
+      if (quartz.search(start) == 1) {
+        (*r)++;
+        fputs(buffer2, fout);
+        break;
+      }
+      start = strtok(nullptr, t);
+    }
+  }
+
+  fclose(fin);
+  fclose(fout);
+  return io_status::success;
+}
 io_status solve4(const char *a, const char *b, char *s, char *t, char *x, int *r) {
   FILE *fin = fopen(a, "r");
   if (fin == nullptr) return io_status::read;

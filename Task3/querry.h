@@ -5,6 +5,8 @@
 #include <string.h>
 #include "btree.h"
 #include "rb_tree.h"
+#include "avl_tree.h"
+#include <vector>
 
 #define LEN 1234
 
@@ -37,7 +39,7 @@ class word {
           return io_status::memory;
       }
       else {
-        return io_status::read;
+        return io_status::success;
       }
     }
     char * get() const {return string.get();}
@@ -107,6 +109,84 @@ class querry_2 {
     int search(char *s) {
       word buf;
       io_status r = buf.init(s);
+      if (r != io_status::success) return 0;
+      return birch.search(birch.get_root(), buf);
+    }
+};
+
+class pair {
+  private:
+    word a;
+    word b;
+  public:
+    pair() = default;
+    ~pair() = default;
+    pair(char *c, char *n) {init(c, n);}
+    io_status init (char * n, char * m) {
+      io_status ret;
+      ret = a.init(n);
+      if (ret != io_status::success) return ret;
+      ret = b.init(m);
+      if (ret != io_status::success) return ret;
+      return io_status::success;
+    }
+    pair(const pair&) = delete;
+    pair(pair&&) = default;
+    pair& operator = (const pair&) = delete;
+    pair& operator = (pair&&) = default;
+    void print(FILE *fout = stdout) {
+      fprintf(fout, "%s %s\n", a.get(), b.get());
+    }
+    int operator<(const pair& x) {return a < x.a;}
+    int operator>(const pair& x) {return a > x.a;}
+    int operator<=(const pair& x) {return a <= x.a;}
+    int operator>=(const pair& x) {return a >= x.a;}
+    int operator!=(const pair& x) {return a != x.a;}
+    int operator==(const pair& x) {return a == x.a;}
+    word& get_first() {return a;}
+    word& get_second() {return b;}
+};
+
+class querry_3 {
+  private:
+    avl_tree<pair> birch;
+  public:
+    querry_3() = default;
+    io_status initialize (char *string, char *x, const char *t) {
+      std::vector<char *> words;
+      std::vector<char *> replace;
+      char *start = strtok(string, t);
+      while (start) {
+        words.push_back(start);
+        start = strtok(nullptr, t);
+      }
+      start = strtok(x, t);
+      while (start) {
+        replace.push_back(start);
+        start = strtok(nullptr, t);
+      }
+      long int a = words.size(), b = replace.size(), dif;
+      if (a > b) {
+        dif = a - b;
+        for (long int i = 0; i < dif; i++) {
+          replace.push_back(nullptr);
+        }
+      }
+      for (long int i = 0; i < a; i++) {
+        io_status r;
+        r = birch.add_value(words[i], replace[i]);
+        if (r != io_status::success) return r;
+      }
+      return io_status::success;
+    }
+    ~querry_3() = default;
+    void print(int r) {
+      birch.print(r);
+    }
+    int search(char *s) {
+      if (s == nullptr) return 0;
+      pair buf;
+      io_status r = buf.init(s, nullptr);
       if (r != io_status::success) return 0;
       return birch.search(birch.get_root(), buf);
     }
