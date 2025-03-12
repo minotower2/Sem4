@@ -1,0 +1,3 @@
+name like a%
+group < 7
+phone <> 234
