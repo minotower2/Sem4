@@ -83,15 +83,18 @@ class record {
       const int max_items = 3;
       const ordering default_ordering[max_items] = {ordering::name, ordering::phone, ordering::group};
       const ordering * p = (order ? order : default_ordering);
-      for (int i = 0; i < max_items; i++) switch (p[i]) {
-        case ordering::name:
-          fprintf (fp, " %s", name.get()); break;
-        case ordering::phone:
-          fprintf (fp, " %d", phone); break;
-        case ordering::group:
-          fprintf (fp, " %d", group); break;
-        case ordering::none:
-          continue;
+      for (int i = 0; i < max_items; i++) {
+        if (p[i] != ordering::none && i > 0) fprintf(fp, " ");
+        switch (p[i]) {
+          case ordering::name:
+            fprintf (fp, "%s", name.get()); break;
+          case ordering::phone:
+            fprintf (fp, "%d", phone); break;
+          case ordering::group:
+            fprintf (fp, "%d", group); break;
+          case ordering::none:
+            continue;
+        }
       }
       fprintf (fp, "\n");
     }

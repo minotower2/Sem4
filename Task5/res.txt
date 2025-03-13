@@ -1,0 +1,55 @@
+AAA 1 2
+
+AAA
+
+1
+
+2
+
+AAA 1 2
+
+AAA 2 1
+
+1 AAA 2
+
+1 2 AAA
+
+2 AAA 1
+
+2 1 AAA
+
+AAA 1
+
+AAA 2
+
+1 AAA
+
+1 2
+
+2 AAA
+
+2 1
+
+BBB -99 50
+
+BBB -99 50
+
+
+BBB -99 50
+
+
+BBB -99 50
+
+
+AAA 1 2
+BBB -99 50
+
+AAA 1 2
+
+AAA 1 2
+BBB -99 50
+
+BBB -99 50
+
+
+./a.out : Result = 26 Elapsed = 0.00

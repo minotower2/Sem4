@@ -18,7 +18,7 @@ class command : public record {
     command() = default;
     ~command() = default;
     bool parse(const char * string, ordering *order) {
-      char buffer[LEN];
+      char buffer[LEN] = {0};
       strcpy(buffer, string);
       char *s;
       s = strtok(buffer, " ,");
@@ -147,7 +147,7 @@ class command : public record {
           init(nullptr, 0, temp);
           break;
         case 3:
-          for (int j = 0 ; j < LEN; j++) if (s[j] == '\n') s[j] = '\0';
+          for (int j = 0 ; j < LEN && s[j]; j++) if (s[j] == '\n') s[j] = '\0';
           init(s, 0 ,0);
           break;
         default:
@@ -234,7 +234,7 @@ class command : public record {
           set_group(temp);
           break;
         case 3:
-          for (int j = 0 ; j < LEN; j++) if (s[j] == '\n') s[j] = '\0';
+          for (int j = 0 ; j < LEN && s[j]; j++) if (s[j] == '\n') s[j] = '\0';
           set_name(s);
           break;
         default:
@@ -321,7 +321,7 @@ class command : public record {
           set_group(temp);
           break;
         case 3:
-          for (int j = 0 ; j < LEN; j++) if (s[j] == '\n') s[j] = '\0';
+          for (int j = 0 ; j < LEN && s[j]; j++) if (s[j] == '\n') s[j] = '\0';
           set_name(s);
           break;
         default:
