@@ -90,6 +90,12 @@ class command : public record {
           else if (strcmp(s, "<=") == 0) c_phone = condition::le;
           else if (strcmp(s, ">=") == 0) c_phone = condition::ge;
           else if (strcmp(s, "like") == 0) c_phone = condition::like;
+          else if (strcmp(s, "not") == 0) {
+            s = strtok(nullptr, " ");
+            if (s == nullptr) return false;
+            if (strcmp(s, "like") == 0) c_phone = condition::nlike;
+            else return false;
+          }
           else return false;
           break;
         case 2:
@@ -100,6 +106,12 @@ class command : public record {
           else if (strcmp(s, "<=") == 0) c_group = condition::le;
           else if (strcmp(s, ">=") == 0) c_group = condition::ge;
           else if (strcmp(s, "like") == 0) c_group = condition::like;
+          else if (strcmp(s, "not") == 0) {
+            s = strtok(nullptr, " ");
+            if (s == nullptr) return false;
+            if (strcmp(s, "like") == 0) c_group = condition::nlike;
+            else return false;
+          }
           else return false;
           break;
         case 3:
@@ -110,6 +122,12 @@ class command : public record {
           else if (strcmp(s, "<=") == 0) c_name = condition::le;
           else if (strcmp(s, ">=") == 0) c_name = condition::ge;
           else if (strcmp(s, "like") == 0) c_name = condition::like;
+          else if (strcmp(s, "not") == 0) {
+            s = strtok(nullptr, " ");
+            if (s == nullptr) return false;
+            if (strcmp(s, "like") == 0) c_name = condition::nlike;
+            else return false;
+          }
           else return false;
           break;
         default:
@@ -160,6 +178,12 @@ class command : public record {
           else if (strcmp(s, "<=") == 0) c_phone = condition::le;
           else if (strcmp(s, ">=") == 0) c_phone = condition::ge;
           else if (strcmp(s, "like") == 0) c_phone = condition::like;
+          else if (strcmp(s, "not") == 0) {
+            s = strtok(nullptr, " ");
+            if (s == nullptr) return false;
+            if (strcmp(s, "like") == 0) c_phone = condition::nlike;
+            else return false;
+          }
           else return false;
           break;
         case 2:
@@ -170,6 +194,12 @@ class command : public record {
           else if (strcmp(s, "<=") == 0) c_group = condition::le;
           else if (strcmp(s, ">=") == 0) c_group = condition::ge;
           else if (strcmp(s, "like") == 0) c_group = condition::like;
+          else if (strcmp(s, "not") == 0) {
+            s = strtok(nullptr, " ");
+            if (s == nullptr) return false;
+            if (strcmp(s, "like") == 0) c_group = condition::nlike;
+            else return false;
+          }
           else return false;
           break;
         case 3:
@@ -180,6 +210,12 @@ class command : public record {
           else if (strcmp(s, "<=") == 0) c_name = condition::le;
           else if (strcmp(s, ">=") == 0) c_name = condition::ge;
           else if (strcmp(s, "like") == 0) c_name = condition::like;
+          else if (strcmp(s, "not") == 0) {
+            s = strtok(nullptr, " ");
+            if (s == nullptr) return false;
+            if (strcmp(s, "like") == 0) c_name = condition::nlike;
+            else return false;
+          }
           else return false;
           break;
         default:
@@ -229,6 +265,12 @@ class command : public record {
           else if (strcmp(s, "<=") == 0) c_phone = condition::le;
           else if (strcmp(s, ">=") == 0) c_phone = condition::ge;
           else if (strcmp(s, "like") == 0) c_phone = condition::like;
+          else if (strcmp(s, "not") == 0) {
+            s = strtok(nullptr, " ");
+            if (s == nullptr) return false;
+            if (strcmp(s, "like") == 0) c_phone = condition::nlike;
+            else return false;
+          }
           else return false;
           break;
         case 2:
@@ -239,6 +281,12 @@ class command : public record {
           else if (strcmp(s, "<=") == 0) c_group = condition::le;
           else if (strcmp(s, ">=") == 0) c_group = condition::ge;
           else if (strcmp(s, "like") == 0) c_group = condition::like;
+          else if (strcmp(s, "not") == 0) {
+            s = strtok(nullptr, " ");
+            if (s == nullptr) return false;
+            if (strcmp(s, "like") == 0) c_group = condition::nlike;
+            else return false;
+          }
           else return false;
           break;
         case 3:
@@ -249,6 +297,12 @@ class command : public record {
           else if (strcmp(s, "<=") == 0) c_name = condition::le;
           else if (strcmp(s, ">=") == 0) c_name = condition::ge;
           else if (strcmp(s, "like") == 0) c_name = condition::like;
+          else if (strcmp(s, "not") == 0) {
+            s = strtok(nullptr, " ");
+            if (s == nullptr) return false;
+            if (strcmp(s, "like") == 0) c_name = condition::nlike;
+            else return false;
+          }
           else return false;
           break;
         default:

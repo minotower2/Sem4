@@ -1,3 +1,28 @@
-name like a%
-group < 7
-phone <> 234
+* where name = AAA
+name where name = AAA
+phone where name = AAA
+group where name = AAA
+name, phone, group where name = AAA
+name, group, phone where name = AAA
+phone, name, group where name = AAA
+phone, group, name where name = AAA
+group, name, phone where name = AAA
+group, phone, name where name = AAA
+name, phone where name = AAA
+name, group where name = AAA
+phone, name where name = AAA
+phone, group where name = AAA
+group, name where name = AAA
+group, phone where name = AAA
+* where name = BBB and phone = -99
+* where name = CCC or phone = 100 or group = 50
+* where name = CCC or phone = 100 or group = 51
+* where name = BBB and phone = -99
+* where name = BBB and phone = -99 and group = 51
+* where name = BBB and phone = -99 and group = 50
+* where name not like BBB and phone = -99 and group = 51
+* where name = BBB or phone = 1
+* where name not like BBB and phone = 1
+* where name not like salghksdfhkjsjvbkdsffshdlf
+* where name like % and phone <> 1
+
