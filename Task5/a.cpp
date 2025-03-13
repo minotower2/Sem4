@@ -31,6 +31,7 @@ int main(int argc, char* argv[]) {
     ordering order[3] = {ordering::none};
     buff.parse(buf, order);
     res += birch.check(buff, order);
+    printf("\n");
   }
   t = (clock()-t)/CLOCKS_PER_SEC;
 
