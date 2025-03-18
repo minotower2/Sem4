@@ -267,7 +267,30 @@ class record {
           int dif = strlen(x) - strlen(buffercopycopy);
           if (dif < 0) return false;
           if (strcmp(buffercopycopy, x+dif) == 0) return true;
-          else return false;
+          for (int b = 0; buffer[j+1]; b++, j++) {
+            if (x[dif+b] == '\0') {
+              return false;
+            }
+            if (keys[j+1] == '0') {
+              if (buffer[j+1] != x[dif+b]) {
+                return false;
+              }
+            }
+            if (keys[j+1] == '3') {
+              if (x[dif+b] > buffercopy[j+1] || x[dif+b] < buffer[j+1]) {
+                return false;
+              }
+            }
+            if (keys[j+1] == '4') {
+              if (x[dif+b] <= buffercopy[j+1] && x[dif+b] >= buffer[j+1]) {
+                return false;
+              }
+            }
+            if (keys[j+2] == '\0' && x[dif+b+1] != '\0') {
+              return false;
+            }
+          }
+          return true;
         }
       }
       j = 0;
@@ -298,8 +321,30 @@ class record {
           strcpy(buffercopycopy, buffer+j+2);
           int dif = strlen(x) - strlen(buffercopycopy);
           if (dif < 0) return false;
-          if (strcmp(buffercopycopy, x+dif) == 0) return true;
-          else return false;
+          for (int b = 0; buffer[j+2]; b++, j++) {
+            if (x[dif+b] == '\0') {
+              return false;
+            }
+            if (keys[j+2] == '0') {
+              if (buffer[j+2] != x[dif+b]) {
+                return false;
+              }
+            }
+            if (keys[j+2] == '3') {
+              if (x[dif+b] > buffercopy[j+2] || x[dif+b] < buffer[j+2]) {
+                return false;
+              }
+            }
+            if (keys[j+2] == '4') {
+              if (x[dif+b] <= buffercopy[j+2] && x[dif+b] >= buffer[j+2]) {
+                return false;
+              }
+            }
+            if (keys[j+3] == '\0' && x[dif+b+1] != '\0') {
+              return false;
+            }
+          }
+          return true;
         }
       }
 
