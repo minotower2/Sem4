@@ -54,6 +54,15 @@ class record {
       else name = nullptr;
       return 0;
     }
+    bool is_eq(record &x) {
+      if (x.get_phone() == phone && x.get_group() == group) {
+        const char *sx = x.get_name();
+        if (sx == nullptr && name == nullptr) return true;
+        if (sx == nullptr || name == nullptr) return true;
+        if (strcmp(sx, name.get()) == 0) return true;
+      }
+      return false;
+    }
     void set_phone(int p) {
       phone = p;
     }
