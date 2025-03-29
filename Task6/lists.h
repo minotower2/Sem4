@@ -36,7 +36,7 @@ class list1 {
     void print_list (ordering *order){
       const list1_node *curr;
       for (curr = head; curr; curr = curr->get_next()) {
-        (curr->body)->print(order);
+        if (curr->body) (curr->body)->print(order);
       }
     }
 
@@ -287,12 +287,11 @@ class list {
           else {
             list_node *p = curr->get_prev();
             list_node *n = curr->get_next();
-            p->next = n;
+            if (p) p->next = n;
             n->prev = p;
             curr->erase();
             delete curr;
-            next = n;
-            continue;
+            curr = p;
           }
         }
         next = curr->get_next();
