@@ -240,7 +240,7 @@ class list {
       }
       *tail = (list_node&&) buff;
       if (ltail) ltail->set_next(tail);
-      if (head != ltail) tail->set_prev(ltail);
+      if (head != nullptr) tail->set_prev(ltail);
       ltail = tail;
       if (head == nullptr) head = ltail;
       return true;
@@ -268,6 +268,7 @@ class list {
               head = curr->get_next();
               curr->erase();
               delete curr;
+              curr = head;
               next = head;
               continue;
             }
