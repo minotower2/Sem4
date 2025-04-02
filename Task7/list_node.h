@@ -37,7 +37,7 @@ class list1;
 class list1_node {
   friend class list1;
   private:
-    record * body = nullptr;
+    list_node * body = nullptr;
     list1_node *next = nullptr;
   public:
     list1_node() = default;
@@ -53,7 +53,12 @@ class list1_node {
       return *this;
     }
     list1_node *get_next() const {return next;}
+    const char * get_name() {
+      if (body == nullptr) return nullptr;
+      return body->get_name();
+    }
     void set_next(list1_node *x) {next = x;}
+    list_node * get_body() {return body;}
     // 1 значит меньше 0 значит больше 2 значит равно
     int cmp(list1_node &x, ordering *order) {
       switch (order[0]) {

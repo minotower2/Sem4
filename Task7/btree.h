@@ -1,6 +1,8 @@
 #ifndef BTREE
 #define BTREE
 #include "btree_node.h"
+
+class list1;
 template <class T>
 class b_tree {
 private:
@@ -178,10 +180,10 @@ public:
     return io_status::success;
   }
 public:
-  T * find(T &x) const {
+  T * find(T &x) {
     return find_subtree(root, x);
   }
-  static T * find_subtree(b_tree_node<T> *curr, T &x) {
+  T * find_subtree(b_tree_node<T> *curr, T &x) {
     if (curr == nullptr) return nullptr;
     int i = curr->bin_search(x);
     if (i < curr->size && curr->values[i] == x) return &(curr->values[i]);

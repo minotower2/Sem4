@@ -1,55 +1,51 @@
 #ifndef HASH
 #define HASH
-#define TABLELENGTH 100000
-#include "btree.h"
+#define TABLELENGTH 1000
+
 #include "config.h"
 #include "record.h"
-#include "list_node.h"
+#include "list1.h"
+#include "btree.h"
 
 class record_name {
   private:
-    list_node *base = nullptr;
+    list1 names;
   public:
     record_name() = default;
     record_name(const record_name& ) = delete;
-    record_name(record_name && x) {
-      base = x.base; x.base = nullptr;
-    } 
+    record_name(record_name && x) = default;
     ~record_name() = default;
     record_name& operator = (const record_name&) = delete;
-    record_name& operator = (record_name&& x) {
-      if (this == &x) return *this;
-      base = x.base; x.base = nullptr;
-      return *this;
+    record_name& operator = (record_name&& x) = default;
+    const char * get_name() {
+      if (names.get_head() == nullptr) return nullptr;
+      return (names.get_head())->get_name();
     }
-    record * get_base() {return base;}
-    void set_base(list_node * x) {base = x;}
-    int operator < (record_name& x) {return cmp(x) < 0;}
-    int operator > (record_name& x) {return cmp(x) > 0;}
-    int operator <= (record_name& x) {return cmp(x) <= 0;}
-    int operator >= (record_name& x) {return cmp(x) >= 0;}
-    int operator == (record_name& x) {return cmp(x) == 0;}
-    int operator != (record_name& x) {return cmp(x) != 0;}
-    void print(FILE *fp = stdout) {
-      (void) fp;
-      (*base).print();
+    int operator> (record_name& x){
+      return (cmp (x) > 0 ? 1 : 0);
     }
-
-  private:
-    int cmp(record_name & x) {
-      if (base->get_name() == nullptr) {
-        if ((x.get_base())->get_name() == nullptr) return 0;
-        else return -1;
+    int operator< (record_name& x) {
+      return (cmp (x) < 0 ? 1 : 0);
+    }
+    int operator== (record_name& x) {
+      return (cmp (x) == 0 ? 1 : 0);
+    }
+    void add_value(list_node * x) {names.add_node(x);}
+    list1 * get_names() {return &names;}
+    void print(FILE *fp) {
+      list1_node * curr;
+      for (curr= names.get_head(); curr; curr = curr->get_next()) {
+        fprintf(fp, "%s\n", curr->get_name());
       }
-      int res = strcmp(base->get_name(), (x.get_base())->get_name());
-      if (res != 0) return res;
-      int p1 = base->get_phone(), p2 = (x.get_base())->get_phone();
-      if (p1 < p2) return -1;
-      if (p1 > p2) return 1;
-      int g1 = base->get_group(), g2 = (x.get_base())->get_group();
-      if (g1 < g2) return -1;
-      if (g1 > g2) return 1;
-      return 0;
+    }
+  private:
+    int cmp(record_name& x) {
+      if (get_name() == nullptr) {
+        if (x.get_name() == nullptr) return 0;
+        return -1;
+      }
+      if (x.get_name() == nullptr) return 1;
+      return strcmp(get_name(), x.get_name());
     }
 };
 
@@ -86,15 +82,27 @@ class hashentry {
         pow = (pow * p) % m;
       }
       hash %= TABLELENGTH;
+      //printf("name = %s, key = %d\n", name, hash);
       return hash;
     }
-    void add_value(list_node *x) {
+    void add_value(list_node *x, int l) {
+      if(x == nullptr) return;
       record_name base;
-      base.set_base(x);
-      birch.add_value(base);
+      base.add_value(x);
+      key = l;
+      record_name * cop = birch.find(base);
+      if (cop) cop->add_value(x);
+      else birch.add_value(base);
     }
-    record_name * find(record_name *x) {
-      return birch.find(*x);
+    record_name * find(record *x) {
+      record_name temp;
+      list_node buf;
+      if (x == nullptr) return nullptr;
+      const char * name = x->get_name();
+      if (name == nullptr) return nullptr;
+      buf.init(name, 0, 0);
+      temp.add_value(&buf);
+      return birch.find(temp);
     }
     int get_key() {return key;}
     int operator < (hashentry& x) {return key < x.get_key();}
@@ -111,8 +119,8 @@ class hashtable {
     int nonfree = 0;
   public:
     void print() {
-      for (int i = 0; i < nonfree; i++) {
-        body[i].print();
+      for (int i = 0; i < TABLELENGTH; i++) {
+        if (body[i].get_key() != 0) body[i].print();
       }
     }
     hashtable() = default;
@@ -120,39 +128,13 @@ class hashtable {
     void add_entry(list_node *x, config conf) {
       hashentry temp;
       temp.init(conf, x->get_name());
-      int l = 0, r = nonfree, c;
-      while (r !=l ) {
-        c = (r + l) / 2;
-        if (body[c] < temp) l = c + 1;
-        else r = c;
-      }
-      if (body[l] == temp) {
-        body[l].add_value(x);
-      }
-      else {
-        for (int i = l+1; i < l+1+nonfree; i++) {
-          body[i] = (hashentry &&) body[i-1];
-        }
-        body[l] = (hashentry&&) temp;
-        temp.add_value(x);
-        nonfree++;
-      }
+      int l = temp.get_key();
+      body[l].add_value(x, l);
     }
-    record_name * find_value(list_node *x, config conf) {
+    record_name * find_value(record *x, config conf) {
       hashentry temp;
       int hash = temp.hash_calc(x->get_name(), conf);
-      int l = 0, r = nonfree, c;
-      while (r !=l ) {
-        c = (r + l) / 2;
-        if (body[c].get_key() < hash) l = c + 1;
-        else r = c;
-      }
-      if (body[l].get_key() == hash) {
-        record_name buf;
-        buf.set_base(x);
-        return body[l].find(&buf);
-      }
-      return 0;
+      return body[hash].find(x);
     }
 
 };

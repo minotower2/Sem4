@@ -1,7 +1,9 @@
 # sdfsdfsdf
-12
+# ammount of accounted letters
+4
 
-14
+# base of Btree
+2
 
 
 #dfsdf

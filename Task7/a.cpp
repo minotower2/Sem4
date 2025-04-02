@@ -49,6 +49,7 @@ int main(int argc, char* argv[]) {
 
   list birch;
   birch.read_list(fp, con);
+  birch.print_hash();
 
   char buf[LEN];
   t = clock();
@@ -63,9 +64,8 @@ int main(int argc, char* argv[]) {
     switch(check) {
       case command_type::select:
         if (buff.parse(buf, order) == false) printf("incorrect format\n");
-        res += birch.check(buff, order, con);
+        res += birch.check(buff, order);
         printf("\n");
-        birch.print_hash();
         break;
       case command_type::quit:
         break;
