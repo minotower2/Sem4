@@ -4,7 +4,6 @@
 class list1 {
   private:
     list1_node *head = nullptr;
-    list1_node *ltail = nullptr;
   public:
     list1() = default;
     ~list1() {
@@ -13,15 +12,12 @@ class list1 {
     list1(const list1&) = delete;
     list1(list1&& x) {
       head = x.head; x.head = nullptr;
-      ltail = x.ltail; x.ltail = nullptr;
     }
     list1& operator = (const list1& x) = delete;
     list1& operator = (list1 && x) {
       if (this == &x) return *this;
       head = nullptr;
-      ltail = nullptr;
       head = x.head; x.head = nullptr;
-      ltail = x.ltail; x.ltail = nullptr;
       return *this;
     }
 
@@ -40,11 +36,11 @@ class list1 {
 
     void add_node (list_node *x) {
       list1_node *tail = new list1_node;
-      tail->body = x;
-      if (head == nullptr) {head = tail; ltail = head;}
+      tail->set_body(x);
+      if (head == nullptr) {head = tail;}
       else {
-        ltail->next = tail;
-        ltail = tail;
+        tail->set_next(head);
+        head = tail;
       }
     }
     void add_nodes(list1 * temp) {

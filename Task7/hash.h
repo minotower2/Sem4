@@ -89,7 +89,7 @@ class hashentry {
       if(x == nullptr) return;
       record_name base;
       base.add_value(x);
-      key = l;
+      (void) l;
       record_name * cop = birch.find(base);
       if (cop) cop->add_value(x);
       else birch.add_value(base);

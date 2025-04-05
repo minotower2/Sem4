@@ -59,6 +59,7 @@ class list1_node {
       return body->get_name();
     }
     void set_next(list1_node *x) {next = x;}
+    void set_body(list_node * x) {body = x;}
     list_node * get_body() {return body;}
     // 1 значит меньше 0 значит больше 2 значит равно
     int cmp(list1_node &x, ordering *order) {

@@ -43,6 +43,7 @@ class list {
     }
 
     io_status read_list (FILE* fp, config con) {
+      (void) con;
       list_node buf;
       io_status res;
       list_node *curr, *tail;
@@ -179,7 +180,6 @@ class list {
       list_node * curr;
       list1 queue;
       int count = 0;
-      int flag = com.get_ordering()[0] == ordering::none ? 1 : 0;
       if (com.is_good() == 1) {
         record temp;
         temp.init(com.get_name(), 0, 0);
@@ -197,8 +197,7 @@ class list {
       else {
         for (curr = head; curr; curr = curr->get_next()) {
           if (com.apply(*curr)) {
-            if (flag == 0) queue.add_node(curr);
-            else curr->print(order);
+            queue.add_node(curr);
             count++;
           }
         }
