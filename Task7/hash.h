@@ -111,6 +111,11 @@ class hashentry {
     int operator >= (hashentry& x) {return key >= x.get_key();}
     int operator == (hashentry& x) {return key == x.get_key();}
     int operator != (hashentry& x) {return key != x.get_key();}
+    bool delete_record(list_node * x) {
+      record_name temp;
+      temp.add_value(x);
+      return birch.delete_node(temp);
+    }
 };
 
 class hashtable {
@@ -136,7 +141,40 @@ class hashtable {
       int hash = temp.hash_calc(x->get_name(), conf);
       return body[hash].find(x);
     }
-
+    bool remove_value(list_node * x, config con) {
+      record_name * res = find_value(x, con);
+      if (res == nullptr) return true;
+      list1 * l = res->get_names();
+      if (l == nullptr) return true;
+      if (l->get_head() == nullptr) return true;
+      if ((l->get_head())->get_next() == nullptr) return false;
+      list1_node * curr = l->get_head();
+      if ((curr->get_body())->is_eq(*x)) {
+        list1_node * n = curr->get_next();
+        curr->set_next(nullptr);
+        delete curr;
+        l->set_head(n);
+      }
+      else {
+        for (list1_node * currer = (l->get_head())->get_next(); currer; currer = currer->get_next()) {
+          if ((currer->get_body())->is_eq(*x)) {
+            list1_node * n = currer->get_next();
+            currer->set_next(nullptr);
+            delete currer;
+            curr->set_next(n);
+            break;
+          }
+          curr = currer;
+        }
+      }
+      return true;
+    }
+    bool delete_list(list_node * x, config conf) {
+      hashentry temp;
+      int hash = temp.hash_calc(x->get_name(), conf);
+      return body[hash].delete_record(x);
+    }
 };
+
 
 #endif

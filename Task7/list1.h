@@ -27,6 +27,7 @@ class list1 {
 
 
     list1_node * get_head() {return head;}
+    void set_head(list1_node *x) {head = x;}
 
     void delete_list() {
       list1_node *curr, *next;

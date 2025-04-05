@@ -189,5 +189,34 @@ public:
     if (i < curr->size && curr->values[i] == x) return &(curr->values[i]);
     return find_subtree(curr->children[i], x);
   }
+private:
+  b_tree_node<T> * find_node(b_tree_node<T> * curr, T&x) {
+    if (curr == nullptr) return nullptr;
+    int i = curr->bin_search(x);
+    if (i < curr->size && curr->values[i] == x) return curr;
+    return find_node(curr->children[i], x);
+  }
+public:
+  bool delete_node(T& x) {
+    b_tree_node<T> * curr = find_node(root, x);
+    if (curr == nullptr) return true;
+    if (curr->children[0] == nullptr) {
+      int i = curr->bin_search(x);
+      delete &(curr->values[i]);
+      curr->size--;
+      if (curr->size == 0) {
+        delete curr;
+        return true;
+      }
+      int j;
+      for (j = i; j <= curr->size; j++){
+        curr->values[j] = (T&&) curr->values[j+1];
+      }
+    }
+    return true;
+
+  }
+
+  
 };
 #endif

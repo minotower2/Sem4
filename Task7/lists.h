@@ -102,12 +102,7 @@ class list {
       if (sscanf(s, "%d", &group) != 1) return false;
       list_node buff;
       if (buff.init(name, phone, group)) return false;
-      list_node *curr;
-      for (curr = head; curr; curr = curr->get_next()) {
-        if (buff.is_eq(*curr)) {
-          return false;
-        }
-      }
+      if (tab.find_value(&buff, con) != nullptr) return false;
       list_node *tail;
       tail = new list_node;
       if (tail == nullptr) {
@@ -123,7 +118,7 @@ class list {
       return true;
     }
 
-    bool delete_parse(const char *string) {
+    bool delete_parse(const char *string, config con) {
       char buf[LEN];
       strcpy(buf, string);
       char *s;
@@ -140,6 +135,9 @@ class list {
       buff.where_parse(s);
       for (curr = head; curr; curr = next) {
         if (buff.apply(*curr)) {
+          if (tab.remove_value(curr, con) == false) {
+            tab.delete_list(curr, con);
+          }
           if (curr == head) {
             if (curr->get_next()) {
               head = curr->get_next();
@@ -177,22 +175,36 @@ class list {
       return true;
     }
 
-    int check(command &com, ordering * order) {
+    int check(command &com, ordering * order, config con) {
       list_node * curr;
       list1 queue;
       int count = 0;
       int flag = com.get_ordering()[0] == ordering::none ? 1 : 0;
-      for (curr = head; curr; curr = curr->get_next()) {
-        if (com.apply(*curr)) {
-          if (flag == 0) queue.add_node(curr);
-          else curr->print(order);
-          count++;
+      if (com.is_good() == 1) {
+        record temp;
+        temp.init(com.get_name(), 0, 0);
+        record_name * res = tab.find_value(&temp, con);
+        if (res == nullptr) return 0;
+        list1 * nodes = res->get_names();
+        list1_node * cur;
+        for (cur = nodes->get_head(); cur; cur = cur->get_next()) {
+          if (cur->get_body() && com.apply(*(cur->get_body()))) {
+            queue.add_node((cur->get_body()));
+            count++;
+          }
         }
       }
-      if (flag == 0) {
-        queue.merge_sort(com.get_ordering());
-        queue.print_list(order);
+      else {
+        for (curr = head; curr; curr = curr->get_next()) {
+          if (com.apply(*curr)) {
+            if (flag == 0) queue.add_node(curr);
+            else curr->print(order);
+            count++;
+          }
+        }
       }
+      queue.merge_sort(com.get_ordering());
+      queue.print_list(order);
       return count;
     }
 };

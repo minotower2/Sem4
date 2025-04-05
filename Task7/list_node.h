@@ -44,6 +44,7 @@ class list1_node {
     list1_node(const list1_node &x) = delete;
     list1_node(list1_node&& x) {
       next = x.next; x.next = nullptr;
+      body = x.body; x.body = nullptr;
     }
     ~list1_node() {next = nullptr; body = nullptr;}
     list1_node& operator=(const list1_node& x) = delete;
