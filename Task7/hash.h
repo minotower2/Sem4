@@ -1,6 +1,6 @@
 #ifndef HASH
 #define HASH
-#define TABLELENGTH 80000
+#define TABLELENGTH 50000
 
 #include "config.h"
 #include "record.h"
@@ -16,6 +16,10 @@ class hashentry {
     void init(config conf, const char * name) {
       birch.set_m(conf.get_m());
       key = hash_calc(name, conf);
+    }
+    void delete_tree() {
+      key = 0;
+      birch.delete_tree();
     }
     void print() {
       printf("key = %d\n", key);
@@ -84,7 +88,6 @@ class hashentry {
 class hashtable {
   private:
     hashentry body[TABLELENGTH];
-    int nonfree = 0;
   public:
     void print() {
       for (int i = 0; i < TABLELENGTH; i++) {
@@ -139,6 +142,11 @@ class hashtable {
       hashentry temp;
       int hash = temp.hash_calc(x->get_name(), conf);
       return body[hash].delete_record(x);
+    }
+    void delete_hash() {
+      for (int i = 0; i < TABLELENGTH; i++) {
+        if (body[i].get_key() != 0) body[i].delete_tree();
+      }
     }
 };
 

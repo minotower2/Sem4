@@ -127,6 +127,7 @@ class list {
       s = strtok(nullptr, " \t\n;");
       if (s==nullptr) {
         delete_list();
+        tab.delete_hash();
         return true;
       }
       if (strcmp(s, "where") != 0) return false;

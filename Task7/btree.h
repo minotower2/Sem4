@@ -12,8 +12,11 @@ public:
   b_tree() = default;
   b_tree(int i) {m = i;}
   ~b_tree() {
+    delete_tree();
+  }
+  void delete_tree() {
     delete_subtree (root);
-    erase_links ();
+    erase_links();
   }
   b_tree(const b_tree &) = delete;
   b_tree(b_tree && x) {
