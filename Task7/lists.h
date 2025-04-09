@@ -102,7 +102,12 @@ class list {
       if (sscanf(s, "%d", &group) != 1) return false;
       list_node buff;
       if (buff.init(name, phone, group)) return false;
-      if (tab.find_value(&buff, con) != nullptr) return false;
+      list1* res = tab.find_value(&buff, con);
+      if (res != nullptr) {
+        for (list1_node * cur = res->get_head(); cur; cur = cur->get_next()) {
+          if ((cur->get_body())->is_eq(buff)) return false;
+        }
+      }
       list_node *tail;
       tail = new list_node;
       if (tail == nullptr) {
@@ -118,7 +123,7 @@ class list {
       return true;
     }
 
-    bool delete_parse(const char *string) {
+    bool delete_parse(const char *string, config con) {
       char buf[LEN];
       strcpy(buf, string);
       char *s;
@@ -134,11 +139,25 @@ class list {
       command buff;
       list_node *curr, *next;
       buff.where_parse(s);
-      for (curr = head; curr; curr = next) {
-        if (buff.apply(*curr)) {
-          curr->set_del(true);
+      if (buff.is_good() == 1) {
+        record temp;
+        temp.init(buff.get_name(), 0, 0);
+        list1 * nodes = tab.find_value(&temp, con);
+        if (nodes == nullptr) return true;
+        list1_node * cur;
+        for (cur = nodes->get_head(); cur; cur = cur->get_next()) {
+          if (cur->get_body() && ((cur->get_body())->get_del() == false) && buff.apply(*(cur->get_body()))) {
+            (cur->get_body())->set_del(true);
+          }
         }
-        next = curr->get_next();
+      }
+      else {
+        for (curr = head; curr; curr = next) {
+          if (buff.apply(*curr)) {
+            curr->set_del(true);
+          }
+          next = curr->get_next();
+        }
       }
       return true;
     }
