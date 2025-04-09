@@ -4,3 +4,4 @@
 __pycache__/
 vgcore*
 gentest*
+trees.h

@@ -43,7 +43,6 @@ class list {
     }
 
     io_status read_list (FILE* fp, config con) {
-      (void) con;
       list_node buf;
       io_status res;
       list_node *curr, *tail;
@@ -58,7 +57,7 @@ class list {
       ltail = head;
       curr = head;
       tail = curr;
-      tab.add_entry(tail, con);
+      if (tab.add_entry(tail, con) == false) {delete_list(); return io_status::memory; }
       while(buf.read(fp) == io_status::success) {
         tail = new list_node;
         if (tail == nullptr) {
@@ -69,7 +68,7 @@ class list {
         curr -> set_next(tail);
         curr = tail;
         ltail = tail;
-        tab.add_entry(tail, con);
+        if(tab.add_entry(tail, con) == false) {delete_list(); return io_status::memory;}
       }
       if (!feof(fp)) {
         delete_list();
@@ -183,9 +182,8 @@ class list {
       if (com.is_good() == 1) {
         record temp;
         temp.init(com.get_name(), 0, 0);
-        record_name * res = tab.find_value(&temp, con);
-        if (res == nullptr) return 0;
-        list1 * nodes = res->get_names();
+        list1 * nodes = tab.find_value(&temp, con);
+        if (nodes == nullptr) return 0;
         list1_node * cur;
         for (cur = nodes->get_head(); cur; cur = cur->get_next()) {
           if (cur->get_body() && com.apply(*(cur->get_body()))) {

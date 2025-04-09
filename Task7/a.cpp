@@ -57,7 +57,6 @@ int main(int argc, char* argv[]) {
     ordering order[3] = {ordering::none};
     command_type check = buff.check_type(buf);
     if (check == command_type::quit) {
-      printf("\n");
       break;
     }
     switch(check) {

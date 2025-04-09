@@ -21,7 +21,33 @@ class list1 {
       return *this;
     }
 
-
+    const char * get_name() {
+      if (head == nullptr) return nullptr;
+      return head->get_name();
+    }
+    int operator> (list1& x){
+      return (cmp (x) > 0 ? 1 : 0);
+    }
+    int operator< (list1& x) {
+      return (cmp (x) < 0 ? 1 : 0);
+    }
+    int operator== (list1& x) {
+      return (cmp (x) == 0 ? 1 : 0);
+    }
+    bool add_value(list_node * x) {
+      return add_node(x);
+    }
+  private:
+    int cmp(list1& x) {
+      if (get_name() == nullptr) {
+        if (x.get_name() == nullptr) return 0;
+        return -1;
+      }
+      if (x.get_name() == nullptr) return 1;
+      return strcmp(get_name(), x.get_name());
+    }
+  public:
+    
     list1_node * get_head() {return head;}
     void set_head(list1_node *x) {head = x;}
 
@@ -34,14 +60,16 @@ class list1 {
       head = nullptr;
     }
 
-    void add_node (list_node *x) {
+    bool add_node (list_node *x) {
       list1_node *tail = new list1_node;
+      if (tail == nullptr) return false;
       tail->set_body(x);
       if (head == nullptr) {head = tail;}
       else {
         tail->set_next(head);
         head = tail;
       }
+      return true;
     }
     void add_nodes(list1 * temp) {
       list_node * curr;
@@ -55,6 +83,10 @@ class list1 {
       for (curr = head; curr; curr = curr->get_next()) {
         if (curr->body) (curr->body)->print(order);
       }
+    }
+    void print(FILE *fp) {
+      (void) fp;
+      print_list(nullptr);
     }
 
     list1_node * merge_lists(list1_node * head_a, list1_node * head_b, ordering * order) {

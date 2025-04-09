@@ -16,6 +16,7 @@ public:
   b_tree_node () = default;
   b_tree_node (const b_tree_node& ) = delete;
   b_tree_node (b_tree_node && x) {
+    erase();
     values = x.values; x.values = nullptr;
     children = x.children; x.children = nullptr;
     size = x.size; x.size = 0;

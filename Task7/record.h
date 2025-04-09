@@ -28,12 +28,14 @@ enum class io_status
   create,
 };
 
+class list_node;
 class record {
   private:
     std::unique_ptr<char []> name = nullptr;
     int phone = 0;
     int group = 0;
   public:
+    friend class list_node;
     record () = default;
     ~record () = default;
     const char * get_name () const { return name.get (); }

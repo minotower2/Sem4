@@ -1,58 +1,16 @@
 #ifndef HASH
 #define HASH
-#define TABLELENGTH 1000
+#define TABLELENGTH 5
 
 #include "config.h"
 #include "record.h"
 #include "list1.h"
 #include "btree.h"
 
-class record_name {
-  private:
-    list1 names;
-  public:
-    record_name() = default;
-    record_name(const record_name& ) = delete;
-    record_name(record_name && x) = default;
-    ~record_name() = default;
-    record_name& operator = (const record_name&) = delete;
-    record_name& operator = (record_name&& x) = default;
-    const char * get_name() {
-      if (names.get_head() == nullptr) return nullptr;
-      return (names.get_head())->get_name();
-    }
-    int operator> (record_name& x){
-      return (cmp (x) > 0 ? 1 : 0);
-    }
-    int operator< (record_name& x) {
-      return (cmp (x) < 0 ? 1 : 0);
-    }
-    int operator== (record_name& x) {
-      return (cmp (x) == 0 ? 1 : 0);
-    }
-    void add_value(list_node * x) {names.add_node(x);}
-    list1 * get_names() {return &names;}
-    void print(FILE *fp) {
-      list1_node * curr;
-      for (curr= names.get_head(); curr; curr = curr->get_next()) {
-        fprintf(fp, "%s\n", curr->get_name());
-      }
-    }
-  private:
-    int cmp(record_name& x) {
-      if (get_name() == nullptr) {
-        if (x.get_name() == nullptr) return 0;
-        return -1;
-      }
-      if (x.get_name() == nullptr) return 1;
-      return strcmp(get_name(), x.get_name());
-    }
-};
-
 class hashentry {
   private:
     int key = 0;
-    b_tree<record_name> birch;
+    b_tree <list1> birch;
   public:
     hashentry() = default;
     void init(config conf, const char * name) {
@@ -65,11 +23,14 @@ class hashentry {
     }
     ~hashentry() = default;
     hashentry(const hashentry&) = delete;
-    hashentry(hashentry&&) = default;
+    hashentry(hashentry&&) {
+      birch.erase_links();
+      key = 0;
+    }
     hashentry& operator = (const hashentry&) = delete;
     hashentry& operator = (hashentry&& x) {
       if (this == &x) return *this;
-      birch = (b_tree<record_name> &&)x.birch; (x.birch).erase_links();
+      birch = (b_tree<list1> &&)x.birch; (x.birch).erase_links();
       key = x.key; x.key = 0;
       return *this;
     }
@@ -85,17 +46,18 @@ class hashentry {
       //printf("name = %s, key = %d\n", name, hash);
       return hash;
     }
-    void add_value(list_node *x, int l) {
-      if(x == nullptr) return;
-      record_name base;
-      base.add_value(x);
-      (void) l;
-      record_name * cop = birch.find(base);
-      if (cop) cop->add_value(x);
+    bool add_value(list_node *x, int l) {
+      if(x == nullptr) return false;
+      list1 base;
+      if (base.add_value(x) == false) {return false;}
+      key = l;
+      list1 * cop = birch.find(base);
+      if (cop) {cop->add_value(x);}
       else birch.add_value(base);
+      return true;
     }
-    record_name * find(record *x) {
-      record_name temp;
+    list1 * find(record *x) {
+      list1 temp;
       list_node buf;
       if (x == nullptr) return nullptr;
       const char * name = x->get_name();
@@ -112,7 +74,7 @@ class hashentry {
     int operator == (hashentry& x) {return key == x.get_key();}
     int operator != (hashentry& x) {return key != x.get_key();}
     bool delete_record(list_node * x) {
-      record_name temp;
+      list1 temp;
       temp.add_value(x);
       return birch.delete_node(temp);
     }
@@ -130,22 +92,21 @@ class hashtable {
     }
     hashtable() = default;
     ~hashtable() = default;
-    void add_entry(list_node *x, config conf) {
+    bool add_entry(list_node *x, config conf) {
       hashentry temp;
-      temp.init(conf, x->get_name());
-      int l = temp.get_key();
-      body[l].add_value(x, l);
+      int l = temp.hash_calc(x->get_name(), conf);
+      body[l].init(conf, x->get_name());
+      return body[l].add_value(x, l);
     }
-    record_name * find_value(record *x, config conf) {
+    list1 * find_value(record *x, config conf) {
       hashentry temp;
       int hash = temp.hash_calc(x->get_name(), conf);
       return body[hash].find(x);
     }
     bool remove_value(list_node * x, config con) {
-      record_name * res = find_value(x, con);
+      list1 * res = find_value(x, con);
       if (res == nullptr) return true;
-      list1 * l = res->get_names();
-      if (l == nullptr) return true;
+      list1 * l = res;
       if (l->get_head() == nullptr) return true;
       if ((l->get_head())->get_next() == nullptr) return false;
       list1_node * curr = l->get_head();

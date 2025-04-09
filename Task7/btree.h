@@ -6,10 +6,11 @@ class list1;
 template <class T>
 class b_tree {
 private:
-  int m; // B-tree base
+  int m = 2; // B-tree base
   b_tree_node<T> * root = nullptr;
 public:
-  b_tree (int i = 0) {m = i;}
+  b_tree() = default;
+  b_tree(int i) {m = i;}
   ~b_tree() {
     delete_subtree (root);
     erase_links ();
