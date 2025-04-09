@@ -118,7 +118,7 @@ class list {
       return true;
     }
 
-    bool delete_parse(const char *string, config con) {
+    bool delete_parse(const char *string) {
       char buf[LEN];
       strcpy(buf, string);
       char *s;
@@ -135,40 +135,7 @@ class list {
       buff.where_parse(s);
       for (curr = head; curr; curr = next) {
         if (buff.apply(*curr)) {
-          if (tab.remove_value(curr, con) == false) {
-            tab.delete_list(curr, con);
-          }
-          if (curr == head) {
-            if (curr->get_next()) {
-              head = curr->get_next();
-              curr->erase();
-              delete curr;
-              curr = head;
-              next = head;
-              continue;
-            }
-            else {
-              delete_list();
-              return true;
-            }
-          }
-          else if (curr == ltail) {
-            list_node *pr = curr->get_prev();
-            pr->next = nullptr;
-            ltail = pr;
-            curr->erase();
-            delete curr;
-            return true;
-          }
-          else {
-            list_node *p = curr->get_prev();
-            list_node *n = curr->get_next();
-            if (p) p->next = n;
-            n->prev = p;
-            curr->erase();
-            delete curr;
-            curr = p;
-          }
+          curr->set_del(true);
         }
         next = curr->get_next();
       }
@@ -183,9 +150,10 @@ class list {
         record temp;
         temp.init(com.get_name(), 0, 0);
         list1 * nodes = tab.find_value(&temp, con);
-        if (nodes == nullptr) return 0; list1_node * cur;
+        if (nodes == nullptr) return 0; 
+        list1_node * cur;
         for (cur = nodes->get_head(); cur; cur = cur->get_next()) {
-          if (cur->get_body() && com.apply(*(cur->get_body()))) {
+          if (cur->get_body() && ((cur->get_body())->get_del() == false) && com.apply(*(cur->get_body()))) {
             queue.add_node((cur->get_body()));
             count++;
           }
@@ -193,7 +161,7 @@ class list {
       }
       else {
         for (curr = head; curr; curr = curr->get_next()) {
-          if (com.apply(*curr)) {
+          if (curr->get_del() == false && com.apply(*curr)) {
             queue.add_node(curr);
             count++;
           }
@@ -202,59 +170,6 @@ class list {
       queue.merge_sort(com.get_ordering());
       queue.print_list(order);
       return count;
-    }
-};
-
-class lists_node {
-
-};
-
-class lists {
-  private:
-    list1_node *head = nullptr;
-  public:
-    lists() = default;
-    ~lists() {
-      delete_list();
-    }
-    lists(const lists&) = delete;
-    lists(lists&& x) {
-      head = x.head; x.head = nullptr;
-    }
-    lists& operator = (const lists& x) = delete;
-    lists& operator = (lists && x) {
-      if (this == &x) return *this;
-      head = nullptr;
-      head = x.head; x.head = nullptr;
-      return *this;
-    }
-
-    bool add_value(list1_node * x) {
-      return add_node(x);
-    }
-  public:
-    list1_node * get_head() {return head;}
-    void set_head(list1_node *x) {head = x;}
-
-    void delete_list() {
-      list1_node *curr, *next;
-      for (curr = head; curr; curr = next) {
-        next = curr->get_next();
-        delete curr;
-      }
-      head = nullptr;
-    }
-
-    bool add_node (list1_node *x) {
-      lists_node *tail = new lists_node;
-      if (tail == nullptr) return false;
-      tail->set_body(x);
-      if (head == nullptr) {head = tail;}
-      else {
-        tail->set_next(head);
-        head = tail;
-      }
-      return true;
     }
 };
 #endif

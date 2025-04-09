@@ -71,7 +71,7 @@ int main(int argc, char* argv[]) {
         birch.parse_insert(buf, con);
         break;
       case command_type::del:
-        birch.delete_parse(buf, con);
+        birch.delete_parse(buf);
         break;
       case command_type::incorrect:
         printf("incorrect command\n");

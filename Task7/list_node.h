@@ -31,6 +31,11 @@ public:
   void set_next(list_node *x) {next = x;}
   void set_prev(list_node *x) {prev = x;}
   void erase() {next = nullptr; prev = nullptr;}
+private:
+  bool del = false;
+public:
+  void set_del(bool x) {del = x;}
+  bool get_del() {return del;}
 };
 
 class list1;
