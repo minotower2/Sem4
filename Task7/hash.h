@@ -1,6 +1,6 @@
 #ifndef HASH
 #define HASH
-#define TABLELENGTH 100000
+#define TABLELENGTH 80000
 
 #include "config.h"
 #include "record.h"
@@ -96,6 +96,7 @@ class hashtable {
     bool add_entry(list_node *x, config conf) {
       hashentry temp;
       int l = temp.hash_calc(x->get_name(), conf);
+      //printf("name = %s, key = %d\n", x->get_name(), l);
       body[l].init(conf, x->get_name());
       return body[l].add_value(x, l);
     }
@@ -109,7 +110,10 @@ class hashtable {
       if (res == nullptr) return true;
       list1 * l = res;
       if (l->get_head() == nullptr) return true;
-      if ((l->get_head())->get_next() == nullptr) return false;
+      if ((l->get_head())->get_next() == nullptr) {
+        hashentry temp;
+        return body[temp.hash_calc(x->get_name(), con)].delete_record(x);
+      }
       list1_node * curr = l->get_head();
       if ((curr->get_body())->is_eq(*x)) {
         list1_node * n = curr->get_next();

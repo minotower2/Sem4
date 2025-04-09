@@ -183,8 +183,7 @@ class list {
         record temp;
         temp.init(com.get_name(), 0, 0);
         list1 * nodes = tab.find_value(&temp, con);
-        if (nodes == nullptr) return 0;
-        list1_node * cur;
+        if (nodes == nullptr) return 0; list1_node * cur;
         for (cur = nodes->get_head(); cur; cur = cur->get_next()) {
           if (cur->get_body() && com.apply(*(cur->get_body()))) {
             queue.add_node((cur->get_body()));
@@ -206,4 +205,56 @@ class list {
     }
 };
 
+class lists_node {
+
+};
+
+class lists {
+  private:
+    list1_node *head = nullptr;
+  public:
+    lists() = default;
+    ~lists() {
+      delete_list();
+    }
+    lists(const lists&) = delete;
+    lists(lists&& x) {
+      head = x.head; x.head = nullptr;
+    }
+    lists& operator = (const lists& x) = delete;
+    lists& operator = (lists && x) {
+      if (this == &x) return *this;
+      head = nullptr;
+      head = x.head; x.head = nullptr;
+      return *this;
+    }
+
+    bool add_value(list1_node * x) {
+      return add_node(x);
+    }
+  public:
+    list1_node * get_head() {return head;}
+    void set_head(list1_node *x) {head = x;}
+
+    void delete_list() {
+      list1_node *curr, *next;
+      for (curr = head; curr; curr = next) {
+        next = curr->get_next();
+        delete curr;
+      }
+      head = nullptr;
+    }
+
+    bool add_node (list1_node *x) {
+      lists_node *tail = new lists_node;
+      if (tail == nullptr) return false;
+      tail->set_body(x);
+      if (head == nullptr) {head = tail;}
+      else {
+        tail->set_next(head);
+        head = tail;
+      }
+      return true;
+    }
+};
 #endif

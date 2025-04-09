@@ -203,7 +203,6 @@ public:
     if (curr == nullptr) return true;
     if (curr->children[0] == nullptr) {
       int i = curr->bin_search(x);
-      delete &(curr->values[i]);
       curr->size--;
       if (curr->size == 0) {
         delete curr;
