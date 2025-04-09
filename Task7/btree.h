@@ -188,9 +188,9 @@ public:
     if (curr == nullptr) return nullptr;
     int i = curr->bin_search(x);
     if (i < curr->size && curr->values[i] == x) return &(curr->values[i]);
+    if (curr->children[0] == nullptr) return nullptr;
     return find_subtree(curr->children[i], x);
   }
-private:
   b_tree_node<T> * find_node(b_tree_node<T> * curr, T&x) {
     if (curr == nullptr) return nullptr;
     int i = curr->bin_search(x);

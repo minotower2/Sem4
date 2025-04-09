@@ -1,6 +1,6 @@
 #ifndef HASH
 #define HASH
-#define TABLELENGTH 5
+#define TABLELENGTH 100000
 
 #include "config.h"
 #include "record.h"
@@ -12,7 +12,7 @@ class hashentry {
     int key = 0;
     b_tree <list1> birch;
   public:
-    hashentry() = default;
+    hashentry() : birch() {};
     void init(config conf, const char * name) {
       birch.set_m(conf.get_m());
       key = hash_calc(name, conf);
@@ -43,6 +43,7 @@ class hashentry {
         pow = (pow * p) % m;
       }
       hash %= TABLELENGTH;
+      if (hash < 0) hash = hash*(-1);
       //printf("name = %s, key = %d\n", name, hash);
       return hash;
     }

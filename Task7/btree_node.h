@@ -64,9 +64,10 @@ private:
     if (values == nullptr) return io_status::memory;
     children = new b_tree_node* [2*m+1];
     if (children == nullptr) {
-      delete values;
+      delete[] values;
       return io_status::memory;
     }
+    for(int i = 0; i < 2 * m + 1; i++) children[i] = nullptr;
     return io_status::success;
   }
   int bin_search (T& x) {
