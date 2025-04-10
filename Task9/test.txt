@@ -1,0 +1,4 @@
+select * where phone = -1412;
+select * where name = Ha;
+select * where name = aJH or phone = 949389;
+quit;

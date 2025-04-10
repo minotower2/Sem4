@@ -1,0 +1,11 @@
+# ammount of accounted letters of a name
+6
+
+# base of Btree
+3
+
+#ammount of accounted numbers of a phone
+4
+
+#base of the Second Btree
+3
