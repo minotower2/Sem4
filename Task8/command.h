@@ -35,8 +35,8 @@ class command : public record {
     int is_good() {
       if (c_name == condition::eq && op != operation::lor && c_phone != condition::eq) return 1;
       else if (c_name != condition::eq && op != operation::lor && c_phone == condition::eq) return 2;
-      else if (c_name == condition::eq && op == operation::land && c_phone == condition::eq) return 3;
-      else if (c_name == condition::eq && op == operation::lor && c_phone == condition::eq) return 4;
+      else if (c_name == condition::eq && op == operation::land && c_phone == condition::eq) return 1;
+      else if (c_name == condition::eq && op == operation::lor && c_phone == condition::eq) return 3;
       return 0;
     }
 

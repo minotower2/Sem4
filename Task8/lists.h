@@ -5,6 +5,7 @@
 #include "command.h"
 #include "hash.h"
 #include "hashphone.h"
+#include "list1.h"
 
 class record_name;
 
@@ -106,9 +107,10 @@ class list {
       if (sscanf(s, "%d", &group) != 1) return false;
       list_node buff;
       if (buff.init(name, phone, group)) return false;
-      list1* res = tab.find_value(&buff, con);
+      list4* res = tab.find_value(&buff, con);
       if (res != nullptr) {
-        for (list1_node * cur = res->get_head(); cur; cur = cur->get_next()) {
+        if ((res->get_body())->is_eq(buff)) return false;
+        for (list1_node * cur = res->get_next(); cur; cur = cur->get_next()) {
           if ((cur->get_body())->is_eq(buff)) return false;
         }
       }
@@ -148,10 +150,13 @@ class list {
       if (buff.is_good() == 1) {
         record temp;
         temp.init(buff.get_name(), 0, 0);
-        list1 * nodes = tab.find_value(&temp, con);
+        list4 * nodes = tab.find_value(&temp, con);
         if (nodes == nullptr) return true;
+        if (nodes->get_body() && ((nodes->get_body())->get_del() == false) && buff.apply(*(nodes->get_body()))) {
+          (nodes->get_body())->set_del(true);
+        }
         list1_node * cur;
-        for (cur = nodes->get_head(); cur; cur = cur->get_next()) {
+        for (cur = nodes->get_next(); cur; cur = cur->get_next()) {
           if (cur->get_body() && ((cur->get_body())->get_del() == false) && buff.apply(*(cur->get_body()))) {
             (cur->get_body())->set_del(true);
           }
@@ -176,10 +181,14 @@ class list {
       if (res == 1) {
         record temp;
         temp.init(com.get_name(), 0, 0);
-        list1 * nodes = tab.find_value(&temp, con);
+        list4 * nodes = tab.find_value(&temp, con);
         if (nodes == nullptr) return 0; 
+        if (nodes->get_body() && ((nodes->get_body())->get_del() == false) && com.apply(*(nodes->get_body()))) {
+          queue.add_node((nodes->get_body()));
+          count++;
+        }
         list1_node * cur;
-        for (cur = nodes->get_head(); cur; cur = cur->get_next()) {
+        for (cur = nodes->get_next(); cur; cur = cur->get_next()) {
           if (cur->get_body() && ((cur->get_body())->get_del() == false) && com.apply(*(cur->get_body()))) {
             queue.add_node((cur->get_body()));
             count++;
@@ -201,6 +210,55 @@ class list {
             queue.add_node((cur->get_body()));
             count++;
           }
+        }
+      }
+      else if (res == 3) {
+        list1 tempqueue;
+        record temp;
+        temp.init(com.get_name(), 0, 0);
+        list4 * nodes = tab.find_value(&temp, con);
+        if (nodes == nullptr) goto phone;
+        if (nodes->get_body() && ((nodes->get_body())->get_del() == false) && com.apply(*(nodes->get_body()))) {
+          tempqueue.add_node((nodes->get_body()));
+        }
+        list1_node * cur;
+        for (cur = nodes->get_next(); cur; cur = cur->get_next()) {
+          if (cur->get_body() && ((cur->get_body())->get_del() == false) && com.apply(*(cur->get_body()))) {
+            tempqueue.add_node((cur->get_body()));
+          }
+        }
+phone:
+        temp.init(nullptr, com.get_phone(), 0);
+        list3 * nodess = tabp.find_value(&temp, con);
+        if (nodess == nullptr) goto checking;
+        list1_node * curr;
+        if (nodess->get_body() && ((nodess->get_body())->get_del() == false) && com.apply(*(nodess->get_body()))) {
+          tempqueue.add_node((nodess->get_body()));
+        }
+        for (curr = nodess->get_next(); curr; curr = curr->get_next()) {
+          if (curr->get_body() && ((curr->get_body())->get_del() == false) && com.apply(*(curr->get_body()))) {
+            tempqueue.add_node((curr->get_body()));
+          }
+        }
+checking:
+        if (tempqueue.get_head() == nullptr) return 0;
+        if ((tempqueue.get_head())->get_next() == nullptr) {
+          queue.add_node((tempqueue.get_head())->get_body());
+          count++;
+        }
+        else {
+          ordering orders[3] {ordering::name, ordering::phone, ordering::group};
+          tempqueue.merge_sort(orders);
+          list1_node *prev = tempqueue.get_head();
+          for (curr = (tempqueue.get_head())->get_next(); curr; curr = curr->get_next()) {
+            if ((curr->get_body())->is_eq(*(prev->get_body())) == false) {
+              queue.add_node(prev->get_body());
+              count++;
+            }
+            prev = curr;
+          }
+          queue.add_node(prev->get_body());
+          count++;
         }
       }
       else {
