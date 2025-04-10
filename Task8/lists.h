@@ -4,12 +4,14 @@
 #include "list_node.h"
 #include "command.h"
 #include "hash.h"
+#include "hashphone.h"
 
 class record_name;
 
 class list {
   private:
     hashtable tab;
+    hashtable_phone tabp;
     list_node * head = nullptr;
     list_node * ltail = nullptr;
   public:
@@ -58,6 +60,7 @@ class list {
       curr = head;
       tail = curr;
       if (tab.add_entry(tail, con) == false) {delete_list(); return io_status::memory; }
+      if (tabp.add_entry(tail, con) == false) {delete_list(); tab.delete_hash(); return io_status::memory; }
       while(buf.read(fp) == io_status::success) {
         tail = new list_node;
         if (tail == nullptr) {
@@ -69,6 +72,7 @@ class list {
         curr = tail;
         ltail = tail;
         if(tab.add_entry(tail, con) == false) {delete_list(); return io_status::memory;}
+        if (tabp.add_entry(tail, con) == false) {delete_list(); tab.delete_hash(); return io_status::memory; }
       }
       if (!feof(fp)) {
         delete_list();
@@ -120,6 +124,7 @@ class list {
       ltail = tail;
       if (head == nullptr) head = ltail;
       tab.add_entry(tail, con);
+      tabp.add_entry(tail, con);
       return true;
     }
 
@@ -133,6 +138,7 @@ class list {
       if (s==nullptr) {
         delete_list();
         tab.delete_hash();
+        tabp.delete_hash();
         return true;
       }
       if (strcmp(s, "where") != 0) return false;
@@ -166,13 +172,31 @@ class list {
       list_node * curr;
       list1 queue;
       int count = 0;
-      if (com.is_good() == 1) {
+      int res = com.is_good();
+      if (res == 1) {
         record temp;
         temp.init(com.get_name(), 0, 0);
         list1 * nodes = tab.find_value(&temp, con);
         if (nodes == nullptr) return 0; 
         list1_node * cur;
         for (cur = nodes->get_head(); cur; cur = cur->get_next()) {
+          if (cur->get_body() && ((cur->get_body())->get_del() == false) && com.apply(*(cur->get_body()))) {
+            queue.add_node((cur->get_body()));
+            count++;
+          }
+        }
+      }
+      else if (res == 2) {
+        record temp;
+        temp.init(nullptr, com.get_phone(), 0);
+        list3 * nodes = tabp.find_value(&temp, con);
+        if (nodes == nullptr) return 0;
+        list1_node * cur;
+        if (nodes->get_body() && ((nodes->get_body())->get_del() == false) && com.apply(*(nodes->get_body()))) {
+          queue.add_node((nodes->get_body()));
+          count++;
+        }
+        for (cur = nodes->get_next(); cur; cur = cur->get_next()) {
           if (cur->get_body() && ((cur->get_body())->get_del() == false) && com.apply(*(cur->get_body()))) {
             queue.add_node((cur->get_body()));
             count++;

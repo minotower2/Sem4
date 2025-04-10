@@ -39,8 +39,10 @@ public:
 };
 
 class list1;
+class list3;
 class list1_node {
   friend class list1;
+  friend class list3;
   private:
     list_node * body = nullptr;
     list1_node *next = nullptr;
@@ -62,6 +64,10 @@ class list1_node {
     const char * get_name() {
       if (body == nullptr) return nullptr;
       return body->get_name();
+    }
+    int get_phone() {
+      if (body == nullptr) return 0;
+      return body->get_phone();
     }
     void set_next(list1_node *x) {next = x;}
     void set_body(list_node * x) {body = x;}

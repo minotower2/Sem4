@@ -33,7 +33,10 @@ class command : public record {
       return command_type::incorrect;
     }
     int is_good() {
-      if (c_name == condition::eq && op != operation::lor) return 1;
+      if (c_name == condition::eq && op != operation::lor && c_phone != condition::eq) return 1;
+      else if (c_name != condition::eq && op != operation::lor && c_phone == condition::eq) return 2;
+      else if (c_name == condition::eq && op == operation::land && c_phone == condition::eq) return 3;
+      else if (c_name == condition::eq && op == operation::lor && c_phone == condition::eq) return 4;
       return 0;
     }
 

@@ -1,6 +1,5 @@
 #ifndef HASH
 #define HASH
-#define TABLELENGTH 50000
 
 #include "config.h"
 #include "record.h"
@@ -9,33 +8,27 @@
 
 class hashentry {
   private:
-    int key = 0;
     b_tree <list1> birch;
   public:
     hashentry() : birch() {};
-    void init(config conf, const char * name) {
+    void init(config conf) {
       birch.set_m(conf.get_m());
-      key = hash_calc(name, conf);
     }
     void delete_tree() {
-      key = 0;
       birch.delete_tree();
     }
     void print() {
-      printf("key = %d\n", key);
       birch.print(10);
     }
     ~hashentry() = default;
     hashentry(const hashentry&) = delete;
     hashentry(hashentry&&) {
       birch.erase_links();
-      key = 0;
     }
     hashentry& operator = (const hashentry&) = delete;
     hashentry& operator = (hashentry&& x) {
       if (this == &x) return *this;
       birch = (b_tree<list1> &&)x.birch; (x.birch).erase_links();
-      key = x.key; x.key = 0;
       return *this;
     }
     int hash_calc(const char *name, config conf) {
@@ -51,11 +44,10 @@ class hashentry {
       //printf("name = %s, key = %d\n", name, hash);
       return hash;
     }
-    bool add_value(list_node *x, int l) {
+    bool add_value(list_node *x) {
       if(x == nullptr) return false;
       list1 base;
       if (base.add_value(x) == false) {return false;}
-      key = l;
       list1 * cop = birch.find(base);
       if (cop) {cop->add_value(x);}
       else birch.add_value(base);
@@ -71,13 +63,6 @@ class hashentry {
       temp.add_value(&buf);
       return birch.find(temp);
     }
-    int get_key() {return key;}
-    int operator < (hashentry& x) {return key < x.get_key();}
-    int operator > (hashentry& x) {return key > x.get_key();}
-    int operator <= (hashentry& x) {return key <= x.get_key();}
-    int operator >= (hashentry& x) {return key >= x.get_key();}
-    int operator == (hashentry& x) {return key == x.get_key();}
-    int operator != (hashentry& x) {return key != x.get_key();}
     bool delete_record(list_node * x) {
       list1 temp;
       temp.add_value(x);
@@ -91,7 +76,8 @@ class hashtable {
   public:
     void print() {
       for (int i = 0; i < TABLELENGTH; i++) {
-        if (body[i].get_key() != 0) body[i].print();
+        printf("key = %d\n", i);
+        body[i].print();
       }
     }
     hashtable() = default;
@@ -100,8 +86,8 @@ class hashtable {
       hashentry temp;
       int l = temp.hash_calc(x->get_name(), conf);
       //printf("name = %s, key = %d\n", x->get_name(), l);
-      body[l].init(conf, x->get_name());
-      return body[l].add_value(x, l);
+      body[l].init(conf);
+      return body[l].add_value(x);
     }
     list1 * find_value(record *x, config conf) {
       hashentry temp;
@@ -145,7 +131,7 @@ class hashtable {
     }
     void delete_hash() {
       for (int i = 0; i < TABLELENGTH; i++) {
-        if (body[i].get_key() != 0) body[i].delete_tree();
+        body[i].delete_tree();
       }
     }
 };
