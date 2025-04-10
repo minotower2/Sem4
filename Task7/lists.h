@@ -4,6 +4,7 @@
 #include "list_node.h"
 #include "command.h"
 #include "hash.h"
+#include "list1.h"
 
 class record_name;
 
@@ -102,9 +103,10 @@ class list {
       if (sscanf(s, "%d", &group) != 1) return false;
       list_node buff;
       if (buff.init(name, phone, group)) return false;
-      list1* res = tab.find_value(&buff, con);
+      list3* res = tab.find_value(&buff, con);
       if (res != nullptr) {
-        for (list1_node * cur = res->get_head(); cur; cur = cur->get_next()) {
+        if ((res->get_body())->is_eq(buff)) return false;
+        for (list1_node * cur = res->get_next(); cur; cur = cur->get_next()) {
           if ((cur->get_body())->is_eq(buff)) return false;
         }
       }
@@ -142,10 +144,13 @@ class list {
       if (buff.is_good() == 1) {
         record temp;
         temp.init(buff.get_name(), 0, 0);
-        list1 * nodes = tab.find_value(&temp, con);
+        list3 * nodes = tab.find_value(&temp, con);
         if (nodes == nullptr) return true;
         list1_node * cur;
-        for (cur = nodes->get_head(); cur; cur = cur->get_next()) {
+        if (nodes->get_body() && ((nodes->get_body())->get_del() == false) && buff.apply(*(nodes->get_body()))) {
+          (nodes->get_body())->set_del(true);
+        }
+        for (cur = nodes->get_next(); cur; cur = cur->get_next()) {
           if (cur->get_body() && ((cur->get_body())->get_del() == false) && buff.apply(*(cur->get_body()))) {
             (cur->get_body())->set_del(true);
           }
@@ -169,10 +174,14 @@ class list {
       if (com.is_good() == 1) {
         record temp;
         temp.init(com.get_name(), 0, 0);
-        list1 * nodes = tab.find_value(&temp, con);
+        list3 * nodes = tab.find_value(&temp, con);
         if (nodes == nullptr) return 0; 
+        if (nodes->get_body() && ((nodes->get_body())->get_del() == false) && com.apply(*(nodes->get_body()))) {
+          queue.add_node((nodes->get_body()));
+          count++;
+        }
         list1_node * cur;
-        for (cur = nodes->get_head(); cur; cur = cur->get_next()) {
+        for (cur = nodes->get_next(); cur; cur = cur->get_next()) {
           if (cur->get_body() && ((cur->get_body())->get_del() == false) && com.apply(*(cur->get_body()))) {
             queue.add_node((cur->get_body()));
             count++;

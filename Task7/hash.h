@@ -4,12 +4,12 @@
 
 #include "config.h"
 #include "record.h"
-#include "list1.h"
+#include "list3.h"
 #include "btree.h"
 
 class hashentry {
   private:
-    b_tree <list1> birch;
+    b_tree <list3> birch;
   public:
     hashentry() : birch() {};
     void init(config conf) {
@@ -29,7 +29,7 @@ class hashentry {
     hashentry& operator = (const hashentry&) = delete;
     hashentry& operator = (hashentry&& x) {
       if (this == &x) return *this;
-      birch = (b_tree<list1> &&)x.birch; (x.birch).erase_links();
+      birch = (b_tree<list3> &&)x.birch; (x.birch).erase_links();
       return *this;
     }
     int hash_calc(const char *name, config conf) {
@@ -47,15 +47,15 @@ class hashentry {
     }
     bool add_value(list_node *x) {
       if(x == nullptr) return false;
-      list1 base;
+      list3 base;
       if (base.add_value(x) == false) {return false;}
-      list1 * cop = birch.find(base);
+      list3 * cop = birch.find(base);
       if (cop) {cop->add_value(x);}
       else birch.add_value(base);
       return true;
     }
-    list1 * find(record *x) {
-      list1 temp;
+    list3 * find(record *x) {
+      list3 temp;
       list_node buf;
       if (x == nullptr) return nullptr;
       const char * name = x->get_name();
@@ -65,7 +65,7 @@ class hashentry {
       return birch.find(temp);
     }
     bool delete_record(list_node * x) {
-      list1 temp;
+      list3 temp;
       temp.add_value(x);
       return birch.delete_node(temp);
     }
@@ -90,13 +90,14 @@ class hashtable {
       body[l].init(conf);
       return body[l].add_value(x);
     }
-    list1 * find_value(record *x, config conf) {
+    list3 * find_value(record *x, config conf) {
       hashentry temp;
       int hash = temp.hash_calc(x->get_name(), conf);
       return body[hash].find(x);
     }
+    /*
     bool remove_value(list_node * x, config con) {
-      list1 * res = find_value(x, con);
+      list3 * res = find_value(x, con);
       if (res == nullptr) return true;
       list1 * l = res;
       if (l->get_head() == nullptr) return true;
@@ -125,6 +126,7 @@ class hashtable {
       }
       return true;
     }
+    */
     bool delete_list(list_node * x, config conf) {
       hashentry temp;
       int hash = temp.hash_calc(x->get_name(), conf);

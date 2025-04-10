@@ -39,8 +39,10 @@ public:
 };
 
 class list1;
+class list3;
 class list1_node {
   friend class list1;
+  friend class list3;
   private:
     list_node * body = nullptr;
     list1_node *next = nullptr;
