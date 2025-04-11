@@ -41,10 +41,12 @@ public:
 class list1;
 class list3;
 class list4;
+class listless;
 class list1_node {
   friend class list1;
   friend class list3;
   friend class list4;
+  friend class listless;
   private:
     list_node * body = nullptr;
     list1_node *next = nullptr;
