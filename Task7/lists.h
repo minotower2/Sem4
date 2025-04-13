@@ -105,10 +105,20 @@ class list {
       if (buff.init(name, phone, group)) return false;
       list3* res = tab.find_value(&buff, con);
       if (res != nullptr) {
-        if ((res->get_body())->is_eq(buff)) return false;
-        for (list1_node * cur = res->get_next(); cur; cur = cur->get_next()) {
-          if ((cur->get_body())->is_eq(buff)) return false;
+        int flag = 0;
+        if ((res->get_body())->is_eq(buff)) {
+          flag = 1;
+          if (res->get_body()->get_del() == false) return false;
+          else (res->get_body())->set_del(false);
         }
+        for (list1_node * cur = res->get_next(); cur; cur = cur->get_next()) {
+          if ((cur->get_body())->is_eq(buff)) {
+            flag = 1;
+            if (cur->get_body()->get_del() == false) return false;
+            else (cur->get_body())->set_del(false);
+          }
+        }
+        if (flag == 1) return true;
       }
       list_node *tail;
       tail = new list_node;

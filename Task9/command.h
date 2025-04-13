@@ -593,7 +593,7 @@ orderby:
           strcpy(s4, land);
           break;}
       }
-      fprintf(fp, "%s %d %d %s %s %s %s\n", get_name(), get_group(), get_phone(), s1, s2, s3, s4);
+      fprintf(fp, "name=%s phone=%d group=%d c_name=%s c_phone=%s c_group=%s op=%s\n", get_name(), get_phone(), get_group(), s1, s3, s2, s4);
     }
     bool apply (const record& x) {
       switch (op) {

@@ -107,17 +107,28 @@ class list {
       if (sscanf(s, "%d", &group) != 1) return false;
       list_node buff;
       if (buff.init(name, phone, group)) return false;
-      list4* res = tab.find_value(&buff, con);
+      printf("insert: ");
+      buff.print();
+      list4* res = tabg.find_value_name(&buff, con);
       if (res != nullptr) {
-        if ((res->get_body())->is_eq(buff)) return false;
-        for (list1_node * cur = res->get_next(); cur; cur = cur->get_next()) {
-          if ((cur->get_body())->is_eq(buff)) return false;
+        int flag = 0;
+        if ((res->get_body())->is_eq(buff)) {
+          flag = 1;
+          if ((res->get_body())->get_del() == false) return false;
+          else (res->get_body())->set_del(false);
         }
+        for (list1_node * cur = res->get_next(); cur; cur = cur->get_next()) {
+          if ((cur->get_body())->is_eq(buff)) {
+            flag = 1;
+            if ((cur->get_body())->get_del() == false) return false;
+            else (cur->get_body())->set_del(false);
+          }
+        }
+        if (flag == 1) return true;
       }
       list_node *tail;
       tail = new list_node;
       if (tail == nullptr) {
-        delete_list();
         return false;
       }
       *tail = (list_node&&) buff;
@@ -141,13 +152,18 @@ class list {
         delete_list();
         tab.delete_hash();
         tabp.delete_hash();
+        tabg.delete_hash();
         return true;
       }
       if (strcmp(s, "where") != 0) return false;
       command buff;
       list_node *curr, *next;
       buff.where_parse(s);
-      if (buff.is_good() == 1) {
+      printf("delete: ");
+      buff.print();
+      int res = buff.is_good();
+      res = 100;
+      if (res == 1) {
         record temp;
         temp.init(buff.get_name(), 0, 0);
         list4 * nodes = tab.find_value(&temp, con);
@@ -156,6 +172,98 @@ class list {
           (nodes->get_body())->set_del(true);
         }
         list1_node * cur;
+        for (cur = nodes->get_next(); cur; cur = cur->get_next()) {
+          if (cur->get_body() && ((cur->get_body())->get_del() == false) && buff.apply(*(cur->get_body()))) {
+            (cur->get_body())->set_del(true);
+          }
+        }
+      }
+      else if (res == 2) {
+        record temp;
+        temp.init(nullptr, buff.get_phone(), 0);
+        list3 * nodes = tabp.find_value(&temp, con);
+        if (nodes == nullptr) return true;
+        if (nodes->get_body() && ((nodes->get_body())->get_del() == false) && buff.apply(*(nodes->get_body()))) {
+          (nodes->get_body())->set_del(true);
+        }
+        list1_node * cur;
+        for (cur = nodes->get_next(); cur; cur = cur->get_next()) {
+          if (cur->get_body() && ((cur->get_body())->get_del() == false) && buff.apply(*(cur->get_body()))) {
+            (cur->get_body())->set_del(true);
+          }
+        }
+      }
+      else if (res == 3) {
+        list1 tempqueue;
+        record temp;
+        temp.init(buff.get_name(), 0, 0);
+        list4 * nodes = tab.find_value(&temp, con);
+        if (nodes == nullptr) goto phone;
+        if (nodes->get_body() && ((nodes->get_body())->get_del() == false) && buff.apply(*(nodes->get_body()))) {
+          tempqueue.add_node((nodes->get_body()));
+        }
+        list1_node * cur;
+        for (cur = nodes->get_next(); cur; cur = cur->get_next()) {
+          if (cur->get_body() && ((cur->get_body())->get_del() == false) && buff.apply(*(cur->get_body()))) {
+            tempqueue.add_node((cur->get_body()));
+          }
+        }
+phone:
+        temp.init(nullptr, buff.get_phone(), 0);
+        list3 * nodess = tabp.find_value(&temp, con);
+        if (nodess == nullptr) goto checking;
+        list1_node * curr;
+        if (nodess->get_body() && ((nodess->get_body())->get_del() == false) && buff.apply(*(nodess->get_body()))) {
+          tempqueue.add_node((nodess->get_body()));
+        }
+        for (curr = nodess->get_next(); curr; curr = curr->get_next()) {
+          if (curr->get_body() && ((curr->get_body())->get_del() == false) && buff.apply(*(curr->get_body()))) {
+            tempqueue.add_node((curr->get_body()));
+          }
+        }
+checking:
+        if (tempqueue.get_head() == nullptr) return true;
+        if ((tempqueue.get_head())->get_next() == nullptr) {
+          ((tempqueue.get_head())->get_body())->set_del(true);
+        }
+        else {
+          ordering orders[3] {ordering::name, ordering::phone, ordering::group};
+          tempqueue.merge_sort(orders);
+          list1_node *prev = tempqueue.get_head();
+          for (curr = (tempqueue.get_head())->get_next(); curr; curr = curr->get_next()) {
+            if ((curr->get_body())->is_eq(*(prev->get_body())) == false) {
+              (prev->get_body())->set_del(true);
+            }
+            prev = curr;
+          }
+          (prev->get_body())->set_del(true);
+        }
+        return true;
+      }
+      else if (res == -1) {
+        record temp;
+        temp.init(buff.get_name(), 0, buff.get_group());
+        list4 * nodes = tabg.find_value_name(&temp, con);
+        if (nodes == nullptr) return true; 
+        if (nodes->get_body() && ((nodes->get_body())->get_del() == false) && buff.apply(*(nodes->get_body()))) {
+          (nodes->get_body())->set_del(true);
+        }
+        list1_node * cur;
+        for (cur = nodes->get_next(); cur; cur = cur->get_next()) {
+          if (cur->get_body() && ((cur->get_body())->get_del() == false) && buff.apply(*(cur->get_body()))) {
+            (cur->get_body())->set_del(true);
+          }
+        }
+      }
+      else if (res == -2) {
+        record temp;
+        temp.init(nullptr, buff.get_phone(), buff.get_group());
+        list3 * nodes = tabg.find_value_phone(&temp, con);
+        if (nodes == nullptr) return true;
+        list1_node * cur;
+        if (nodes->get_body() && ((nodes->get_body())->get_del() == false) && buff.apply(*(nodes->get_body()))) {
+          (nodes->get_body())->set_del(true);
+        }
         for (cur = nodes->get_next(); cur; cur = cur->get_next()) {
           if (cur->get_body() && ((cur->get_body())->get_del() == false) && buff.apply(*(cur->get_body()))) {
             (cur->get_body())->set_del(true);
@@ -174,6 +282,8 @@ class list {
     }
 
     int check(command &com, ordering * order, config con) {
+      printf("select: ");
+      com.print();
       list_node * curr;
       list1 queue;
       int count = 0;
