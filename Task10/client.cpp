@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#include <errno.h>
 #include <ctime>
 #include <stdlib.h>
 #include <unistd.h>
@@ -8,11 +7,9 @@
 #include <sys/socket.h> 
 #include <netinet/in.h>
 #include <netdb.h>
-// Определимся с портом, адресом сервера и другими константами.
-// В данном случае берем произвольный порт и адрес обратной связи
-// (тестируем на одной машине).
+
 #define BUFLEN 512
-// Две вспомогательные функции для чтения/записи (см. ниже)
+
 void writeToServer (int fd, int *working);
 int readFromServer (int fd);
 
@@ -31,6 +28,7 @@ int main (int argc, char ** argv) {
     return -1;
   }
   name = argv[1];
+
   // Получаем информацию о сервере по его DNS имени
   // или точечной нотации IP адреса.
   hostinfo = gethostbyname (name);

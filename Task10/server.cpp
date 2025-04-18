@@ -1,8 +1,6 @@
 #include <stdio.h>
-#include <errno.h>
 #include <stdlib.h>
 #include <string.h>
-#include <ctype.h>
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -17,8 +15,6 @@
 #include <memory>
 
 #define BUFLEN 512
-
-// Две вспомогательные функции для чтения/записи (см. ниже)
 
 int readFromClient (int fd, char *buf);
 int writeToClient (int fd, const char *buf);
