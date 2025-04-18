@@ -96,6 +96,32 @@ class list1 {
         if (curr->body) (curr->body)->print(order);
       }
     }
+    void write_list(ordering *order, int fd) {
+      const list1_node *curr = head;
+      for (curr = head; curr; curr = curr->get_next()) {
+        if (curr->body) (curr->body)->writeToServer(fd, order);
+      }
+      const char *buf = "SUCCESS";
+      int len = strlen(buf);
+      len++;
+      if (send (fd, &len, sizeof (int), MSG_NOSIGNAL) != (int) sizeof (int)) {
+        perror ("write length");
+        exit (EXIT_FAILURE);
+      }
+      // Пересылаем len байт
+      int nbytes;
+      for (int i = 0; len > 0; i += nbytes, len -= nbytes) {
+        nbytes = send (fd, buf + i, len, MSG_NOSIGNAL);
+        if (nbytes < 0)   {
+          perror ("write");
+          exit (EXIT_FAILURE);
+        }
+        else if (nbytes == 0) {
+          perror ("write truncated");
+          exit (EXIT_FAILURE);
+        }
+      }
+    }
     void print(FILE *fp) {
       (void) fp;
       print_list(nullptr);

@@ -88,6 +88,62 @@ class list4 {
       (void) fp;
       print_list(nullptr);
     }
+<<<<<<< HEAD:Task9/list4.h
+=======
+};
+
+class list3: public listless {
+  public:
+    int get_phone() {
+      if (body == nullptr) return 0;
+      return body->get_phone();
+    }
+    int operator> (list3& x){
+      return get_phone() > x.get_phone();
+    }
+    int operator< (list3& x) {
+      return get_phone() < x.get_phone();
+    }
+    int operator== (list3& x) {
+      return get_phone() == x.get_phone();
+    }
+    bool add_value(list_node * x) {
+      return add_node(x);
+    }
+  private:
+    int cmp(list3& x) {
+      return x.get_phone() < get_phone();
+    }
+};
+
+class list4 : public listless {
+  public:
+    const char * get_name() {
+      if (body == nullptr) return nullptr;
+      return body->get_name();
+    }
+    int operator> (list4& x){
+      return (cmp (x) > 0 ? 1 : 0);
+    }
+    int operator< (list4& x) {
+      return (cmp (x) < 0 ? 1 : 0);
+    }
+    int operator== (list4& x) {
+      return (cmp (x) == 0 ? 1 : 0);
+    }
+    bool add_value(list_node * x) {
+      return add_node(x);
+    }
+  private:
+    int cmp(list4& x) {
+      if (get_name() == nullptr) {
+        if (x.get_name() == nullptr) return 0;
+        return -1;
+      }
+      if (x.get_name() == nullptr) return 1;
+      return strcmp(get_name(), x.get_name());
+    }
+>>>>>>> 7878f31 (Added network stuff + some minor bug fixes):Task9/listless.h
 
 };
 #endif

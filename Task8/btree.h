@@ -198,6 +198,7 @@ public:
     if (curr == nullptr) return nullptr;
     int i = curr->bin_search(x);
     if (i < curr->size && curr->values[i] == x) return curr;
+    if (curr->children[0] == nullptr) return nullptr;
     return find_node(curr->children[i], x);
   }
 public:

@@ -5,6 +5,7 @@
 #include "command.h"
 #include "hash.h"
 #include "hashphone.h"
+#include "groupsearch.h"
 #include "list1.h"
 
 class record_name;
@@ -13,11 +14,7 @@ class list {
   private:
     hashtable tab;
     hashtable_phone tabp;
-<<<<<<< HEAD
-    list_node * head = nullptr;
-=======
     group_search tabg; list_node * head = nullptr;
->>>>>>> 7878f31 (Added network stuff + some minor bug fixes)
     list_node * ltail = nullptr;
   public:
     list() = default;
@@ -65,6 +62,7 @@ class list {
       tail = curr;
       if (tab.add_entry(tail, con) == false) {delete_list(); return io_status::memory; }
       if (tabp.add_entry(tail, con) == false) {delete_list(); tab.delete_hash(); return io_status::memory; }
+      if (tabg.add_entry(tail, con) == false) {delete_list(); tab.delete_hash(); tabp.delete_hash(); return io_status::memory; }
       while(buf.read(fp) == io_status::success) {
         tail = new list_node;
         if (tail == nullptr) {
@@ -77,6 +75,7 @@ class list {
         ltail = tail;
         if(tab.add_entry(tail, con) == false) {delete_list(); return io_status::memory;}
         if (tabp.add_entry(tail, con) == false) {delete_list(); tab.delete_hash(); return io_status::memory; }
+        if (tabg.add_entry(tail, con) == false) {delete_list(); tab.delete_hash(); tabp.delete_hash(); return io_status::memory; }
       }
       if (!feof(fp)) {
         delete_list();
@@ -141,6 +140,7 @@ class list {
       if (head == nullptr) head = ltail;
       tab.add_entry(tail, con);
       tabp.add_entry(tail, con);
+      tabg.add_entry(tail, con);
       return true;
     }
 
@@ -288,7 +288,7 @@ checking:
       return true;
     }
 
-    int check(command &com, ordering * order, config con) {
+    int check(command &com, ordering * order, config con, int fd) {
       //printf("select: ");
       //com.print();
       list_node * curr;
@@ -297,16 +297,17 @@ checking:
       int res = com.is_good();
       if (res == 1) {
         list4 * nodes = tab.find_value(&com, con);
-        if (nodes == nullptr) return 0; 
-        if (nodes->get_body() && ((nodes->get_body())->get_del() == false) && com.apply(*(nodes->get_body()))) {
-          queue.add_node((nodes->get_body()));
-          count++;
-        }
-        list1_node * cur;
-        for (cur = nodes->get_next(); cur; cur = cur->get_next()) {
-          if (cur->get_body() && ((cur->get_body())->get_del() == false) && com.apply(*(cur->get_body()))) {
-            queue.add_node((cur->get_body()));
+        if (nodes != nullptr) {
+          if (nodes->get_body() && ((nodes->get_body())->get_del() == false) && com.apply(*(nodes->get_body()))) {
+            queue.add_node((nodes->get_body()));
             count++;
+          }
+          list1_node * cur;
+          for (cur = nodes->get_next(); cur; cur = cur->get_next()) {
+            if (cur->get_body() && ((cur->get_body())->get_del() == false) && com.apply(*(cur->get_body()))) {
+              queue.add_node((cur->get_body()));
+              count++;
+            }
           }
         }
       }
@@ -314,16 +315,17 @@ checking:
         record temp;
         temp.init(nullptr, com.get_phone(), 0);
         list3 * nodes = tabp.find_value(&temp, con);
-        if (nodes == nullptr) return 0;
-        list1_node * cur;
-        if (nodes->get_body() && ((nodes->get_body())->get_del() == false) && com.apply(*(nodes->get_body()))) {
-          queue.add_node((nodes->get_body()));
-          count++;
-        }
-        for (cur = nodes->get_next(); cur; cur = cur->get_next()) {
-          if (cur->get_body() && ((cur->get_body())->get_del() == false) && com.apply(*(cur->get_body()))) {
-            queue.add_node((cur->get_body()));
+        if (nodes != nullptr) {
+          list1_node * cur;
+          if (nodes->get_body() && ((nodes->get_body())->get_del() == false) && com.apply(*(nodes->get_body()))) {
+            queue.add_node((nodes->get_body()));
             count++;
+          }
+          for (cur = nodes->get_next(); cur; cur = cur->get_next()) {
+            if (cur->get_body() && ((cur->get_body())->get_del() == false) && com.apply(*(cur->get_body()))) {
+              queue.add_node((cur->get_body()));
+              count++;
+            }
           }
         }
       }
@@ -353,55 +355,56 @@ phone:
           }
         }
 checking:
-        if (tempqueue.get_head() == nullptr) return 0;
-        if ((tempqueue.get_head())->get_next() == nullptr) {
-          queue.add_node((tempqueue.get_head())->get_body());
-          count++;
-        }
-        else {
-          ordering orders[3] {ordering::name, ordering::phone, ordering::group};
-          tempqueue.merge_sort(orders);
-          list1_node *prev = tempqueue.get_head();
-          for (curr = (tempqueue.get_head())->get_next(); curr; curr = curr->get_next()) {
-            if ((curr->get_body())->is_eq(*(prev->get_body())) == false) {
-              queue.add_node(prev->get_body());
-              count++;
-            }
-            prev = curr;
+        if (tempqueue.get_head() != nullptr) {
+          if ((tempqueue.get_head())->get_next() == nullptr) {
+            queue.add_node((tempqueue.get_head())->get_body());
+            count++;
           }
-          queue.add_node(prev->get_body());
-          count++;
+          else {
+            ordering orders[3] {ordering::name, ordering::phone, ordering::group};
+            tempqueue.merge_sort(orders);
+            list1_node *prev = tempqueue.get_head();
+            for (curr = (tempqueue.get_head())->get_next(); curr; curr = curr->get_next()) {
+              if ((curr->get_body())->is_eq(*(prev->get_body())) == false) {
+                queue.add_node(prev->get_body());
+                count++;
+              }
+              prev = curr;
+            }
+            queue.add_node(prev->get_body());
+            count++;
+          }
         }
       }
-<<<<<<< HEAD
-=======
       else if (res == -1) {
         list4 * nodes = tabg.find_value_name(&com, con);
-        if (nodes == nullptr) return 0; 
-        if (nodes->get_body() && ((nodes->get_body())->get_del() == false) && com.apply(*(nodes->get_body()))) {
-          queue.add_node((nodes->get_body()));
-          count++;
-        }
-        list1_node * cur;
-        for (cur = nodes->get_next(); cur; cur = cur->get_next()) {
-          if (cur->get_body() && ((cur->get_body())->get_del() == false) && com.apply(*(cur->get_body()))) {
-            queue.add_node((cur->get_body()));
+        if (nodes != nullptr) {
+          if (nodes->get_body() && ((nodes->get_body())->get_del() == false) && com.apply(*(nodes->get_body()))) {
+            queue.add_node((nodes->get_body()));
             count++;
+          }
+          list1_node * cur;
+          for (cur = nodes->get_next(); cur; cur = cur->get_next()) {
+            if (cur->get_body() && ((cur->get_body())->get_del() == false) && com.apply(*(cur->get_body()))) {
+              queue.add_node((cur->get_body()));
+              count++;
+            }
           }
         }
       }
       else if (res == -2) {
         list3 * nodes = tabg.find_value_phone(&com, con);
-        if (nodes == nullptr) return 0;
-        list1_node * cur;
-        if (nodes->get_body() && ((nodes->get_body())->get_del() == false) && com.apply(*(nodes->get_body()))) {
-          queue.add_node((nodes->get_body()));
-          count++;
-        }
-        for (cur = nodes->get_next(); cur; cur = cur->get_next()) {
-          if (cur->get_body() && ((cur->get_body())->get_del() == false) && com.apply(*(cur->get_body()))) {
-            queue.add_node((cur->get_body()));
+        if (nodes != nullptr) {
+          list1_node * cur;
+          if (nodes->get_body() && ((nodes->get_body())->get_del() == false) && com.apply(*(nodes->get_body()))) {
+            queue.add_node((nodes->get_body()));
             count++;
+          }
+          for (cur = nodes->get_next(); cur; cur = cur->get_next()) {
+            if (cur->get_body() && ((cur->get_body())->get_del() == false) && com.apply(*(cur->get_body()))) {
+              queue.add_node((cur->get_body()));
+              count++;
+            }
           }
         }
       }
@@ -439,7 +442,6 @@ checking:
         }
       }
       */
->>>>>>> 7878f31 (Added network stuff + some minor bug fixes)
       else {
         for (curr = head; curr; curr = curr->get_next()) {
           if (curr->get_del() == false && com.apply(*curr)) {
@@ -449,7 +451,7 @@ checking:
         }
       }
       queue.merge_sort(com.get_ordering());
-      queue.print_list(order);
+      queue.write_list(order, fd);
       return count;
     }
 };

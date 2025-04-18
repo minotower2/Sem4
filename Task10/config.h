@@ -1,10 +1,7 @@
 #ifndef CONFIG
 #define CONFIG
 #define TABLELENGTH 20000
-<<<<<<< HEAD
-=======
 #define TABLELENGTHPRIME 40
->>>>>>> 7878f31 (Added network stuff + some minor bug fixes)
 #include "stdio.h"
 #include "record.h"
 

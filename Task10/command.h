@@ -30,15 +30,13 @@ class command : public record {
       if (strcmp(s, "insert")==0) return command_type::insert;
       if (strcmp(s, "delete")==0) return command_type::del;
       if (strcmp(s, "quit")==0) return command_type::quit;
+      if (strcmp(s, "stop")==0) return command_type::stop;
       return command_type::incorrect;
     }
     int is_good() {
-<<<<<<< HEAD
-=======
       if (c_group == condition::eq && op == operation::land && c_name == condition::eq) return -1;
       else if (c_group == condition::eq && op == operation::land && c_phone == condition::eq) return -2;
       else if (c_group == condition::eq) return -3;
->>>>>>> 7878f31 (Added network stuff + some minor bug fixes)
       if (c_name == condition::eq && op != operation::lor && c_phone != condition::eq) return 1;
       else if (c_name != condition::eq && op != operation::lor && c_phone == condition::eq) return 2;
       else if (c_name == condition::eq && op == operation::land && c_phone == condition::eq) return 1;
