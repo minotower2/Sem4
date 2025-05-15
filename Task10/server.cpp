@@ -86,8 +86,8 @@ int main (int argc, char ** argv) {
     perror ("Server: cannot bind socket");
     exit (EXIT_FAILURE);
   }
-  // Создаем очередь на 30 входящих запроса соединения
-  err = listen (sock, 30);
+  // Создаем очередь на 3 входящих запроса соединения
+  err = listen (sock, 3);
   if (err < 0) {
     perror ("Server: listen queue failure");
     exit (EXIT_FAILURE);
@@ -99,6 +99,7 @@ int main (int argc, char ** argv) {
   FD_ZERO (&active_set);
   FD_SET (sock, &active_set);
   // Основной бесконечный цикл проверки состояния сокетов
+  printf("Ready to recieve connections\n");
   while (1) {
     // Проверим, не появились ли данные в каком-либо сокете.
     // В нашем варианте ждем до фактического появления данных.
