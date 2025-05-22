@@ -201,7 +201,11 @@ io_status solve5(const char *a, const char *b, const char *c, std::string& t, in
     for (int i = 0; buf[i]; ++i) {
       if (buf[i] == '\n') buf[i] = '\0';
     }
-    birch.push_back(buf);
+    s = strtok(buf, t.c_str());
+    while (s != nullptr) {
+      birch.push_back(s);
+      s = strtok(nullptr, t.c_str());
+    }
   }
   std::sort(birch.begin(), birch.end());
   auto it = std::unique(birch.begin(), birch.end());
@@ -244,7 +248,11 @@ io_status solve6(const char *a, const char *b, const char *c, std::string& t, in
     for (int i = 0; buf[i]; ++i) {
       if (buf[i] == '\n') buf[i] = '\0';
     }
-    birch.push_back(buf);
+    s = strtok(buf, t.c_str());
+    while (s != nullptr) {
+      birch.push_back(s);
+      s = strtok(nullptr, t.c_str());
+    }
   }
   birch.sort();
   birch.unique();
